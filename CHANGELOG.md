@@ -6,4 +6,4 @@
 * Validator support via input filter
 * Service plugin manager for responses, requests and input filter
 * Hydrator strategies for address list and addresses
-* Response/Request classes 
+* Response/Request classes for all blockchain wallet api methods

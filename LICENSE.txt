@@ -1,0 +1,7 @@
+New BSD License
+===============
+
+Copyright (c) 2014, Sandro Keil
+All rights reserved.
+
+Redistribution an
