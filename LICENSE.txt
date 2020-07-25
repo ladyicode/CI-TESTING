@@ -4,4 +4,7 @@ New BSD License
 Copyright (c) 2014, Sandro Keil
 All rights reserved.
 
-Redistribution an
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the a
