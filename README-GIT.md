@@ -9,4 +9,9 @@ Your first step is to establish a public repository from which i can pull your w
  3. Clone your fork locally and enter it (use your own GitHub username in the statement below)
 
     ```sh
-    % git clone git@github.com:<username>/BlockchainWalletApi.
+    % git clone git@github.com:<username>/BlockchainWalletApi.git
+    % cd BlockchainWalletApi
+    ```
+
+ 4. Add a remote to the canonical BlockchainWalletApi repository, so you can keep your fork
+    up-to
