@@ -49,4 +49,18 @@ A typical work flow will then consist of the following:
  4. Push the local branch to your remote repository.
  5. Send a pull request.
 
-The mechanics of this process are actually quite trivial. Below, we will create a branch for fixing an is
+The mechanics of this process are actually quite trivial. Below, we will create a branch for fixing an issue in the tracker.
+
+```sh
+% git checkout -b 3452
+Switched to a new branch '3452'
+```
+... do some work ...
+
+```sh
+% git commit
+```
+... write your log message ...
+
+```sh
+% git p
