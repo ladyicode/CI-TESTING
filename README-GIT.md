@@ -63,4 +63,8 @@ Switched to a new branch '3452'
 ... write your log message ...
 
 ```sh
-% git p
+% git push origin HEAD:3452
+Counting objects: 38, done.
+Delta compression using up to 2 threads.
+Compression objects: 100% (18/18), done.
+Writing objects: 100% (20/20), 8.19KiB, done.
