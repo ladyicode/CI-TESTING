@@ -44,4 +44,6 @@ task of code review as well as of merging your changes into the canonical reposi
 A typical work flow will then consist of the following:
 
  1. Create a new local branch based off your master branch.
- 2. Switch to your new local branch. (This step can be 
+ 2. Switch to your new local branch. (This step can be combined with the previous step with the use of `git checkout -b`.)
+ 3. Do some work, commit, repeat as necessary.
+ 4. Push the local branch to your remote repo
