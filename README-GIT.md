@@ -34,4 +34,8 @@ added a remote to the BlockchainWalletApi repository, which allows you to do the
 ```
 
 If you're tracking other branches -- for example, the "develop" branch, where new feature development occurs --
-you'll want to do the same operat
+you'll want to do the same operations for that branch; simply substitute  "develop" for "master".
+
+## Working on BlockchainWalletApi
+
+When working on BlockchainWalletApi, we recommend you do e
