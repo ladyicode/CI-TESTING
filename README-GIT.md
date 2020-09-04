@@ -41,4 +41,7 @@ you'll want to do the same operations for that branch; simply substitute  "devel
 When working on BlockchainWalletApi, we recommend you do each new feature or bugfix in a new branch. This simplifies the
 task of code review as well as of merging your changes into the canonical repository.
 
-A ty
+A typical work flow will then consist of the following:
+
+ 1. Create a new local branch based off your master branch.
+ 2. Switch to your new local branch. (This step can be 
