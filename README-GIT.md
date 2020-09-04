@@ -38,4 +38,7 @@ you'll want to do the same operations for that branch; simply substitute  "devel
 
 ## Working on BlockchainWalletApi
 
-When working on BlockchainWalletApi, we recommend you do e
+When working on BlockchainWalletApi, we recommend you do each new feature or bugfix in a new branch. This simplifies the
+task of code review as well as of merging your changes into the canonical repository.
+
+A ty
