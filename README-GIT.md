@@ -24,4 +24,10 @@ Your first step is to establish a public repository from which i can pull your w
 ## Keeping Up-to-Date
 
 Periodically, you should update your fork to match the canonical BlockchainWalletApi repository. we have
-added a remote to the BlockchainWalletApi repository, 
+added a remote to the BlockchainWalletApi repository, which allows you to do the following:
+
+```sh
+% git checkout master
+% git pull upstream master
+- OPTIONALLY, to keep your remote up-to-date -
+% git push orig
