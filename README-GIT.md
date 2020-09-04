@@ -46,4 +46,7 @@ A typical work flow will then consist of the following:
  1. Create a new local branch based off your master branch.
  2. Switch to your new local branch. (This step can be combined with the previous step with the use of `git checkout -b`.)
  3. Do some work, commit, repeat as necessary.
- 4. Push the local branch to your remote repo
+ 4. Push the local branch to your remote repository.
+ 5. Send a pull request.
+
+The mechanics of this process are actually quite trivial. Below, we will create a branch for fixing an is
