@@ -68,3 +68,9 @@ Counting objects: 38, done.
 Delta compression using up to 2 threads.
 Compression objects: 100% (18/18), done.
 Writing objects: 100% (20/20), 8.19KiB, done.
+Total 20 (delta 12), reused 0 (delta 0)
+To ssh://git@github.com/sandrokeil/BlockchainWalletApi.git
+   g5342..9k3532  HEAD -> master
+```
+
+You 
