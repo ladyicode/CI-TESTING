@@ -73,4 +73,5 @@ To ssh://git@github.com/sandrokeil/BlockchainWalletApi.git
    g5342..9k3532  HEAD -> master
 ```
 
-You 
+You can do the pull request from github. Navigate to your repository, select the branch you just created, and then
+select the "Pull Request" button in the uppe
