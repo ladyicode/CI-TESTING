@@ -86,4 +86,7 @@ Which branch should you issue a pull request against?
 
 ## Branch Cleanup
 
-As you might imagine, if you are a frequent contributor, y
+As you might imagine, if you are a frequent contributor, you'll start to get a ton of branches both locally and on
+your remote.
+
+Once you know that your changes have been accepted to the master repository, we suggest doing s
