@@ -101,4 +101,14 @@ branches.
  -  Remote branch removal
 
     ```sh
-    % git push or
+    % git push origin :<branchname>
+    ```
+
+
+## FEEDS AND EMAILS
+
+RSS feeds may be found at:
+
+`https://github.com/sandrokeil/BlockchainWalletApi/commits/<branch>.atom`
+
+where &lt;branch&gt; is a branch in the repository.
