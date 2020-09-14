@@ -112,3 +112,5 @@ RSS feeds may be found at:
 `https://github.com/sandrokeil/BlockchainWalletApi/commits/<branch>.atom`
 
 where &lt;branch&gt; is a branch in the repository.
+
+To subscribe to git email notifications, simply watch or fork the BlockchainWalletApi repository on GitHub.
