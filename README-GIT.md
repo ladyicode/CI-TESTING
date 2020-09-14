@@ -89,4 +89,16 @@ Which branch should you issue a pull request against?
 As you might imagine, if you are a frequent contributor, you'll start to get a ton of branches both locally and on
 your remote.
 
-Once you know that your changes have been accepted to the master repository, we suggest doing s
+Once you know that your changes have been accepted to the master repository, we suggest doing some cleanup of these
+branches.
+
+ -  Local branch cleanup
+
+    ```sh
+    % git branch -d <branchname>
+    ```
+
+ -  Remote branch removal
+
+    ```sh
+    % git push or
