@@ -55,3 +55,152 @@ Please refer to [blockchain wallet api documentation](https://blockchain.info/en
  * WalletBalance => balance
  * ListAddresses => list
  * AddressBalance => address_balance
+ * NewAddress => new_address
+ * AddressArchive => archive_address
+ * AddressUnarchive => unarchive_address
+ * AutoConsolidateAddresses => auto_consolidate
+
+## Configuration
+Connection parameters can be defined in the application configuration:
+
+```php
+<?php
+
+return array(
+    'sake_bwa' => array(
+        'connection' => array(
+            'default' => array(
+                'options' => array(
+                    // see \Sake\BlockchainWalletApi\Service\BlockchainWalletOptions for all configurations
+                    'url' => 'https://blockchain.info/de/merchant/', // note on your country
+                    'guid' => 'your My Wallet identifier (found on the login page)',
+                    'main_password' => 'Your Main My wallet password',
+                    'second_password' => 'Your second My Wallet password if double encryption is enabled',
+                ),
+                'client' => 'Service factory name for Http Client, Lazy-loads a Zend\Http\Client instance if none registered'
+            )
+        )
+    )
+);
+```
+
+## Registered service names
+ * `sake_bwa.service.default`: a \Sake\BlockchainWalletApi\Service\BlockchainWallet instance to send requests to the api
+ * `sake_bwa.service.response`: a \Sake\BlockchainWalletApi\Service\ResponsePluginManager Service plugin manager to create responses via api method name
+ * `sake_bwa.service.request`: a \Sake\BlockchainWalletApi\Service\RequestPluginManager Service plugin manager to create requests via api method name
+ * `sake_bwa.service.input_filter`: a \Sake\BlockchainWalletApi\Service\InputFilterPluginManager Service plugin manager to create input filter via api method name
+ * `sake_bwa.service.hydrator`: a \Zend\Stdlib\Hydrator\ClassMethods instance with strategies and filters for requests/responses
+
+## Registered view helper
+To use this view helper you must add `zendframework/zend-view` to your composer dependencies.
+
+ * `satoshi`: a \Zend\View\Helper\AbstractHelper instance which converts satoshi to other unit e.g. bitcoin
+
+## Examples
+This module is very easy to use. However, these code snippets should help you to start.
+
+### Send bitcoins
+Here is an example how to send a transaction to a bitcoin address:
+
+```php
+<?php
+use Sake\BlockchainWalletApi;
+
+// $sl is the service locator
+$blockchain = $sl->get('sake_bwa.service.default');
+
+/* @var $request BlockchainWalletApi\Request\Send */
+$request = $sl->get('sake_bwa.service.request')->get('payment');
+// or
+$request = new BlockchainWalletApi\Request\Send();
+
+$request->setAmount(100000); // in satoshi
+$request->setTo('1KwbP2sRHW7uDsxnW8sBbymVwnSsm8cFXC');
+
+try {
+    // validate request
+    if ($blockchain->isValid($request)) {
+        /* @var $response BlockchainWalletApi\Response\Send */
+        $response = $service->send($request);
+        // access to response data
+        $transactionHash = $response->getTxHash();
+    }
+} catch (BlockchainWalletApi\Exception\ExceptionInterface $exception) {
+    // error handling
+}
+```
+
+### Send bitcoins to multiple addresses
+Here is an example how to send a transaction to multiple recipients in the same transaction.
+
+```php
+<?php
+use Sake\BlockchainWalletApi;
+
+// $sl is the service locator
+$blockchain = $sl->get('sake_bwa.service.default');
+
+/* @var $request BlockchainWalletApi\Request\SendMany */
+$request = $sl->get('sake_bwa.service.request')->get('sendmany');
+// or
+$request = new BlockchainWalletApi\Request\SendMany();
+
+$request->setRecipients(
+    array(
+        new BlockchainWalletApi\Request\Recipient('1BzHqGWhdpXyLqiYkAT7sasfCoffYo79tT', 10000),
+        new BlockchainWalletApi\Request\Recipient('1NqH4QkkjDErD9TNC7arDQVMv4zKgfCzmb', 10000),
+    )
+);
+
+try {
+    // validate request
+    if ($blockchain->isValid($request)) {
+        /* @var $response BlockchainWalletApi\Response\SendMany */
+        $response = $service->send($request);
+        // access to response data
+        $transactionHash = $response->getTxHash();
+    }
+} catch (BlockchainWalletApi\Exception\ExceptionInterface $exception) {
+    // error handling
+}
+```
+
+### Get wallet balance
+Here is an example how to retrieve wallet balance:
+
+```php
+<?php
+use Sake\BlockchainWalletApi;
+
+// $sl is the service locator
+/* @var $blockchain BlockchainWalletApi\Service\BlockchainWallet */
+$blockchain = $sl->get('sake_bwa.service.default');
+
+/* @var $request BlockchainWalletApi\Request\WalletBalance */
+$request = $sl->get('sake_bwa.service.request')->get('balance');
+// or
+$request = new BlockchainWalletApi\Request\WalletBalance();
+
+try {
+    // validate request
+    if ($blockchain->isValid($request)) {
+        /* @var $response BlockchainWalletApi\Response\WalletBalance */
+        $response = $blockchain->send($request);
+        // access to response data
+        $balance = $response->getBalance(); // in satoshi
+    }
+} catch (BlockchainWalletApi\Exception\ExceptionInterface $exception) {
+    // error handling
+}
+```
+
+### Using view helper to convert satoshi to other unit e.g. bitcoins
+Here is an example how to use satoshi view helper to convert satoshi to an other unit:
+
+```php
+<?php
+// assume we are in a template
+
+/* @var $response \Sake\BlockchainWalletApi\Response\WalletBalance */
+echo $this->satoshi($response->getBalanace(), 'BTC'); // Bitcoin
+// or
