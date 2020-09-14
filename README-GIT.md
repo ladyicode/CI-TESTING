@@ -78,4 +78,8 @@ select the "Pull Request" button in the upper right. Select the user "sandrokeil
 
 ### What branch to issue the pull request against?
 
-Which branch should you issue a pull req
+Which branch should you issue a pull request against?
+
+- For fixes against the stable release, issue the pull request against the "master" branch.
+- For new features, or fixes that introduce new elements to the public API
+  
