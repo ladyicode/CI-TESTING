@@ -204,3 +204,7 @@ Here is an example how to use satoshi view helper to convert satoshi to an other
 /* @var $response \Sake\BlockchainWalletApi\Response\WalletBalance */
 echo $this->satoshi($response->getBalanace(), 'BTC'); // Bitcoin
 // or
+echo $this->satoshi($response->getBalanace(), 'mBTC'); // Milli Bits
+// or
+echo $this->satoshi($response->getBalanace(), 'uBTC'); // Micro Bitcoin
+```
