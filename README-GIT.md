@@ -74,4 +74,8 @@ To ssh://git@github.com/sandrokeil/BlockchainWalletApi.git
 ```
 
 You can do the pull request from github. Navigate to your repository, select the branch you just created, and then
-select the "Pull Request" button in the uppe
+select the "Pull Request" button in the upper right. Select the user "sandrokeil" as the recipient.
+
+### What branch to issue the pull request against?
+
+Which branch should you issue a pull req
