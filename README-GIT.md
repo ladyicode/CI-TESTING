@@ -82,4 +82,8 @@ Which branch should you issue a pull request against?
 
 - For fixes against the stable release, issue the pull request against the "master" branch.
 - For new features, or fixes that introduce new elements to the public API
-  
+  (such as new public methods or properties), issue the pull request against the "develop" branch.
+
+## Branch Cleanup
+
+As you might imagine, if you are a frequent contributor, y
