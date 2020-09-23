@@ -11,4 +11,12 @@
         "blockchain wallet api",
         "wallet",
         "api",
-        "webserv
+        "webservice",
+        "client",
+        "payment"
+    ],
+    "authors": [
+        {"name": "Sandro Keil", "homepage": "https://github.com/sandrokeil"}
+    ],
+    "autoload": {
+        "psr-4":
