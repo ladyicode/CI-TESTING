@@ -19,4 +19,11 @@
         {"name": "Sandro Keil", "homepage": "https://github.com/sandrokeil"}
     ],
     "autoload": {
-        "psr-4":
+        "psr-4": {
+            "Sake\\BlockchainWalletApi\\": "src/",
+            "SakeTest\\BlockchainWalletApi\\": "test/"
+        }
+    },
+    "require": {
+        "php": "~5.3",
+      
