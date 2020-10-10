@@ -34,4 +34,7 @@
     },
     "require-dev": {
         "zendframework/zend-test": "~2.2",
-        "zendfr
+        "zendframework/zend-config": "~2.2",
+        "zendframework/zend-form": "~2.2",
+        "zendframework/zend-serializer": "~2.2",
+        "zendframework/zend
