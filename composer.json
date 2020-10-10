@@ -29,4 +29,9 @@
         "zendframework/zend-servicemanager": "~2.2",
         "zendframework/zend-stdlib": "~2.2",
         "zendframework/zend-http": "~2.2",
-        "zendframewor
+        "zendframework/zend-filter": "~2.2",
+        "sandrokeil/easy-config": "~1.0"
+    },
+    "require-dev": {
+        "zendframework/zend-test": "~2.2",
+        "zendfr
