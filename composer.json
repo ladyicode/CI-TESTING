@@ -42,4 +42,6 @@
         "zendframework/zend-view": "~2.2",
         "sandrokeil/citools": "~1.0"
     },
-    "suggest":
+    "suggest": {
+        "zendframework/zend-view": "Zend\\View to use satoshi view helper",
+        "zendframework/zend-modulemanager": "Zend\\ModuleManager to use default modu
