@@ -44,4 +44,6 @@
     },
     "suggest": {
         "zendframework/zend-view": "Zend\\View to use satoshi view helper",
-        "zendframework/zend-modulemanager": "Zend\\ModuleManager to use default modu
+        "zendframework/zend-modulemanager": "Zend\\ModuleManager to use default module configuration e.g. services"
+    }
+}
