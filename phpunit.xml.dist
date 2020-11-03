@@ -25,3 +25,6 @@
     </filter>
 
     <logging>
+        <log type="coverage-html" target="./build/logs/report/"
+             charset="UTF-8" yui="true" highlight="true"
+             lowUpperBound="35" highLowe
