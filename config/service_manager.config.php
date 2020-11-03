@@ -9,4 +9,8 @@
 
 return array(
     'factories' => array(
-        'sake_bwa.service.default' => '\Sake\BlockchainWalletApi\Service\Blo
+        'sake_bwa.service.default' => '\Sake\BlockchainWalletApi\Service\BlockchainWalletFactory',
+        'sake_bwa.service.hydrator' => '\Sake\BlockchainWalletApi\Service\HydratorFactory',
+    ),
+    'invokables' => array(
+        'sake_bw
