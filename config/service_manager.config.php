@@ -13,4 +13,5 @@ return array(
         'sake_bwa.service.hydrator' => '\Sake\BlockchainWalletApi\Service\HydratorFactory',
     ),
     'invokables' => array(
-        'sake_bw
+        'sake_bwa.service.request' => '\Sake\BlockchainWalletApi\Service\RequestPluginManager',
+        'sake_bwa.service.response' => '\Sake\BlockchainWalletApi\Service\Respon
