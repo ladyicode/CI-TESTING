@@ -7,4 +7,10 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          forceCoversAnnotation="true"
-         syntaxChec
+         syntaxCheck="true"
+         backupGlobals="true"
+         backupStaticAttributes="false">
+
+    <testsuites>
+        <testsuite name="Sake BlockchainWalletApi Test Suite">
+          
