@@ -13,4 +13,10 @@
 
     <testsuites>
         <testsuite name="Sake BlockchainWalletApi Test Suite">
-          
+            <directory>./test</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+           
