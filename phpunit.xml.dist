@@ -1,1 +1,6 @@
-<?xml version="1.0" en
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- disable strict to debug tests -->
+<phpunit bootstrap="./test/Bootstrap.php"
+         colors="true"
+         strict="true"
+         convertErrorsToExceptio
