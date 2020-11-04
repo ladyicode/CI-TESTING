@@ -29,4 +29,7 @@
              charset="UTF-8" yui="true" highlight="true"
              lowUpperBound="35" highLowerBound="70" showUncoveredFiles="true" />
         <log type="testdox-html" target="./build/logs/testdox.html" />
-        <log type="coverage-clover" target="bui
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+    </logging>
+
+</phpunit>
