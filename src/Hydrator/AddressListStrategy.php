@@ -24,4 +24,12 @@ class AddressListStrategy implements StrategyInterface
      *
      * @param mixed $value The original value.
      * @return mixed|void
-     * @throws \Sake\BlockchainWalletApi\Exception\Ru
+     * @throws \Sake\BlockchainWalletApi\Exception\RuntimeException
+     */
+    public function extract($value)
+    {
+        throw new RuntimeException('Extract is not supported');
+    }
+
+    /**
+     * Convert
