@@ -51,3 +51,27 @@ class AddressStrategy implements StrategyInterface
     {
         if (!is_array($value)) {
             return array();
+        }
+
+        $addresses = array();
+
+        foreach ($value as $data) {
+            $addresses[$data['address']] = new Response\Address();
+            $this->getHydrator()->hydrate($data, $addresses[$data['address']]);
+        }
+        return $addresses;
+    }
+
+    /**
+     * Returns hydrator
+     *
+     * @return ClassMethods
+     */
+    protected function getHydrator()
+    {
+        if (null === $this->hydrator) {
+            $this->hydrator = new ClassMethods();
+        }
+        return $this->hydrator;
+    }
+}
