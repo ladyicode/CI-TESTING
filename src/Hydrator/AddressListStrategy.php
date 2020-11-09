@@ -16,3 +16,8 @@ use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
  * Strategy for a list of addresses from request
  *
  * This strategy converts a list of addresses from response to an array
+ */
+class AddressListStrategy implements StrategyInterface
+{
+    /**
+     * Converts the given value so that it can be extract
