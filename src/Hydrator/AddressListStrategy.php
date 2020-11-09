@@ -10,4 +10,9 @@
 namespace Sake\BlockchainWalletApi\Hydrator;
 
 use Sake\BlockchainWalletApi\Exception\RuntimeException;
-use Zend\Stdlib\Hydrator\Strategy\StrategyI
+use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
+
+/**
+ * Strategy for a list of addresses from request
+ *
+ * This strategy converts a list of addresses from response to an array
