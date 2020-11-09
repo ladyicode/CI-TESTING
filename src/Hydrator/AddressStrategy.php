@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Sake
@@ -10,15 +11,24 @@
 namespace Sake\BlockchainWalletApi\Hydrator;
 
 use Sake\BlockchainWalletApi\Exception\RuntimeException;
+use Zend\Stdlib\Hydrator\ClassMethods;
 use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
+use \Sake\BlockchainWalletApi\Response;
 
 /**
- * Strategy for a list of addresses from request
+ * Strategy for list addresses request
  *
- * This strategy converts a list of addresses from response to an array
+ * This strategy creates for each address an address object with given address data
  */
-class AddressListStrategy implements StrategyInterface
+class AddressStrategy implements StrategyInterface
 {
+    /**
+     * Hydrator to set data to object
+     *
+     * @var ClassMethods
+     */
+    protected $hydrator;
+
     /**
      * Converts the given value so that it can be extracted by the hydrator.
      *
@@ -41,13 +51,3 @@ class AddressListStrategy implements StrategyInterface
     {
         if (!is_array($value)) {
             return array();
-        }
-
-        $addresses = array();
-
-        foreach ($value as $address) {
-            $addresses[] = $address;
-        }
-        return $addresses;
-    }
-}
