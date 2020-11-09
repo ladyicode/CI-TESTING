@@ -35,4 +35,12 @@ class AddressListStrategy implements StrategyInterface
      * Converts the given value (addresses) so that it can be hydrated by the hydrator.
      *
      * @param mixed $value The original value.
-     * @return array 
+     * @return array List of Response\Address objects
+     */
+    public function hydrate($value)
+    {
+        if (!is_array($value)) {
+            return array();
+        }
+
+        $addres
