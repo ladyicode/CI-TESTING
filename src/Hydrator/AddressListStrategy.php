@@ -32,4 +32,7 @@ class AddressListStrategy implements StrategyInterface
     }
 
     /**
-     * Convert
+     * Converts the given value (addresses) so that it can be hydrated by the hydrator.
+     *
+     * @param mixed $value The original value.
+     * @return array 
