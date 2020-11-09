@@ -20,4 +20,8 @@ use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
 class AddressListStrategy implements StrategyInterface
 {
     /**
-     * Converts the given value so that it can be extract
+     * Converts the given value so that it can be extracted by the hydrator.
+     *
+     * @param mixed $value The original value.
+     * @return mixed|void
+     * @throws \Sake\BlockchainWalletApi\Exception\Ru
