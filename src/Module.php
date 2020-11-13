@@ -9,4 +9,8 @@
 
 namespace Sake\BlockchainWalletApi;
 
-use Zend\M
+use Zend\ModuleManager\Feature\ServiceProviderInterface;
+use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
+
+/**
+ * This class initializes the BlockchainWalletApi module.
