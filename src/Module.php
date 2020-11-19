@@ -20,4 +20,9 @@ class Module implements ServiceProviderInterface, ViewHelperProviderInterface
     /**
      * Return service config
      *
-     * @see ServiceProvider
+     * @see ServiceProviderInterface::getServiceConfig()
+     * @return array
+     */
+    public function getServiceConfig()
+    {
+        return require dirname(__DIR__
