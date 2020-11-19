@@ -25,4 +25,9 @@ class Module implements ServiceProviderInterface, ViewHelperProviderInterface
      */
     public function getServiceConfig()
     {
-        return require dirname(__DIR__
+        return require dirname(__DIR__) . '/config/service_manager.config.php';
+    }
+
+    /**
+     * Expected to return \Zend\ServiceManager\Config object or array to
+     * seed such 
