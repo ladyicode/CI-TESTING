@@ -14,3 +14,10 @@ use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
 
 /**
  * This class initializes the BlockchainWalletApi module.
+ */
+class Module implements ServiceProviderInterface, ViewHelperProviderInterface
+{
+    /**
+     * Return service config
+     *
+     * @see ServiceProvider
