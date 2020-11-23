@@ -11,19 +11,12 @@
 namespace Sake\BlockchainWalletApi\Request;
 
 /**
- * Request for address balance method
+ * Request for unarchive address method
  *
- * This class handles data for address balance request
+ * This class handles data for unarchive address request
  */
-class AddressBalance implements RequestInterface
+class AddressUnarchive implements RequestInterface
 {
-    /**
-     * Minimum number of confirmations required. 0 for unconfirmed.
-     *
-     * @var int
-     */
-    protected $confirmations = 0;
-
     /**
      * Bitcoin address
      *
@@ -38,7 +31,7 @@ class AddressBalance implements RequestInterface
      */
     public function getMethod()
     {
-        return 'address_balance';
+        return 'unarchive_address';
     }
 
     /**
@@ -51,7 +44,6 @@ class AddressBalance implements RequestInterface
     {
         return array(
             'address' => $this->address,
-            'confirmations' => $this->confirmations
         );
     }
 
@@ -73,25 +65,5 @@ class AddressBalance implements RequestInterface
     public function getAddress()
     {
         return $this->address;
-    }
-
-    /**
-     * Minimum number of confirmations required. 0 for unconfirmed.
-     *
-     * @param int $confirmations
-     */
-    public function setConfirmations($confirmations)
-    {
-        $this->confirmations = (int) $confirmations;
-    }
-
-    /**
-     * Returns minimum number of confirmations required
-     *
-     * @return int
-     */
-    public function getConfirmations()
-    {
-        return $this->confirmations;
     }
 }
