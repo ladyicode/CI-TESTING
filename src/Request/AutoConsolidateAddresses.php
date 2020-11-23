@@ -17,4 +17,13 @@ namespace Sake\BlockchainWalletApi\Request;
 class AutoConsolidateAddresses implements RequestInterface
 {
     /**
-     * Addresses which have not receive
+     * Addresses which have not received any transactions in at least this many days will be consolidated
+     *
+     * @var int
+     */
+    protected $days;
+
+    /**
+     * Service method
+     *
+     *
