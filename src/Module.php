@@ -30,4 +30,10 @@ class Module implements ServiceProviderInterface, ViewHelperProviderInterface
 
     /**
      * Expected to return \Zend\ServiceManager\Config object or array to
-     * seed such 
+     * seed such an object.
+     *
+     * @return array
+     */
+    public function getViewHelperConfig()
+    {
+        return require dirname(__DIR__) . '/config/view
