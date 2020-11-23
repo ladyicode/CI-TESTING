@@ -26,4 +26,12 @@ class AutoConsolidateAddresses implements RequestInterface
     /**
      * Service method
      *
-     *
+     * @return string
+     */
+    public function getMethod()
+    {
+        return 'auto_consolidate';
+    }
+
+    /**
+     * Return the arguments fo
