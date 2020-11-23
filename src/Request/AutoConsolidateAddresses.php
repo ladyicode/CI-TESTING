@@ -34,4 +34,9 @@ class AutoConsolidateAddresses implements RequestInterface
     }
 
     /**
-     * Return the arguments fo
+     * Return the arguments for the server's method. If the method does not require any arguments, return an empty
+     * array!
+     *
+     * @return array Arguments
+     */
+    pu
