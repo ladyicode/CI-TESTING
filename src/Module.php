@@ -36,4 +36,6 @@ class Module implements ServiceProviderInterface, ViewHelperProviderInterface
      */
     public function getViewHelperConfig()
     {
-        return require dirname(__DIR__) . '/config/view
+        return require dirname(__DIR__) . '/config/view_helper.config.php';
+    }
+}
