@@ -12,4 +12,9 @@ namespace Sake\BlockchainWalletApi\Request;
 /**
  * Request for auto_consolidate method
  *
- * This c
+ * This class handles data for archive address request
+ */
+class AutoConsolidateAddresses implements RequestInterface
+{
+    /**
+     * Addresses which have not receive
