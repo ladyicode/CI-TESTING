@@ -39,4 +39,14 @@ class AutoConsolidateAddresses implements RequestInterface
      *
      * @return array Arguments
      */
-    pu
+    public function getArguments()
+    {
+        return array(
+            'days' => $this->days,
+        );
+    }
+
+    /**
+     * Set number of days.
+     *
+    
