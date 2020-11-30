@@ -49,4 +49,12 @@ class AutoConsolidateAddresses implements RequestInterface
     /**
      * Set number of days.
      *
-    
+     * @param int $days
+     */
+    public function setDays($days)
+    {
+        $this->days = (int) $days;
+    }
+
+    /**
+     * Returns number of day
