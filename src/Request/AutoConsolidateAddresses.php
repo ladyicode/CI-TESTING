@@ -57,4 +57,12 @@ class AutoConsolidateAddresses implements RequestInterface
     }
 
     /**
-     * Returns number of day
+     * Returns number of days
+     *
+     * @return int
+     */
+    public function getDays()
+    {
+        return $this->days;
+    }
+}
