@@ -12,4 +12,9 @@ namespace Sake\BlockchainWalletApi\Request;
 /**
  * Request for list addresses method
  *
- * This class
+ * This class handles data for list addresses request
+ */
+class ListAddresses implements RequestInterface
+{
+    /**
+     * The minimum number of confirma
