@@ -17,4 +17,11 @@ namespace Sake\BlockchainWalletApi\Request;
 class ListAddresses implements RequestInterface
 {
     /**
-     * The minimum number of confirma
+     * The minimum number of confirmations transactions must have before being included in balance of addresses
+     *
+     * @var int
+     */
+    protected $confirmations;
+
+    /**
+     * 
