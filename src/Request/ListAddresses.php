@@ -36,4 +36,10 @@ class ListAddresses implements RequestInterface
     /**
      * No arguments available
      *
-     * @return
+     * @return array Arguments
+     */
+    public function getArguments()
+    {
+        $args = array();
+
+        if (null !== $this->confirmations)
