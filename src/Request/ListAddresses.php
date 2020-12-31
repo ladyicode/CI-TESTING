@@ -24,4 +24,16 @@ class ListAddresses implements RequestInterface
     protected $confirmations;
 
     /**
-     * 
+     * Service method
+     *
+     * @return string
+     */
+    public function getMethod()
+    {
+        return 'list';
+    }
+
+    /**
+     * No arguments available
+     *
+     * @return
