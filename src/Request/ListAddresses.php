@@ -49,4 +49,9 @@ class ListAddresses implements RequestInterface
     }
 
     /**
-     * The minimum number of confirmations transa
+     * The minimum number of confirmations transactions must have before being included in balance of
+     * addresses (Optional)
+     *
+     * @param int $confirmations
+     */
+    public function setC
