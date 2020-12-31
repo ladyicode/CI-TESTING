@@ -42,4 +42,11 @@ class ListAddresses implements RequestInterface
     {
         $args = array();
 
-        if (null !== $this->confirmations)
+        if (null !== $this->confirmations) {
+            $args['confirmations'] = $this->confirmations;
+        }
+        return $args;
+    }
+
+    /**
+     * The minimum number of confirmations transa
