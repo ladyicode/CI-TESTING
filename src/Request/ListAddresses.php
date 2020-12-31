@@ -54,4 +54,12 @@ class ListAddresses implements RequestInterface
      *
      * @param int $confirmations
      */
-    public function setC
+    public function setConfirmations($confirmations)
+    {
+        $this->confirmations = (int) $confirmations;
+    }
+
+    /**
+     * Returns minimum number of confirmations
+     *
+     * @retur
