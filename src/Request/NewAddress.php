@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Sake
@@ -10,18 +11,18 @@
 namespace Sake\BlockchainWalletApi\Request;
 
 /**
- * Request for list addresses method
+ * Request for new address method
  *
- * This class handles data for list addresses request
+ * This class handles data for new address request
  */
-class ListAddresses implements RequestInterface
+class NewAddress implements RequestInterface
 {
     /**
      * The minimum number of confirmations transactions must have before being included in balance of addresses
      *
-     * @var int
+     * @var string
      */
-    protected $confirmations;
+    protected $label;
 
     /**
      * Service method
@@ -30,11 +31,11 @@ class ListAddresses implements RequestInterface
      */
     public function getMethod()
     {
-        return 'list';
+        return 'new_address';
     }
 
     /**
-     * No arguments available
+     * Returns arguments if set
      *
      * @return array Arguments
      */
@@ -42,30 +43,29 @@ class ListAddresses implements RequestInterface
     {
         $args = array();
 
-        if (null !== $this->confirmations) {
-            $args['confirmations'] = $this->confirmations;
+        if (null !== $this->label) {
+            $args['label'] = $this->label;
         }
         return $args;
     }
 
     /**
-     * The minimum number of confirmations transactions must have before being included in balance of
-     * addresses (Optional)
+     * Set label for address e.g. order number
      *
-     * @param int $confirmations
+     * @param string $label
      */
-    public function setConfirmations($confirmations)
+    public function setLabel($label)
     {
-        $this->confirmations = (int) $confirmations;
+        $this->label = (string) $label;
     }
 
     /**
-     * Returns minimum number of confirmations
+     * Returns label
      *
-     * @return int
+     * @return string
      */
-    public function getConfirmations()
+    public function getLabel()
     {
-        return $this->confirmations;
+        return $this->label;
     }
 }
