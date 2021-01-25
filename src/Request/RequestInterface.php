@@ -24,4 +24,10 @@ interface RequestInterface
     public function getMethod();
 
     /**
-     * Return the arguments for the server's method. If the method does not require any arguments, return an emp
+     * Return the arguments for the server's method. If the method does not require any arguments, return an empty
+     * array!
+     *
+     * @return array Arguments
+     */
+    public function getArguments();
+}
