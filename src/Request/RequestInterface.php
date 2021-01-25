@@ -12,4 +12,11 @@ namespace Sake\BlockchainWalletApi\Request;
 /**
  * Request interface
  *
- * Defines necessary methods to 
+ * Defines necessary methods to send a request to the wallet api
+ */
+interface RequestInterface
+{
+    /**
+     * Return service method
+     *
+     * @return strin
