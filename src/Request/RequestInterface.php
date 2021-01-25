@@ -19,4 +19,9 @@ interface RequestInterface
     /**
      * Return service method
      *
-     * @return strin
+     * @return string
+     */
+    public function getMethod();
+
+    /**
+     * Return the arguments for the server's method. If the method does not require any arguments, return an emp
