@@ -73,3 +73,147 @@ class Send implements RequestInterface
     /**
      * Returns arguments if set
      *
+     * @return array Arguments
+     */
+    public function getArguments()
+    {
+        $args = array(
+            'to' => $this->to,
+            'amount' => $this->amount,
+        );
+
+        if (null !== $this->from) {
+            $args['from'] = $this->from;
+        }
+        if (null !== $this->shared) {
+            $args['shared'] = $this->shared;
+        }
+        if (null !== $this->fee) {
+            $args['fee'] = $this->fee;
+        }
+        if (null !== $this->note) {
+            $args['note'] = $this->note;
+        }
+        return $args;
+    }
+
+    /**
+     * Returns amount to send in satoshi
+     *
+     * @return int
+     */
+    public function getAmount()
+    {
+        return $this->amount;
+    }
+
+    /**
+     * Sets amount to send in satoshi
+     *
+     * @param int $amount
+     */
+    public function setAmount($amount)
+    {
+        $this->amount = (int) $amount;
+    }
+
+    /**
+     * Returns transaction fee value in satoshi
+     *
+     * @return int
+     */
+    public function getFee()
+    {
+        return $this->fee;
+    }
+
+    /**
+     * Sets transaction fee value in satoshi (Must be greater than default fee) (Optional)
+     *
+     * @param int $fee
+     */
+    public function setFee($fee)
+    {
+        $this->fee = (int) $fee;
+    }
+
+    /**
+     * Returns Recipient Bitcoin Address
+     *
+     * @return string
+     */
+    public function getFrom()
+    {
+        return $this->from;
+    }
+
+    /**
+     * Sets Recipient Bitcoin Address
+     *
+     * @param string $from
+     */
+    public function setFrom($from)
+    {
+        $this->from = (string) $from;
+    }
+
+    /**
+     * Returns note
+     *
+     * @return string
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * Sets a public note to include with the transaction (Optional)
+     *
+     * @param string $note
+     */
+    public function setNote($note)
+    {
+        $this->note = (string) $note;
+    }
+
+    /**
+     * Returns indicating whether the transaction should be sent through a shared wallet. Fees apply. (Optional)
+     *
+     * @return bool
+     */
+    public function getShared()
+    {
+        return $this->shared;
+    }
+
+    /**
+     * Sets indicating whether the transaction should be sent through a shared wallet. Fees apply. (Optional)
+     *
+     * @param bool $shared
+     */
+    public function setShared($shared)
+    {
+        $this->shared = (bool) $shared;
+    }
+
+    /**
+     * Returns recipient address
+     *
+     * @return string
+     */
+    public function getTo()
+    {
+        return $this->to;
+    }
+
+    /**
+     * Sets recipient address
+     *
+     * @param string $to
+     */
+    public function setTo($to)
+    {
+        $this->to = (string) $to;
+    }
+}
