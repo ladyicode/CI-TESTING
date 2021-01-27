@@ -7,4 +7,11 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
-namespace Sak
+namespace Sake\BlockchainWalletApi\Request;
+
+/**
+ * Request for wallet balance method
+ *
+ * This class handles data for wallet balance request
+ */
+class Wall
