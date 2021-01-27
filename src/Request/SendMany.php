@@ -163,3 +163,34 @@ class SendMany implements RequestInterface
     {
         return $this->shared;
     }
+
+    /**
+     * Sets indicating whether the transaction should be sent through a shared wallet. Fees apply. (Optional)
+     *
+     * @param bool $shared
+     */
+    public function setShared($shared)
+    {
+        $this->shared = (bool) $shared;
+    }
+
+    /**
+     * Returns list of recipients objects
+     *
+     * @return array List of recipient objects
+     */
+    public function getRecipients()
+    {
+        return $this->recipients;
+    }
+
+    /**
+     * Sets recipients
+     *
+     * @param array $recipients List of recipient objects
+     */
+    public function setRecipients(array $recipients)
+    {
+        $this->recipients = $recipients;
+    }
+}
