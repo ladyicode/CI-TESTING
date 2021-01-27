@@ -14,4 +14,13 @@ namespace Sake\BlockchainWalletApi\Request;
  *
  * This class handles data for wallet balance request
  */
-class Wall
+class WalletBalance implements RequestInterface
+{
+    /**
+     * Service method
+     *
+     * @return string
+     */
+    public function getMethod()
+    {
+        return 'bal
