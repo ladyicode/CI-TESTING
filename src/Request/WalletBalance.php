@@ -23,4 +23,14 @@ class WalletBalance implements RequestInterface
      */
     public function getMethod()
     {
-        return 'bal
+        return 'balance';
+    }
+
+    /**
+     * No arguments available
+     *
+     * @return array Arguments
+     */
+    public function getArguments()
+    {
+        return
