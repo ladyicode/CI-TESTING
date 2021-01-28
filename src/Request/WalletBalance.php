@@ -33,4 +33,6 @@ class WalletBalance implements RequestInterface
      */
     public function getArguments()
     {
-        return
+        return array();
+    }
+}
