@@ -95,3 +95,6 @@ class AddressBalance implements ResponseInterface
      */
     public function getTotalReceived()
     {
+        return $this->totalReceived;
+    }
+}
