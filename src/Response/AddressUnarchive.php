@@ -10,3 +10,8 @@
 namespace Sake\BlockchainWalletApi\Response;
 
 /**
+ * Response for unarchive address request
+ *
+ * This class contains the result data of the unarchive address request
+ */
+class AddressUnarchive implements
