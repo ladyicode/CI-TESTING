@@ -14,4 +14,14 @@ namespace Sake\BlockchainWalletApi\Response;
  *
  * This class contains the result data of the unarchive address request
  */
-class AddressUnarchive implements
+class AddressUnarchive implements ResponseInterface
+{
+    /**
+     * Unarchived address
+     *
+     * @var string
+     */
+    protected $active;
+
+    /**
+     * Sets unarchived addr
