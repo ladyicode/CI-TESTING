@@ -24,4 +24,14 @@ class AddressUnarchive implements ResponseInterface
     protected $active;
 
     /**
-     * Sets unarchived addr
+     * Sets unarchived address
+     *
+     * @param string $address
+     */
+    public function setActive($address)
+    {
+        $this->active = (string) $address;
+    }
+
+    /**
+     * R
