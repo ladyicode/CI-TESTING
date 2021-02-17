@@ -34,4 +34,12 @@ class AddressUnarchive implements ResponseInterface
     }
 
     /**
-     * R
+     * Returns unarchived address
+     *
+     * @return string
+     */
+    public function getActive()
+    {
+        return $this->active;
+    }
+}
