@@ -10,4 +10,8 @@
 namespace Sake\BlockchainWalletApi\Response;
 
 /**
- * Response f
+ * Response for archive address request
+ *
+ * This class contains the result data of the archive address request
+ */
+class AutoConsolidateAddresses implements ResponseInterf
