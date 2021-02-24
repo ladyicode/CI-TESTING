@@ -14,4 +14,14 @@ namespace Sake\BlockchainWalletApi\Response;
  *
  * This class contains the result data of the archive address request
  */
-class AutoConsolidateAddresses implements ResponseInterf
+class AutoConsolidateAddresses implements ResponseInterface
+{
+    /**
+     * List of consolidated addresses
+     *
+     * @var array
+     */
+    protected $consolidated = array();
+
+    /**
+     *
