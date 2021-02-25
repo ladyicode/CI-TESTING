@@ -24,4 +24,9 @@ class AutoConsolidateAddresses implements ResponseInterface
     protected $consolidated = array();
 
     /**
+     * Sets archived address
      *
+     * @param array $addresses List of bitcoin addresses
+     */
+    public function setConsolidated(array $addresses)
+  
