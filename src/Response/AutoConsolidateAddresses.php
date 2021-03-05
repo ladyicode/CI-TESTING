@@ -38,4 +38,8 @@ class AutoConsolidateAddresses implements ResponseInterface
      *
      * @return array List of bitcoin addresses
      */
-    public function
+    public function getConsolidated()
+    {
+        return $this->consolidated;
+    }
+}
