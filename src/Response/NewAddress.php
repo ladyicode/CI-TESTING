@@ -10,4 +10,9 @@
 namespace Sake\BlockchainWalletApi\Response;
 
 /**
- * Response for ne
+ * Response for new address request
+ *
+ * This class contains the result data of the new address request
+ */
+class NewAddress implements ResponseInterface
+{
