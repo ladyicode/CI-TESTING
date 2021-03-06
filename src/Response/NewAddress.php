@@ -16,3 +16,14 @@ namespace Sake\BlockchainWalletApi\Response;
  */
 class NewAddress implements ResponseInterface
 {
+    /**
+     * Bitcoin address
+     *
+     * @var string
+     */
+    protected $address;
+
+    /**
+     * Label e.g. order number
+     *
+     * @v
