@@ -35,4 +35,14 @@ class NewAddress implements ResponseInterface
      *
      * @param string $address
      */
-    public function setAddress($
+    public function setAddress($address)
+    {
+        $this->address = (string) $address;
+    }
+
+    /**
+     * Returns bitcoin address
+     *
+     * @return string
+     */
+ 
