@@ -26,4 +26,13 @@ class NewAddress implements ResponseInterface
     /**
      * Label e.g. order number
      *
-     * @v
+     * @var string
+     */
+    protected $label;
+
+    /**
+     * Sets bitcoin address
+     *
+     * @param string $address
+     */
+    public function setAddress($
