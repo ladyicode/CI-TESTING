@@ -45,4 +45,14 @@ class NewAddress implements ResponseInterface
      *
      * @return string
      */
- 
+    public function getAddress()
+    {
+        return $this->address;
+    }
+
+    /**
+     * Sets label
+     *
+     * @param string $label
+     */
+    publi
