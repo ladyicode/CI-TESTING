@@ -12,4 +12,13 @@ namespace Sake\BlockchainWalletApi\Response;
 /**
  * Response for payment request
  *
- * This class co
+ * This class contains the result data of the payment request
+ */
+class Send implements ResponseInterface
+{
+    /**
+     * Response message
+     *
+     * @var string
+     */
+    prote
