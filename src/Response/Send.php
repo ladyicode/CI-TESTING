@@ -21,4 +21,18 @@ class Send implements ResponseInterface
      *
      * @var string
      */
-    prote
+    protected $message;
+
+    /**
+     * Transaction hash
+     *
+     * @var string
+     */
+    protected $txHash;
+
+    /**
+     * Additional message
+     *
+     * @var string
+     */
+    prot
