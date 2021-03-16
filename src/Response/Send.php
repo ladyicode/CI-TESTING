@@ -35,4 +35,17 @@ class Send implements ResponseInterface
      *
      * @var string
      */
-    prot
+    protected $notice;
+
+    /**
+     * Returns message
+     *
+     * @return string
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     
