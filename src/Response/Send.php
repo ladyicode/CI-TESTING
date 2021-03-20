@@ -78,4 +78,14 @@ class Send implements ResponseInterface
     }
 
     /**
-     * Returns transact
+     * Returns transaction hash
+     *
+     * @return string
+     */
+    public function getTxHash()
+    {
+        return $this->txHash;
+    }
+
+    /**
+     * Sets transactio
