@@ -58,4 +58,15 @@ class Send implements ResponseInterface
     }
 
     /**
+     * Returns notice
      *
+     * @return string
+     */
+    public function getNotice()
+    {
+        return $this->notice;
+    }
+
+    /**
+     * Sets notice
+   
