@@ -69,4 +69,13 @@ class Send implements ResponseInterface
 
     /**
      * Sets notice
-   
+     *
+     * @param string $notice
+     */
+    public function setNotice($notice)
+    {
+        $this->notice = (string) $notice;
+    }
+
+    /**
+     * Returns transact
