@@ -48,4 +48,14 @@ class Send implements ResponseInterface
     }
 
     /**
-     
+     * Sets message
+     *
+     * @param string $message
+     */
+    public function setMessage($message)
+    {
+        $this->message = (string) $message;
+    }
+
+    /**
+     *
