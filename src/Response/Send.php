@@ -94,4 +94,6 @@ class Send implements ResponseInterface
      */
     public function setTxHash($transactionHash)
     {
-        $this->txHash = (string) $transactionHas
+        $this->txHash = (string) $transactionHash;
+    }
+}
