@@ -26,3 +26,15 @@ class SendMany implements ResponseInterface
     /**
      * Transaction hash
      *
+     * @var string
+     */
+    protected $txHash;
+
+    /**
+     * Returns message
+     *
+     * @return string
+     */
+    public function getMessage()
+    {
+   
