@@ -14,4 +14,15 @@ namespace Sake\BlockchainWalletApi\Response;
  *
  * This class contains the result data of the sendmany request
  */
-class SendMany implement
+class SendMany implements ResponseInterface
+{
+    /**
+     * Response message
+     *
+     * @var string
+     */
+    protected $message;
+
+    /**
+     * Transaction hash
+     *
