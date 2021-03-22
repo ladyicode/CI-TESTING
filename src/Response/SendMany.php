@@ -7,4 +7,11 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
-namespace Sake\BlockchainW
+namespace Sake\BlockchainWalletApi\Response;
+
+/**
+ * Response for sendmany request
+ *
+ * This class contains the result data of the sendmany request
+ */
+class SendMany implement
