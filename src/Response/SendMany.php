@@ -37,4 +37,13 @@ class SendMany implements ResponseInterface
      */
     public function getMessage()
     {
-   
+        return $this->message;
+    }
+
+    /**
+     * Sets message
+     *
+     * @param string $message
+     */
+    public function setMessage($message)
+    {
