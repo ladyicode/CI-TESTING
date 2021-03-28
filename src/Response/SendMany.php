@@ -47,3 +47,12 @@ class SendMany implements ResponseInterface
      */
     public function setMessage($message)
     {
+        $this->message = (string) $message;
+    }
+
+    /**
+     * Returns transaction hash
+     *
+     * @return string
+     */
+    publi
