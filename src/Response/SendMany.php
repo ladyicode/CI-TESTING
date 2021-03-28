@@ -55,4 +55,14 @@ class SendMany implements ResponseInterface
      *
      * @return string
      */
-    publi
+    public function getTxHash()
+    {
+        return $this->txHash;
+    }
+
+    /**
+     * Sets transaction hash
+     *
+     * @param string $transactionHash
+     */
+    pub
