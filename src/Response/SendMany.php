@@ -65,4 +65,8 @@ class SendMany implements ResponseInterface
      *
      * @param string $transactionHash
      */
-    pub
+    public function setTxHash($transactionHash)
+    {
+        $this->txHash = (string) $transactionHash;
+    }
+}
