@@ -9,4 +9,7 @@
 
 namespace Sake\BlockchainWalletApi\Service;
 
-use Sake
+use Sake\BlockchainWalletApi\Exception\RuntimeException;
+use Sake\EasyConfig\Service\AbstractConfigurableFactory;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLo
