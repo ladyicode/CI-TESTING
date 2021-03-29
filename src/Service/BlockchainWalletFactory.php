@@ -19,4 +19,14 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  *
  * Creates the blockchain wallet api service with dependencies
  */
-class BlockchainWalletFact
+class BlockchainWalletFactory extends AbstractConfigurableFactory implements FactoryInterface
+{
+    /**
+     * Config name
+     *
+     * @var string
+     */
+    protected $name;
+
+    /**
+     *
