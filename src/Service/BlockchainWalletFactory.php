@@ -12,4 +12,11 @@ namespace Sake\BlockchainWalletApi\Service;
 use Sake\BlockchainWalletApi\Exception\RuntimeException;
 use Sake\EasyConfig\Service\AbstractConfigurableFactory;
 use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLo
+use Zend\ServiceManager\ServiceLocatorInterface;
+
+/**
+ * Blockchain wallet api service factory
+ *
+ * Creates the blockchain wallet api service with dependencies
+ */
+class BlockchainWalletFact
