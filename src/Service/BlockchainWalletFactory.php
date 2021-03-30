@@ -29,4 +29,11 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
     protected $name;
 
     /**
+     * Initialize object
      *
+     * @param string $name Config name
+     */
+    public function __construct($name = 'default')
+    {
+        $this->name = $name;
+  
