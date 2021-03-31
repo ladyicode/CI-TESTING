@@ -36,4 +36,10 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
     public function __construct($name = 'default')
     {
         $this->name = $name;
-  
+    }
+
+    /**
+     * Creates service depending on configuration
+     *
+     * @param ServiceLocatorInterface $serviceLocator
+     * @throws \Sake\BlockchainWa
