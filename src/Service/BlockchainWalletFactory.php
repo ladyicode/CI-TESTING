@@ -47,4 +47,9 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-     
+        $config = $this->getOptions($serviceLocator);
+
+        if (empty($config['options'])) {
+            throw new RuntimeException(
+                sprintf(
+                    'N
