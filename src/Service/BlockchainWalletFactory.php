@@ -42,4 +42,9 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
      * Creates service depending on configuration
      *
      * @param ServiceLocatorInterface $serviceLocator
-     * @throws \Sake\BlockchainWa
+     * @throws \Sake\BlockchainWalletApi\Exception\RuntimeException
+     * @return mixed
+     */
+    public function createService(ServiceLocatorInterface $serviceLocator)
+    {
+     
