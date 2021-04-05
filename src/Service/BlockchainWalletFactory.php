@@ -52,4 +52,7 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
         if (empty($config['options'])) {
             throw new RuntimeException(
                 sprintf(
-                    'N
+                    'No options defined for config %s.%s.%s',
+                    $this->getModule(),
+                    $this->getScope(),
+      
