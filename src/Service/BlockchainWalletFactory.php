@@ -55,4 +55,10 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
                     'No options defined for config %s.%s.%s',
                     $this->getModule(),
                     $this->getScope(),
-      
+                    $this->getName()
+                )
+            );
+        }
+        $options = new BlockchainWalletOptions($config['options']);
+
+        if (!i
