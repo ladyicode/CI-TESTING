@@ -64,4 +64,10 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
         if (!isset($config['options']['hydrator'])) {
             $options->setHydrator($serviceLocator->get('sake_bwa.service.hydrator'));
         }
-  
+        return new BlockchainWallet($this->getClient($serviceLocator, $config), $options);
+    }
+
+    /**
+     * Module name
+     *
+     * @return st
