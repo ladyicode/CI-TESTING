@@ -82,4 +82,16 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
      *
      * @return string
      */
-    public func
+    public function getScope()
+    {
+        return 'connection';
+    }
+
+    /**
+     * Config name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return
