@@ -70,4 +70,16 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
     /**
      * Module name
      *
-     * @return st
+     * @return string
+     */
+    public function getModule()
+    {
+        return 'sake_bwa';
+    }
+
+    /**
+     * Config scope
+     *
+     * @return string
+     */
+    public func
