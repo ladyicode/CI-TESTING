@@ -94,4 +94,10 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
      */
     public function getName()
     {
-        return
+        return $this->name;
+    }
+
+    /**
+     * Returns http client from service manager or default will be created
+     *
+     * @param ServiceLocatorInterface
