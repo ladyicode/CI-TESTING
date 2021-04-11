@@ -100,4 +100,9 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
     /**
      * Returns http client from service manager or default will be created
      *
-     * @param ServiceLocatorInterface
+     * @param ServiceLocatorInterface $serviceLocator
+     * @param array $config
+     * @throws \Sake\BlockchainWalletApi\Exception\RuntimeException
+     * @return \Zend\Http\Client
+     */
+    prote
