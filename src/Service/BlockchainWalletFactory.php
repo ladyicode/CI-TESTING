@@ -111,4 +111,9 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
             $client = new \Zend\Http\Client();
             $client->getAdapter()->setOptions(array('sslverifypeer' => false));
         } else {
-            $client = $se
+            $client = $serviceLocator->get($config['client']);
+        }
+
+        if (!$client instanceof \Zend\Http\Client) {
+            throw new RuntimeException(
+    
