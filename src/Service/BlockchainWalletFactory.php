@@ -105,4 +105,7 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
      * @throws \Sake\BlockchainWalletApi\Exception\RuntimeException
      * @return \Zend\Http\Client
      */
-    prote
+    protected function getClient(ServiceLocatorInterface $serviceLocator, array $config)
+    {
+        if (empty($config['client'])) {
+            $cl
