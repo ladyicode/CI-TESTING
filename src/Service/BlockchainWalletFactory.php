@@ -116,4 +116,7 @@ class BlockchainWalletFactory extends AbstractConfigurableFactory implements Fac
 
         if (!$client instanceof \Zend\Http\Client) {
             throw new RuntimeException(
-    
+                sprintf('Class "%s" is not an instance of \Zend\Http\Client', get_class($client))
+            );
+        }
+        return $clien
