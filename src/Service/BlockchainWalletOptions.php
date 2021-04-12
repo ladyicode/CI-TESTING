@@ -10,4 +10,7 @@
 namespace Sake\BlockchainWalletApi\Service;
 
 use Zend\Http\Request;
-use Zend\
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\Stdlib\AbstractOptions;
+use Zend\Stdlib\Hydrator\ClassMethods;
+use Zend\Stdlib\Hydrator\HydratorI
