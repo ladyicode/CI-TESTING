@@ -13,4 +13,11 @@ use Zend\Http\Request;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Stdlib\AbstractOptions;
 use Zend\Stdlib\Hydrator\ClassMethods;
-use Zend\Stdlib\Hydrator\HydratorI
+use Zend\Stdlib\Hydrator\HydratorInterface;
+
+/**
+ * Blockchain wallet api service options
+ *
+ * Contains configuration for the blockchain wallet api service e.g. passwords.
+ */
+class BlockchainWalletOptions 
