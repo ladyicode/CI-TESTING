@@ -20,4 +20,15 @@ use Zend\Stdlib\Hydrator\HydratorInterface;
  *
  * Contains configuration for the blockchain wallet api service e.g. passwords.
  */
-class BlockchainWalletOptions 
+class BlockchainWalletOptions extends AbstractOptions
+{
+    /**
+     * Service url
+     *
+     * @var string
+     */
+    protected $url;
+
+    /**
+     * Request method
+   
