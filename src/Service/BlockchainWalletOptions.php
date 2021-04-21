@@ -39,4 +39,18 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Wallet identifier
      *
-     * @var s
+     * @var string
+     */
+    protected $guid;
+
+    /**
+     * Main password
+     *
+     * @var string
+     */
+    protected $mainPassword;
+
+    /**
+     * Second password
+     *
+ 
