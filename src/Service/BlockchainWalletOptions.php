@@ -31,4 +31,12 @@ class BlockchainWalletOptions extends AbstractOptions
 
     /**
      * Request method
-   
+     *
+     * @var string
+     */
+    protected $httpMethod = Request::METHOD_GET;
+
+    /**
+     * Wallet identifier
+     *
+     * @var s
