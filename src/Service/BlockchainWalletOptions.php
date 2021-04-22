@@ -53,4 +53,16 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Second password
      *
+     * @var string
+     */
+    protected $secondPassword;
+
+    /**
+     * Hydrator class
+     *
+     * @var HydratorInterface
+     */
+    protected $hydrator;
+
+    /**
  
