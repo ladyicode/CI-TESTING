@@ -65,4 +65,11 @@ class BlockchainWalletOptions extends AbstractOptions
     protected $hydrator;
 
     /**
- 
+     * Plugin manager to create responses
+     *
+     * @var ResponsePluginManager
+     */
+    protected $responsePluginManager;
+
+    /**
+     * Plugin manager to cre
