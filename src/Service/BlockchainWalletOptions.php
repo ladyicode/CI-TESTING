@@ -72,4 +72,13 @@ class BlockchainWalletOptions extends AbstractOptions
     protected $responsePluginManager;
 
     /**
-     * Plugin manager to cre
+     * Plugin manager to create input filter
+     *
+     * @var InputFilterPluginManager
+     */
+    protected $inputFilterPluginManager;
+
+    /**
+     * Sets wallet identifier
+     *
+     * @para
