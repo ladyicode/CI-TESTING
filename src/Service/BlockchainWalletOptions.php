@@ -81,4 +81,14 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Sets wallet identifier
      *
-     * @para
+     * @param string $guid
+     */
+    public function setGuid($guid)
+    {
+        $this->guid = $guid;
+    }
+
+    /**
+     * Returns wallet identifier
+     *
+     * @r
