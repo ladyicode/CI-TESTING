@@ -102,4 +102,13 @@ class BlockchainWalletOptions extends AbstractOptions
      * Sets http method
      *
      * @param string $httpMethod
-    
+     */
+    public function setHttpMethod($httpMethod)
+    {
+        $this->httpMethod = $httpMethod;
+    }
+
+    /**
+     * Returns http method
+     *
+   
