@@ -91,4 +91,15 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Returns wallet identifier
      *
-     * @r
+     * @return string
+     */
+    public function getGuid()
+    {
+        return $this->guid;
+    }
+
+    /**
+     * Sets http method
+     *
+     * @param string $httpMethod
+    
