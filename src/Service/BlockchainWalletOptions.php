@@ -129,4 +129,16 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
-     * Returns main pas
+     * Returns main password
+     *
+     * @return string
+     */
+    public function getMainPassword()
+    {
+        return $this->mainPassword;
+    }
+
+    /**
+     * Sets second password
+     *
+     * @p
