@@ -121,4 +121,12 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Sets main password
      *
- 
+     * @param string $mainPassword
+     */
+    public function setMainPassword($mainPassword)
+    {
+        $this->mainPassword = $mainPassword;
+    }
+
+    /**
+     * Returns main pas
