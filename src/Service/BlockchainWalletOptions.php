@@ -111,4 +111,14 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Returns http method
      *
-   
+     * @return string
+     */
+    public function getHttpMethod()
+    {
+        return $this->httpMethod;
+    }
+
+    /**
+     * Sets main password
+     *
+ 
