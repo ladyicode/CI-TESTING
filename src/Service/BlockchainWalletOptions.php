@@ -141,4 +141,12 @@ class BlockchainWalletOptions extends AbstractOptions
     /**
      * Sets second password
      *
-     * @p
+     * @param string $secondPassword
+     */
+    public function setSecondPassword($secondPassword)
+    {
+        $this->secondPassword = $secondPassword;
+    }
+
+    /**
+ 
