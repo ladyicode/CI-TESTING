@@ -159,4 +159,10 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
- 
+     * Sets service url e.g. https://blockchain.info/de/merchant
+     *
+     * @param string $url
+     */
+    public function setUrl($url)
+    {
+        $this-
