@@ -203,4 +203,10 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
-     * Returns response plugin manager. Lazy-loads a default response manager instance if none 
+     * Returns response plugin manager. Lazy-loads a default response manager instance if none registered
+     *
+     * @return ServiceLocatorInterface
+     */
+    public function getResponsePluginManager()
+    {
+        if (null === $this->responseP
