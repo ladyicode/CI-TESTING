@@ -165,4 +165,18 @@ class BlockchainWalletOptions extends AbstractOptions
      */
     public function setUrl($url)
     {
-        $this-
+        $this->url = $url;
+    }
+
+    /**
+     * Returns service url
+     *
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+ 
