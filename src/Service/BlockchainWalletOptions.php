@@ -179,4 +179,8 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
- 
+     * Sets hydrator for hydration of result data to responses
+     *
+     * @param \Zend\Stdlib\Hydrator\HydratorInterface $hydrator
+     */
+    public
