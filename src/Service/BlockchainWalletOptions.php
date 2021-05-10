@@ -197,4 +197,10 @@ class BlockchainWalletOptions extends AbstractOptions
     public function getHydrator()
     {
         if (null === $this->hydrator) {
-            $this->hydrator = new ClassMetho
+            $this->hydrator = new ClassMethods();
+        }
+        return $this->hydrator;
+    }
+
+    /**
+     * Returns response plugin manager. Lazy-loads a default response manager instance if none 
