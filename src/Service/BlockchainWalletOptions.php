@@ -189,4 +189,7 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
-     * Returns hydrator for h
+     * Returns hydrator for hydration of result data to responses. Lazy-loads a default class methods hydrator instance
+     * if none registered
+     *
+     * @return \Zend\Stdl
