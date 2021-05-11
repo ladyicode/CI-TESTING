@@ -209,4 +209,10 @@ class BlockchainWalletOptions extends AbstractOptions
      */
     public function getResponsePluginManager()
     {
-        if (null === $this->responseP
+        if (null === $this->responsePluginManager) {
+            $this->responsePluginManager = new ResponsePluginManager();
+        }
+        return $this->responsePluginManager;
+    }
+
+    
