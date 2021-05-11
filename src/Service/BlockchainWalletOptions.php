@@ -215,4 +215,9 @@ class BlockchainWalletOptions extends AbstractOptions
         return $this->responsePluginManager;
     }
 
-    
+    /**
+     * Service locator to retrieve response classes depending on request method
+     *
+     * @param ServiceLocatorInterface $responsePluginManager
+     */
+    publ
