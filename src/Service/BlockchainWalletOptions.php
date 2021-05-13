@@ -223,4 +223,9 @@ class BlockchainWalletOptions extends AbstractOptions
     public function setResponsePluginManager(ServiceLocatorInterface $responsePluginManager)
     {
         $this->responsePluginManager = $responsePluginManager;
-   
+    }
+
+    /**
+     * Returns input filter plugin manager. Lazy-loads a default input filter manager instance if none registered
+     *
+     * @return ServiceLocatorInterface
