@@ -220,4 +220,7 @@ class BlockchainWalletOptions extends AbstractOptions
      *
      * @param ServiceLocatorInterface $responsePluginManager
      */
-    publ
+    public function setResponsePluginManager(ServiceLocatorInterface $responsePluginManager)
+    {
+        $this->responsePluginManager = $responsePluginManager;
+   
