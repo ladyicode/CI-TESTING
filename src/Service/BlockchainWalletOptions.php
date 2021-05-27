@@ -233,4 +233,10 @@ class BlockchainWalletOptions extends AbstractOptions
     public function getInputFilterPluginManager()
     {
         if (null === $this->inputFilterPluginManager) {
-            $this->inputFilter
+            $this->inputFilterPluginManager = new InputFilterPluginManager();
+        }
+        return $this->inputFilterPluginManager;
+    }
+
+    /**
+     * Service locator to retrieve input filter cl
