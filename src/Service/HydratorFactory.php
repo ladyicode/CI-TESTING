@@ -9,4 +9,8 @@
 
 namespace Sake\BlockchainWalletApi\Service;
 
-use Sake\Blockchai
+use Sake\BlockchainWalletApi\Hydrator;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\Stdlib\Hydrator\ClassMethods;
+use Zend\St
