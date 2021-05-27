@@ -239,4 +239,8 @@ class BlockchainWalletOptions extends AbstractOptions
     }
 
     /**
-     * Service locator to retrieve input filter cl
+     * Service locator to retrieve input filter classes depending on request method
+     *
+     * @param ServiceLocatorInterface $inputFilterPluginManager
+     */
+    public function setInputFilterPluginManager(Service
