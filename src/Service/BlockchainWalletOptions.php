@@ -229,3 +229,8 @@ class BlockchainWalletOptions extends AbstractOptions
      * Returns input filter plugin manager. Lazy-loads a default input filter manager instance if none registered
      *
      * @return ServiceLocatorInterface
+     */
+    public function getInputFilterPluginManager()
+    {
+        if (null === $this->inputFilterPluginManager) {
+            $this->inputFilter
