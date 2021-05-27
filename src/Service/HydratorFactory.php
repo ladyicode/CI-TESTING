@@ -13,4 +13,10 @@ use Sake\BlockchainWalletApi\Hydrator;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Stdlib\Hydrator\ClassMethods;
-use Zend\St
+use Zend\Stdlib\Hydrator\Filter\FilterComposite;
+use Zend\Stdlib\Hydrator\Filter\MethodMatchFilter;
+
+/**
+ * Hydrator factory
+ *
+ * Creates class methods hydrator 
