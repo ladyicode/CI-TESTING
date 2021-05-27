@@ -19,4 +19,9 @@ use Zend\Stdlib\Hydrator\Filter\MethodMatchFilter;
 /**
  * Hydrator factory
  *
- * Creates class methods hydrator 
+ * Creates class methods hydrator with strategies and filter to hydratoe response/request data
+ */
+class HydratorFactory implements FactoryInterface
+{
+    /**
+     * Create service
