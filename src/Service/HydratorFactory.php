@@ -43,4 +43,7 @@ class HydratorFactory implements FactoryInterface
             new MethodMatchFilter("getMethod"),
             FilterComposite::CONDITION_AND
         );
-      
+        $hydrator->addFilter(
+            'arguments',
+            new MethodMatchFilter("getArguments"),
+            FilterComposite::CONDITI
