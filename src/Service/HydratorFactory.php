@@ -34,4 +34,8 @@ class HydratorFactory implements FactoryInterface
         $hydrator = new ClassMethods();
 
         // use special hydration for these methods
-        $hydrator->addStrategy('addresses', new Hydrator\Addr
+        $hydrator->addStrategy('addresses', new Hydrator\AddressStrategy());
+        $hydrator->addStrategy('consolidated', new Hydrator\AddressListStrategy());
+
+        // dont extract data of these functions
+        $
