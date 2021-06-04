@@ -31,4 +31,7 @@ class HydratorFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
- 
+        $hydrator = new ClassMethods();
+
+        // use special hydration for these methods
+        $hydrator->addStrategy('addresses', new Hydrator\Addr
