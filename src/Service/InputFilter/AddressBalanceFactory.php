@@ -41,3 +41,30 @@ class AddressBalanceFactory implements FactoryInterface
                     ),
                     array(
                         'name' => '\Sake\BlockchainWalletApi\Validator\BitcoinAddress',
+                    ),
+                ),
+            ),
+            'confirmations' => array(
+                'name'       => 'confirmations',
+                'required'   => true,
+                'validators' => array(
+                    array(
+                        'name' => 'greater_than',
+                        'options' => array(
+                            'min' => 0,
+                            'inclusive' => true
+                        )
+                    ),
+                    array(
+                        'name' => 'less_than',
+                        'options' => array(
+                            'max' => 120,
+                            'inclusive' => true
+                        )
+                    ),
+                ),
+            ),
+        ));
+        return $inputFilter;
+    }
+}
