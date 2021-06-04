@@ -38,4 +38,9 @@ class HydratorFactory implements FactoryInterface
         $hydrator->addStrategy('consolidated', new Hydrator\AddressListStrategy());
 
         // dont extract data of these functions
-        $
+        $hydrator->addFilter(
+            'method',
+            new MethodMatchFilter("getMethod"),
+            FilterComposite::CONDITION_AND
+        );
+      
