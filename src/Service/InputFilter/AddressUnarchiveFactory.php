@@ -17,4 +17,11 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  * Input filter factory for address unarchive request
  *
  * Creates input filter for address unarchive request validation
- *
+ */
+class AddressUnarchiveFactory implements FactoryInterface
+{
+    /**
+     * Create service
+     *
+     * @param ServiceLocatorInterface $serviceLocator
+     * @
