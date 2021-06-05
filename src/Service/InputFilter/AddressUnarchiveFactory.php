@@ -7,3 +7,8 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
+namespace Sake\BlockchainWalletApi\Service\InputFilter;
+
+use Zend\InputFilter\Factory;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManag
