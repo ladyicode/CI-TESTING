@@ -29,4 +29,8 @@ class AddressUnarchiveFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $factory = new Factory();
-        $inputFilter = $
+        $inputFilter = $factory->createInputFilter(array(
+            'address' => array(
+                'name'       => 'address',
+                'required'   => true,
+     
