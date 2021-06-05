@@ -33,4 +33,7 @@ class AddressUnarchiveFactory implements FactoryInterface
             'address' => array(
                 'name'       => 'address',
                 'required'   => true,
-     
+                'validators' => array(
+                    array(
+                        'name' => 'not_empty',
+                        'break_chain_on_f
