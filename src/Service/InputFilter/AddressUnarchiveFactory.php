@@ -39,4 +39,11 @@ class AddressUnarchiveFactory implements FactoryInterface
                         'break_chain_on_failure' => true,
                     ),
                     array(
-                        'name' => '\Sake\BlockchainWalletApi\Validator\Bit
+                        'name' => '\Sake\BlockchainWalletApi\Validator\BitcoinAddress',
+                    ),
+                ),
+            ),
+        ));
+        return $inputFilter;
+    }
+}
