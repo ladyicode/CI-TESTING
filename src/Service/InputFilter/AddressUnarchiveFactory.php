@@ -11,4 +11,10 @@ namespace Sake\BlockchainWalletApi\Service\InputFilter;
 
 use Zend\InputFilter\Factory;
 use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManag
+use Zend\ServiceManager\ServiceLocatorInterface;
+
+/**
+ * Input filter factory for address unarchive request
+ *
+ * Creates input filter for address unarchive request validation
+ *
