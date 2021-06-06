@@ -15,11 +15,11 @@ use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
- * Input filter factory for new address request
+ * Input filter factory for list addresses request
  *
- * Creates input filter for new address request validation
+ * Creates input filter for list addresses request validation
  */
-class AutoConsolidateAddressesFactory implements FactoryInterface
+class ListAddressesFactory implements FactoryInterface
 {
     /**
      * Create service
@@ -31,14 +31,22 @@ class AutoConsolidateAddressesFactory implements FactoryInterface
     {
         $factory = new Factory();
         $inputFilter = $factory->createInputFilter(array(
-            'days' => array(
-                'name'       => 'days',
-                'required'   => true,
+            'confirmations' => array(
+                'name'       => 'confirmations',
+                'required'   => false,
                 'validators' => array(
                     array(
                         'name' => 'greater_than',
                         'options' => array(
                             'min' => 0,
+                            'inclusive' => true
+                        )
+                    ),
+                    array(
+                        'name' => 'less_than',
+                        'options' => array(
+                            'max' => 120,
+                            'inclusive' => true
                         )
                     ),
                 ),

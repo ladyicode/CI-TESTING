@@ -10,7 +10,7 @@
 
 namespace Sake\BlockchainWalletApi\Service\InputFilter;
 
-use Zend\InputFilter\Factory;
+use Zend\InputFilter\InputFilter;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
@@ -19,7 +19,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  *
  * Creates input filter for new address request validation
  */
-class AutoConsolidateAddressesFactory implements FactoryInterface
+class NewAddressFactory implements FactoryInterface
 {
     /**
      * Create service
@@ -29,21 +29,6 @@ class AutoConsolidateAddressesFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $factory = new Factory();
-        $inputFilter = $factory->createInputFilter(array(
-            'days' => array(
-                'name'       => 'days',
-                'required'   => true,
-                'validators' => array(
-                    array(
-                        'name' => 'greater_than',
-                        'options' => array(
-                            'min' => 0,
-                        )
-                    ),
-                ),
-            ),
-        ));
-        return $inputFilter;
+        return new InputFilter();
     }
 }
