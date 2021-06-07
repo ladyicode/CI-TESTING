@@ -15,11 +15,11 @@ use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
- * Input filter factory for send request
+ * Input filter factory for send many request
  *
- * Creates input filter for send request validation
+ * Creates input filter for send many request validation
  */
-class SendFactory implements FactoryInterface
+class SendManyFactory implements FactoryInterface
 {
     /**
      * Create service
@@ -31,28 +31,12 @@ class SendFactory implements FactoryInterface
     {
         $factory = new Factory();
         $inputFilter = $factory->createInputFilter(array(
-            'to' => array(
-                'name'       => 'to',
+            'recipients' => array(
+                'name'       => 'recipients',
                 'required'   => true,
                 'validators' => array(
                     array(
                         'name' => 'not_empty',
-                        'break_chain_on_failure' => true,
-                    ),
-                    array(
-                        'name' => '\Sake\BlockchainWalletApi\Validator\BitcoinAddress',
-                    ),
-                ),
-            ),
-            'amount' => array(
-                'name'       => 'amount',
-                'required'   => true,
-                'validators' => array(
-                    array(
-                        'name' => 'greater_than',
-                        'options' => array(
-                            'min' => 0,
-                        )
                     ),
                 ),
             ),
