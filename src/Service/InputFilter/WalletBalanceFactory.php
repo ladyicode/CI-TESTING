@@ -16,4 +16,11 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 /**
  * Input filter factory for wallet balance request
  *
- * Creates input filter for wallet b
+ * Creates input filter for wallet balance request validation
+ */
+class WalletBalanceFactory implements FactoryInterface
+{
+    /**
+     * Create service
+     *
+     * @param ServiceLocatorInterfac
