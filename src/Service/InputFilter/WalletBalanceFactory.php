@@ -29,3 +29,5 @@ class WalletBalanceFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         return new InputFilter();
+    }
+}
