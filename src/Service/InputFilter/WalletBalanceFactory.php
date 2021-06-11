@@ -10,4 +10,10 @@
 namespace Sake\BlockchainWalletApi\Service\InputFilter;
 
 use Zend\InputFilter\InputFilter;
-use Zend\ServiceManager\FactoryI
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+
+/**
+ * Input filter factory for wallet balance request
+ *
+ * Creates input filter for wallet b
