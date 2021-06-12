@@ -24,4 +24,8 @@ class InputFilterPluginManager extends AbstractPluginManager
     /**
      * Default set of input filter, note the method name must be without underscore
      *
-     * @var
+     * @var array
+     */
+    protected $factories = array(
+        'addressbalance' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory',
+        'balance
