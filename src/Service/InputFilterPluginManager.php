@@ -19,4 +19,9 @@ use Zend\ServiceManager\AbstractPluginManager;
  * Enforces that input filter retrieved are either callbacks or instances of InputFilterInterface. Additionally, it
  * registers a number of default input filter which matches the blockchain wallet api service request method name.
  */
-class I
+class InputFilterPluginManager extends AbstractPluginManager
+{
+    /**
+     * Default set of input filter, note the method name must be without underscore
+     *
+     * @var
