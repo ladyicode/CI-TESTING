@@ -28,4 +28,5 @@ class InputFilterPluginManager extends AbstractPluginManager
      */
     protected $factories = array(
         'addressbalance' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory',
-        'balance
+        'balance'        => '\Sake\BlockchainWalletApi\Service\InputFilter\WalletBalanceFactory',
+        'list'           => '\Sake\BlockchainWalletApi\Service\InputFil
