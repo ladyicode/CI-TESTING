@@ -11,4 +11,9 @@ namespace Sake\BlockchainWalletApi\Service;
 
 use Sake\BlockchainWalletApi\Exception;
 use Zend\InputFilter\InputFilterInterface;
-use Zend\ServiceManager\AbstractPluginMana
+use Zend\ServiceManager\AbstractPluginManager;
+
+/**
+ * Plugin manager implementation for input filter.
+ *
+ * Enforces that input filter retrieved are either callbacks or instances of InputFilte
