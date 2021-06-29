@@ -34,4 +34,9 @@ class InputFilterPluginManager extends AbstractPluginManager
         'payment'        => '\Sake\BlockchainWalletApi\Service\InputFilter\SendFactory',
         'sendmany'       => '\Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory',
         'archiveaddress' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFactory',
-        'unarchiveaddress' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarc
+        'unarchiveaddress' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarchiveFactory',
+        'autoconsolidate' => '\Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory',
+    );
+
+    /**
+     * Whether or not to share
