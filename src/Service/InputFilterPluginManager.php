@@ -33,4 +33,5 @@ class InputFilterPluginManager extends AbstractPluginManager
         'newaddress'     => '\Sake\BlockchainWalletApi\Service\InputFilter\NewAddressFactory',
         'payment'        => '\Sake\BlockchainWalletApi\Service\InputFilter\SendFactory',
         'sendmany'       => '\Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory',
-        'archiveaddre
+        'archiveaddress' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFactory',
+        'unarchiveaddress' => '\Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarc
