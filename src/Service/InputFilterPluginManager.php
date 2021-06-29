@@ -58,4 +58,12 @@ class InputFilterPluginManager extends AbstractPluginManager
     public function validatePlugin($plugin)
     {
         if ($plugin instanceof InputFilterInterface) {
-            // we'r
+            // we're okay
+            return;
+        }
+        if (is_callable($plugin)) {
+            // also okay
+            return;
+        }
+
+        throw new Exceptio
