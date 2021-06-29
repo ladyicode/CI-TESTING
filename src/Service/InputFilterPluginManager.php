@@ -66,4 +66,6 @@ class InputFilterPluginManager extends AbstractPluginManager
             return;
         }
 
-        throw new Exceptio
+        throw new Exception\RuntimeException(sprintf(
+            'Plugin of type %s is invalid; must implement %s\InputFilterInterface or be callable',
+            (is_object($plug
