@@ -53,4 +53,9 @@ class InputFilterPluginManager extends AbstractPluginManager
      *
      * @param  mixed $plugin
      * @return void
-     * @throws Exception\RuntimeE
+     * @throws Exception\RuntimeException if invalid
+     */
+    public function validatePlugin($plugin)
+    {
+        if ($plugin instanceof InputFilterInterface) {
+            // we'r
