@@ -48,4 +48,9 @@ class InputFilterPluginManager extends AbstractPluginManager
     /**
      * Validate the plugin
      *
-     * Checks that the filt
+     * Checks that the filter loaded is either a valid callback or an instance
+     * of FilterInterface.
+     *
+     * @param  mixed $plugin
+     * @return void
+     * @throws Exception\RuntimeE
