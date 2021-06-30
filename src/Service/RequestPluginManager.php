@@ -22,4 +22,9 @@ use Zend\ServiceManager\AbstractPluginManager;
 class RequestPluginManager extends AbstractPluginManager
 {
     /**
-     * Default set of requests, 
+     * Default set of requests, note the method name must be without underscore
+     *
+     * @var array
+     */
+    protected $invokableClasses = array(
+        'addressbalance
