@@ -29,4 +29,6 @@ class RequestPluginManager extends AbstractPluginManager
     protected $invokableClasses = array(
         'addressbalance' => '\Sake\BlockchainWalletApi\Request\AddressBalance',
         'balance'        => '\Sake\BlockchainWalletApi\Request\WalletBalance',
-        'list'           => '\S
+        'list'           => '\Sake\BlockchainWalletApi\Request\ListAddresses',
+        'newaddress'     => '\Sake\BlockchainWalletApi\Request\NewAddress',
+        'payment'        => '\S
