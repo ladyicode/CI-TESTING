@@ -68,4 +68,8 @@ class InputFilterPluginManager extends AbstractPluginManager
 
         throw new Exception\RuntimeException(sprintf(
             'Plugin of type %s is invalid; must implement %s\InputFilterInterface or be callable',
-            (is_object($plug
+            (is_object($plugin) ? get_class($plugin) : gettype($plugin)),
+            'Zend\InputFilter'
+        ));
+    }
+}
