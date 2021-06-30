@@ -16,4 +16,5 @@ use Zend\ServiceManager\AbstractPluginManager;
 /**
  * Plugin manager implementation for requests.
  *
- * Enforces that request
+ * Enforces that requests retrieved are either callbacks or instances of RequestInterface. Additionally, it
+ * registers a number of default requests which matches the block
