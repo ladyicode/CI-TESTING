@@ -10,4 +10,10 @@
 namespace Sake\BlockchainWalletApi\Service;
 
 use Sake\BlockchainWalletApi\Exception;
-use Sake\BlockchainWalletApi\Request\R
+use Sake\BlockchainWalletApi\Request\RequestInterface;
+use Zend\ServiceManager\AbstractPluginManager;
+
+/**
+ * Plugin manager implementation for requests.
+ *
+ * Enforces that request
