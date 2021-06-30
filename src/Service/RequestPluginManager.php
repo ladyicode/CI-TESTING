@@ -17,4 +17,9 @@ use Zend\ServiceManager\AbstractPluginManager;
  * Plugin manager implementation for requests.
  *
  * Enforces that requests retrieved are either callbacks or instances of RequestInterface. Additionally, it
- * registers a number of default requests which matches the block
+ * registers a number of default requests which matches the blockchain wallet api service request method name.
+ */
+class RequestPluginManager extends AbstractPluginManager
+{
+    /**
+     * Default set of requests, 
