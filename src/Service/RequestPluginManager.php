@@ -33,4 +33,6 @@ class RequestPluginManager extends AbstractPluginManager
         'newaddress'     => '\Sake\BlockchainWalletApi\Request\NewAddress',
         'payment'        => '\Sake\BlockchainWalletApi\Request\Send',
         'sendmany'       => '\Sake\BlockchainWalletApi\Request\SendMany',
-        'archiveaddress' => '\
+        'archiveaddress' => '\Sake\BlockchainWalletApi\Request\AddressArchive',
+        'unarchiveaddress' => '\Sake\BlockchainWalletApi\Request\AddressUnarchive',
+        'autoconsolidate' => '\Sa
