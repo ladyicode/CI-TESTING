@@ -35,4 +35,10 @@ class RequestPluginManager extends AbstractPluginManager
         'sendmany'       => '\Sake\BlockchainWalletApi\Request\SendMany',
         'archiveaddress' => '\Sake\BlockchainWalletApi\Request\AddressArchive',
         'unarchiveaddress' => '\Sake\BlockchainWalletApi\Request\AddressUnarchive',
-        'autoconsolidate' => '\Sa
+        'autoconsolidate' => '\Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses',
+    );
+
+    /**
+     * Whether or not to share by default; default to false
+     *
+     * @var bool
