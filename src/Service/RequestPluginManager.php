@@ -42,3 +42,10 @@ class RequestPluginManager extends AbstractPluginManager
      * Whether or not to share by default; default to false
      *
      * @var bool
+     */
+    protected $shareByDefault = false;
+
+    /**
+     * Validate the plugin
+     *
+     * Checks that the request loaded is either a valid callback or an instance 
