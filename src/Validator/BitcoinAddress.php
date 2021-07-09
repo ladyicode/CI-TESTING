@@ -9,4 +9,10 @@
 
 namespace Sake\BlockchainWalletApi\Validator;
 
-use Sake\BlockchainWalletApi\Validator\Exception\ValidatorExcept
+use Sake\BlockchainWalletApi\Validator\Exception\ValidatorException;
+use Zend\Validator\AbstractValidator;
+
+/**
+ * Validates a bitcoin address
+ *
+ * For more details see https://en.bitcoin.it/wiki/Address#Address_validati
