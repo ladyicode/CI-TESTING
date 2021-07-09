@@ -48,4 +48,10 @@ class RequestPluginManager extends AbstractPluginManager
     /**
      * Validate the plugin
      *
-     * Checks that the request loaded is either a valid callback or an instance 
+     * Checks that the request loaded is either a valid callback or an instance of RequestInterface.
+     *
+     * @param  mixed $plugin
+     * @return void
+     * @throws Exception\RuntimeException if invalid
+     */
+    public function validat
