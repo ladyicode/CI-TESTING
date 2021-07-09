@@ -54,4 +54,10 @@ class RequestPluginManager extends AbstractPluginManager
      * @return void
      * @throws Exception\RuntimeException if invalid
      */
-    public function validat
+    public function validatePlugin($plugin)
+    {
+        if ($plugin instanceof RequestInterface) {
+            // we're okay
+            return;
+        }
+        if (is_cal
