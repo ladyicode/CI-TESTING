@@ -66,4 +66,9 @@ class RequestPluginManager extends AbstractPluginManager
         }
 
         throw new Exception\RuntimeException(sprintf(
-            'Plugin of type
+            'Plugin of type %s is invalid; must implement %s\RequestInterface or be callable',
+            (is_object($plugin) ? get_class($plugin) : gettype($plugin)),
+            __NAMESPACE__
+        ));
+    }
+}
