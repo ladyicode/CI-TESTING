@@ -60,4 +60,10 @@ class RequestPluginManager extends AbstractPluginManager
             // we're okay
             return;
         }
-        if (is_cal
+        if (is_callable($plugin)) {
+            // also okay
+            return;
+        }
+
+        throw new Exception\RuntimeException(sprintf(
+            'Plugin of type
