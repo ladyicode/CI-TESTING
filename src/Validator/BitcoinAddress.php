@@ -15,4 +15,12 @@ use Zend\Validator\AbstractValidator;
 /**
  * Validates a bitcoin address
  *
- * For more details see https://en.bitcoin.it/wiki/Address#Address_validati
+ * For more details see https://en.bitcoin.it/wiki/Address#Address_validation
+ */
+class BitcoinAddress extends AbstractValidator
+{
+    /**#@+
+     * Validity constants
+     * @var string
+     */
+    c
