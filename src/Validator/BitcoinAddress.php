@@ -23,4 +23,9 @@ class BitcoinAddress extends AbstractValidator
      * Validity constants
      * @var string
      */
-    c
+    const INVALID        = 'dateInvalid';
+    const INVALID_VERSION   = 'bitcionAddressInvalidVersion';
+    /**#@-*/
+
+    /**
+     * Validation failure message template d
