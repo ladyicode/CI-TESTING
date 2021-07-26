@@ -28,4 +28,9 @@ class BitcoinAddress extends AbstractValidator
     /**#@-*/
 
     /**
-     * Validation failure message template d
+     * Validation failure message template definitions
+     *
+     * @var array
+     */
+    protected $messageTemplates = array(
+        self::INVALID      => "The input is not a valid bitcoi
