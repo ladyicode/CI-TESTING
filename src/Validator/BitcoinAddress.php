@@ -33,4 +33,9 @@ class BitcoinAddress extends AbstractValidator
      * @var array
      */
     protected $messageTemplates = array(
-        self::INVALID      => "The input is not a valid bitcoi
+        self::INVALID      => "The input is not a valid bitcoin address",
+        self::INVALID_VERSION => 'The input does not appear to be a valid bitcoin address version "00"',
+    );
+
+    /**
+   
