@@ -45,4 +45,8 @@ class BitcoinAddress extends AbstractValidator
      *
      * @param  string $value Bitcoin address
      * @return bool
-     * 
+     * @throws ValidatorException If validation of $value is impossible
+     */
+    public function isValid($value)
+    {
+        $address = $
