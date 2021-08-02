@@ -40,4 +40,9 @@ class BitcoinAddress extends AbstractValidator
     /**
      * Returns true if and only if $value meets the validation requirements
      *
-     * If $value fails validation, then this method returns false, and getMessages(
+     * If $value fails validation, then this method returns false, and getMessages() will return an array of messages
+     * that explain why the validation failed.
+     *
+     * @param  string $value Bitcoin address
+     * @return bool
+     * 
