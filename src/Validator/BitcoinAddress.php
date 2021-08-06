@@ -52,4 +52,10 @@ class BitcoinAddress extends AbstractValidator
         $address = $this->decode((string) $value);
 
         if (strlen($address) != 50) {
-            throw new ValidatorException(sprintf('Could not decode bitcoin address "%s
+            throw new ValidatorException(sprintf('Could not decode bitcoin address "%s"', $value));
+        }
+        // check version
+        if (hexdec(substr($address, 0, 2)) > hexdec('00')) {
+            $this->error(self::INVALID_VERSION);
+            return false;
+ 
