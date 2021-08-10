@@ -65,4 +65,11 @@ class BitcoinAddress extends AbstractValidator
         $checksum = substr($checksum, 0, 8);
 
         if ($checksum === substr($address, strlen($address) - 8)) {
-       
+            return true;
+        }
+        $this->error(self::INVALID);
+        return false;
+    }
+
+    /**
+     * Decode bitcoin address to hex representati
