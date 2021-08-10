@@ -86,4 +86,6 @@ class BitcoinAddress extends AbstractValidator
 
         $length = strlen($address);
 
-        for ($i
+        for ($i = 0; $i < $length; $i++) {
+            $current = (string) strpos($chars, $address[$i]);
+            $return = (string) bcmul($return, '58', 0);
