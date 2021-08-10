@@ -72,4 +72,13 @@ class BitcoinAddress extends AbstractValidator
     }
 
     /**
-     * Decode bitcoin address to hex representati
+     * Decode bitcoin address to hex representation
+     *
+     * @param string $address Bitcoin address
+     * @return string
+     */
+    protected function decode($address)
+    {
+        $originBase58 = $address;
+
+    
