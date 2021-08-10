@@ -58,4 +58,7 @@ class BitcoinAddress extends AbstractValidator
         if (hexdec(substr($address, 0, 2)) > hexdec('00')) {
             $this->error(self::INVALID_VERSION);
             return false;
- 
+        }
+        // creating a Base58Check string
+        $checksum = pack('H*', substr($address, 0, strlen($address) - 8));
+        $checksum = strtoupper(hash('sha256'
