@@ -61,4 +61,8 @@ class BitcoinAddress extends AbstractValidator
         }
         // creating a Base58Check string
         $checksum = pack('H*', substr($address, 0, strlen($address) - 8));
-        $checksum = strtoupper(hash('sha256'
+        $checksum = strtoupper(hash('sha256', hash('sha256', $checksum, true)));
+        $checksum = substr($checksum, 0, 8);
+
+        if ($checksum === substr($address, strlen($address) - 8)) {
+       
