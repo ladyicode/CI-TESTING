@@ -81,4 +81,9 @@ class BitcoinAddress extends AbstractValidator
     {
         $originBase58 = $address;
 
-    
+        $chars = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+        $return = '0';
+
+        $length = strlen($address);
+
+        for ($i
