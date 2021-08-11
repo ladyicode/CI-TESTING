@@ -113,4 +113,8 @@ class BitcoinAddress extends AbstractValidator
     protected function encodeHex($decimal)
     {
         $chars = '0123456789ABCDEF';
-   
+        $hex = '';
+
+        while (bccomp($decimal, 0) == 1) {
+            $division = (string) bcdiv($decimal, '16', 0);
+            $rem     
