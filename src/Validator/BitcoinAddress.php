@@ -117,4 +117,11 @@ class BitcoinAddress extends AbstractValidator
 
         while (bccomp($decimal, 0) == 1) {
             $division = (string) bcdiv($decimal, '16', 0);
-            $rem     
+            $rem      = (int) bcmod($decimal, '16');
+            $decimal  = $division;
+
+            $hex .= $chars[$rem];
+        }
+        return strrev($hex);
+    }
+}
