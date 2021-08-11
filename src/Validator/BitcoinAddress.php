@@ -98,4 +98,13 @@ class BitcoinAddress extends AbstractValidator
             $return = '00' . $return;
         }
 
-        if (strlen($return)
+        if (strlen($return) % 2 != 0) {
+            $return = '0' . $return;
+        }
+        return $return;
+    }
+
+    /**
+     * Encodes integer to hex representation
+     *
+     * @para
