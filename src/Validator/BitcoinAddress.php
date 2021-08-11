@@ -107,4 +107,10 @@ class BitcoinAddress extends AbstractValidator
     /**
      * Encodes integer to hex representation
      *
-     * @para
+     * @param string $decimal
+     * @return string
+     */
+    protected function encodeHex($decimal)
+    {
+        $chars = '0123456789ABCDEF';
+   
