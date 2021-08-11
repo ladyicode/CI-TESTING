@@ -94,4 +94,8 @@ class BitcoinAddress extends AbstractValidator
         $return = $this->encodeHex($return);
 
         // add leading zeros
-        for ($i = 
+        for ($i = 0; $i < strlen($originBase58) && $originBase58[$i] == '1'; $i++) {
+            $return = '00' . $return;
+        }
+
+        if (strlen($return)
