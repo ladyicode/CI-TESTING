@@ -14,4 +14,6 @@ namespace Sake\BlockchainWalletApi\Validator\Exception;
  *
  * All validator exceptions must implements this exception to catch exceptions of validator
  */
-i
+interface ExceptionInterface
+{
+}
