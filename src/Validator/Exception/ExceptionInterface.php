@@ -7,4 +7,11 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
-namespace Sake\BlockchainWalletApi\Valida
+namespace Sake\BlockchainWalletApi\Validator\Exception;
+
+/**
+ * Validator exception interface
+ *
+ * All validator exceptions must implements this exception to catch exceptions of validator
+ */
+i
