@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Sake
@@ -10,10 +11,10 @@
 namespace Sake\BlockchainWalletApi\Validator\Exception;
 
 /**
- * Runtime exception
+ * Validator exception
  *
- * Use this exception if the code has not the capacity to handle the request.
+ * Use this exception vf validation of $value is impossible
  */
-class RuntimeException extends \RuntimeException implements ExceptionInterface
+class ValidatorException extends RuntimeException
 {
 }
