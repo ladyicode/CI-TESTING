@@ -12,4 +12,12 @@ namespace Sake\BlockchainWalletApi\View\Helper;
 use Zend\View\Helper\AbstractHelper;
 
 /**
- * S
+ * Satoshi view helper
+ *
+ * Converts satoshi to other format e.g. btc
+ */
+class Satoshi extends AbstractHelper
+{
+    /**
+     * Value is converted to BTC
+   
