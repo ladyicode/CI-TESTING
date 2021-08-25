@@ -20,4 +20,14 @@ class Satoshi extends AbstractHelper
 {
     /**
      * Value is converted to BTC
-   
+     *
+     * @var string
+     */
+    const UNIT_BTC = 'BTC';
+
+    /**
+     * Value is converted to mBTC
+     *
+     * @var string
+     */
+    const UNIT_MBTC
