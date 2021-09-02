@@ -42,4 +42,12 @@ class Satoshi extends AbstractHelper
     /**
      * Default unit
      *
-     
+     * @var string
+     */
+    protected $defaultUnit;
+
+    /**
+     * Converts satoshi to given unit
+     *
+     * @param int $satoshi Satoshi
+     *
