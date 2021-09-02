@@ -50,4 +50,8 @@ class Satoshi extends AbstractHelper
      * Converts satoshi to given unit
      *
      * @param int $satoshi Satoshi
-     *
+     * @param string $unit Use UNIT_* constant, default BTC
+     * @return float
+     */
+    public function __invoke($satoshi, $unit = null)
+    {
