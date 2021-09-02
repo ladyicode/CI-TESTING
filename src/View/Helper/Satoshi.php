@@ -30,4 +30,16 @@ class Satoshi extends AbstractHelper
      *
      * @var string
      */
-    const UNIT_MBTC
+    const UNIT_MBTC = 'mBTC';
+
+    /**
+     * Value is converted to uBTC
+     *
+     * @var string
+     */
+    const UNIT_UBTC = 'uBTC';
+
+    /**
+     * Default unit
+     *
+     
