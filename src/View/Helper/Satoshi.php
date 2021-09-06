@@ -55,3 +55,12 @@ class Satoshi extends AbstractHelper
      */
     public function __invoke($satoshi, $unit = null)
     {
+        return $this->format($satoshi, $unit);
+    }
+
+    /**
+     * @param string $unit Use UNIT_* constant
+     */
+    public function setDefaultUnit($unit)
+    {
+     
