@@ -63,4 +63,12 @@ class Satoshi extends AbstractHelper
      */
     public function setDefaultUnit($unit)
     {
-     
+        $this->defaultUnit = $unit;
+    }
+
+    /**
+     * @param $satoshi
+     * @param $unit
+     * @return float
+     */
+    protected function form
