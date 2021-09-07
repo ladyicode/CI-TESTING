@@ -71,4 +71,11 @@ class Satoshi extends AbstractHelper
      * @param $unit
      * @return float
      */
-    protected function form
+    protected function format($satoshi, $unit)
+    {
+        if (null === $unit) {
+            $unit = $this->defaultUnit;
+        }
+
+        switch ($unit) {
+            case self::UNIT_MB
