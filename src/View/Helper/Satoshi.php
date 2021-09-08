@@ -84,4 +84,11 @@ class Satoshi extends AbstractHelper
 
             case self::UNIT_UBTC:
                 $value = $satoshi / 100;
-                bre
+                break;
+
+            case self::UNIT_BTC:
+            default:
+                $value = $satoshi / 100000000;
+                break;
+        }
+      
