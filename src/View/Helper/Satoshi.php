@@ -78,4 +78,10 @@ class Satoshi extends AbstractHelper
         }
 
         switch ($unit) {
-            case self::UNIT_MB
+            case self::UNIT_MBTC:
+                $value = $satoshi / 100000;
+                break;
+
+            case self::UNIT_UBTC:
+                $value = $satoshi / 100;
+                bre
