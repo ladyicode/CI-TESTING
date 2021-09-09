@@ -91,4 +91,6 @@ class Satoshi extends AbstractHelper
                 $value = $satoshi / 100000000;
                 break;
         }
-      
+        return $value;
+    }
+}
