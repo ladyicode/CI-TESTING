@@ -10,4 +10,10 @@
 namespace SakeTest\BlockchainWalletApi;
 
 // set error reporting
-error_repo
+error_reporting(E_ALL | E_STRICT);
+
+chdir(dirname(__DIR__));
+
+if (!file_exists('vendor/autoload.php')) {
+    throw new \RuntimeException(
+        'Unable to loa
