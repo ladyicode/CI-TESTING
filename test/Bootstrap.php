@@ -16,4 +16,9 @@ chdir(dirname(__DIR__));
 
 if (!file_exists('vendor/autoload.php')) {
     throw new \RuntimeException(
-        'Unable to loa
+        'Unable to load ZF2. Run `php composer.phar install`'
+    );
+}
+
+// Setup autoloading
+include 'vendor/autoload.php';
