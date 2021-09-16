@@ -51,3 +51,21 @@ class AddressListStrategyTest extends TestCase
     /**
      * Tests if hydrate() works as expected
      *
+     * @group hydrator
+     *
+     * @covers \Sake\BlockchainWalletApi\Hydrator\AddressListStrategy::hydrate
+     */
+    public function testHydrate()
+    {
+        $cut = new AddressListStrategy();
+
+        $data = json_decode('["18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy", "1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC"]', true);
+
+        $this->assertEmpty($cut->hydrate(''));
+
+        $current = $cut->hydrate($data);
+        $this->assertCount(2, $current);
+
+        $this->assertSame(array_values($data), $current);
+    }
+}
