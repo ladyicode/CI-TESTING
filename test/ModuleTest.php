@@ -4,4 +4,12 @@
  *
  * @link      http://github.com/sandrokeil/BlockchainWalletApi for the canonical source repository
  * @copyright Copyright (c) 2014 Sandro Keil
- * @license   http://github.com/sandrokeil/Block
+ * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
+ */
+
+namespace SakeTest\BlockchainWalletApi;
+
+use \Sake\BlockchainWalletApi\Module;
+
+/**
+ * Class Modul
