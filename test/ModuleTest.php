@@ -12,4 +12,11 @@ namespace SakeTest\BlockchainWalletApi;
 use \Sake\BlockchainWalletApi\Module;
 
 /**
- * Class Modul
+ * Class ModuleTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Module
+ */
+class ModuleTest extends \PHPUnit_Framework_TestCase
+{
+    /**
+     * Tests get
