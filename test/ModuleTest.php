@@ -19,4 +19,7 @@ use \Sake\BlockchainWalletApi\Module;
 class ModuleTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Tests get
+     * Tests getServiceConfig() should should return service manager configuration
+     *
+     * @covers \Sake\BlockchainWalletApi\Module::getServiceConfig
+     *
