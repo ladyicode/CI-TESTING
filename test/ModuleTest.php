@@ -22,4 +22,10 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
      * Tests getServiceConfig() should should return service manager configuration
      *
      * @covers \Sake\BlockchainWalletApi\Module::getServiceConfig
-     *
+     */
+    public function testGetServiceConfig()
+    {
+        $cut = new Module();
+        $config = $cut->getServiceConfig();
+        $this->assertSame(
+            
