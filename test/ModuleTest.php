@@ -28,4 +28,8 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
         $cut = new Module();
         $config = $cut->getServiceConfig();
         $this->assertSame(
-            
+            @include 'config/service_manager.config.php',
+            $config,
+            'Service manager configuration could not be read'
+        );
+   
