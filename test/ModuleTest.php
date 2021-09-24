@@ -37,4 +37,10 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests getViewHelperConfig() should should return view helper configuration
      *
-     * @covers \Sake\BlockchainWalletApi\Module::ge
+     * @covers \Sake\BlockchainWalletApi\Module::getViewHelperConfig
+     */
+    public function testGetViewHelperConfig()
+    {
+        $cut = new Module();
+        $config = $cut->getViewHelperConfig();
+   
