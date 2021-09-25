@@ -47,4 +47,6 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
             @include 'config/view_helper.config.php',
             $config,
             'View helper configuration could not be read'
-       
+        );
+    }
+}
