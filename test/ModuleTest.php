@@ -43,4 +43,8 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
     {
         $cut = new Module();
         $config = $cut->getViewHelperConfig();
-   
+        $this->assertSame(
+            @include 'config/view_helper.config.php',
+            $config,
+            'View helper configuration could not be read'
+       
