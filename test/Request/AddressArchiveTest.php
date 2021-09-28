@@ -15,4 +15,11 @@ use Sake\BlockchainWalletApi\Request\AddressArchive;
 /**
  * Class AddressArchiveTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Request\Addre
+ * Tests integrity of \Sake\BlockchainWalletApi\Request\AddressArchive
+ */
+class AddressArchiveTest extends TestCase
+{
+    /**
+     * Tests if class implements request interface
+     *
+     * @group request
