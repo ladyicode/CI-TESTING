@@ -29,4 +29,8 @@ class AddressArchiveTest extends TestCase
     public function testIsRequestClass()
     {
         $cut = new AddressArchive();
-        $this->assertInstanc
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut);
+    }
+
+    /**
+     * Tests if getMethod returns the correct api method
