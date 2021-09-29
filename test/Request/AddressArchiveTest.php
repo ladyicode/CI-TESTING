@@ -23,3 +23,10 @@ class AddressArchiveTest extends TestCase
      * Tests if class implements request interface
      *
      * @group request
+     *
+     * @codeCoverageIgnore
+     */
+    public function testIsRequestClass()
+    {
+        $cut = new AddressArchive();
+        $this->assertInstanc
