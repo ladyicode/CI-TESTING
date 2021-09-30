@@ -34,3 +34,9 @@ class AddressArchiveTest extends TestCase
 
     /**
      * Tests if getMethod returns the correct api method
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::getMethod
+     */
+    public function testGetMethod()
