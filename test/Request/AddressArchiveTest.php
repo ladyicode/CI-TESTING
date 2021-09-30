@@ -40,3 +40,10 @@ class AddressArchiveTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::getMethod
      */
     public function testGetMethod()
+    {
+        $cut = new AddressArchive();
+        $this->assertEquals('archive_address', $cut->getMethod());
+    }
+
+    /**
+     * Tests if request 
