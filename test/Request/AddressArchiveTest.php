@@ -46,4 +46,9 @@ class AddressArchiveTest extends TestCase
     }
 
     /**
-     * Tests if request 
+     * Tests if request can be configured via setter
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::setAddress
+     * @covers \Sake\BlockchainWall
