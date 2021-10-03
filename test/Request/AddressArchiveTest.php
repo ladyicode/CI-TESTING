@@ -57,4 +57,12 @@ class AddressArchiveTest extends TestCase
     {
         $cut = new AddressArchive();
 
-       
+        $address = '18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy';
+
+        $cut->setAddress($address);
+
+        $this->assertEquals($address, $cut->getAddress());
+    }
+
+    /**
+     * Tests if getA
