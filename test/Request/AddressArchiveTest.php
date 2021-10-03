@@ -51,4 +51,10 @@ class AddressArchiveTest extends TestCase
      * @group request
      *
      * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::setAddress
-     * @covers \Sake\BlockchainWall
+     * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::getAddress
+     */
+    public function testIfRequestDataCanBeSet()
+    {
+        $cut = new AddressArchive();
+
+       
