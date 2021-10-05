@@ -65,4 +65,9 @@ class AddressArchiveTest extends TestCase
     }
 
     /**
-     * Tests if getA
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @depends testIfRequestDataCanBeSet
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\Add
