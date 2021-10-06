@@ -70,4 +70,10 @@ class AddressArchiveTest extends TestCase
      * @group request
      * @depends testIfRequestDataCanBeSet
      *
-     * @covers \Sake\BlockchainWalletApi\Request\Add
+     * @covers \Sake\BlockchainWalletApi\Request\AddressArchive::getArguments
+     */
+    public function testGetArguments()
+    {
+        $cut = new AddressArchive();
+
+        $address = '18fyqiZzndTxdVo7g9ouRogB4uFj86JJ
