@@ -9,4 +9,10 @@
 
 namespace SakeTest\BlockchainWalletApi\Request;
 
-use PHPUnit_Framew
+use PHPUnit_Framework_TestCase as TestCase;
+use Sake\BlockchainWalletApi\Request\AddressUnarchive;
+
+/**
+ * Class AddressUnarchiveTest
+ *
+ * Tests integrity of \Sake
