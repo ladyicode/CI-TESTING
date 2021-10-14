@@ -20,4 +20,13 @@ use Sake\BlockchainWalletApi\Request\AddressUnarchive;
 class AddressUnarchiveTest extends TestCase
 {
     /**
-     * Tests if class implements request interfa
+     * Tests if class implements request interface
+     *
+     * @group request
+     *
+     * @codeCoverageIgnore
+     */
+    public function testIsRequestClass()
+    {
+        $cut = new AddressUnarchive();
+        $thi
