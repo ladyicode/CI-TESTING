@@ -15,4 +15,9 @@ use Sake\BlockchainWalletApi\Request\AddressUnarchive;
 /**
  * Class AddressUnarchiveTest
  *
- * Tests integrity of \Sake
+ * Tests integrity of \Sake\BlockchainWalletApi\Request\AddressUnarchive
+ */
+class AddressUnarchiveTest extends TestCase
+{
+    /**
+     * Tests if class implements request interfa
