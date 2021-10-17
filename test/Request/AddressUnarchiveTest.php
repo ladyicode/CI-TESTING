@@ -29,4 +29,9 @@ class AddressUnarchiveTest extends TestCase
     public function testIsRequestClass()
     {
         $cut = new AddressUnarchive();
-        $thi
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut);
+    }
+
+    /**
+     * Tests if getMethod returns the correct api method
+ 
