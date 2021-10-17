@@ -34,4 +34,9 @@ class AddressUnarchiveTest extends TestCase
 
     /**
      * Tests if getMethod returns the correct api method
- 
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AddressUnarchive::getMethod
+     */
+    public function t
