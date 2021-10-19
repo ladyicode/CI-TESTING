@@ -39,4 +39,11 @@ class AddressUnarchiveTest extends TestCase
      *
      * @covers \Sake\BlockchainWalletApi\Request\AddressUnarchive::getMethod
      */
-    public function t
+    public function testGetMethod()
+    {
+        $cut = new AddressUnarchive();
+        $this->assertEquals('unarchive_address', $cut->getMethod());
+    }
+
+    /**
+ 
