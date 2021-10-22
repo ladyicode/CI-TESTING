@@ -46,4 +46,9 @@ class AddressUnarchiveTest extends TestCase
     }
 
     /**
- 
+     * Tests if request can be configured via setter
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AddressUnarchive::setAddress
+     * @cover
