@@ -61,4 +61,12 @@ class AddressUnarchiveTest extends TestCase
 
         $cut->setAddress($address);
 
-        $this->assertEquals($address, $cut->getAddress()
+        $this->assertEquals($address, $cut->getAddress());
+    }
+
+    /**
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @depends testIfRequestDataCanBeSet
+     
