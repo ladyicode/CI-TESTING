@@ -69,4 +69,9 @@ class AddressUnarchiveTest extends TestCase
      *
      * @group request
      * @depends testIfRequestDataCanBeSet
-     
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AddressUnarchive::getArguments
+     */
+    public function testGetArguments()
+    {
+        $cut = new Add
