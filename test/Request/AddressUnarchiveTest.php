@@ -74,4 +74,10 @@ class AddressUnarchiveTest extends TestCase
      */
     public function testGetArguments()
     {
-        $cut = new Add
+        $cut = new AddressUnarchive();
+
+        $address = '18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy';
+
+        $cut->setAddress($address);
+
+        $this->assertEquals(array('address' => $address), 
