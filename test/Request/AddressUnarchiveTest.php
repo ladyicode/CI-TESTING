@@ -80,4 +80,6 @@ class AddressUnarchiveTest extends TestCase
 
         $cut->setAddress($address);
 
-        $this->assertEquals(array('address' => $address), 
+        $this->assertEquals(array('address' => $address), $cut->getArguments());
+    }
+}
