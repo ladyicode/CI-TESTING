@@ -7,4 +7,10 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
-namespace SakeTest\BlockchainWa
+namespace SakeTest\BlockchainWalletApi\Request;
+
+use PHPUnit_Framework_TestCase as TestCase;
+use Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses;
+
+/**
+ * Class AutoCons
