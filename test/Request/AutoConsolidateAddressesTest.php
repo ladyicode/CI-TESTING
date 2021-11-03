@@ -13,4 +13,10 @@ use PHPUnit_Framework_TestCase as TestCase;
 use Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses;
 
 /**
- * Class AutoCons
+ * Class AutoConsolidateAddressesTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses
+ */
+class AutoConsolidateAddressesTest extends TestCase
+{
+    /*
