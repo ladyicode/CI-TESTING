@@ -19,4 +19,13 @@ use Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses;
  */
 class AutoConsolidateAddressesTest extends TestCase
 {
-    /*
+    /**
+     * Tests if class implements request interface
+     *
+     * @group request
+     *
+     * @codeCoverageIgnore
+     */
+    public function testIsRequestClass()
+    {
+        $cut = n
