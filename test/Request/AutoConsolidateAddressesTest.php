@@ -33,3 +33,8 @@ class AutoConsolidateAddressesTest extends TestCase
     }
 
     /**
+     * Tests if getMethod returns the correct api method
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AutoCo
