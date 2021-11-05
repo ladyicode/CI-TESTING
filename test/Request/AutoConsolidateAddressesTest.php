@@ -28,4 +28,8 @@ class AutoConsolidateAddressesTest extends TestCase
      */
     public function testIsRequestClass()
     {
-        $cut = n
+        $cut = new AutoConsolidateAddresses();
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut);
+    }
+
+    /**
