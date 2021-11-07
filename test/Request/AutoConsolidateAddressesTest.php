@@ -37,4 +37,9 @@ class AutoConsolidateAddressesTest extends TestCase
      *
      * @group request
      *
-     * @covers \Sake\BlockchainWalletApi\Request\AutoCo
+     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::getMethod
+     */
+    public function testGetMethod()
+    {
+        $cut = new AutoConsolidateAddresses();
+        $this->assertEquals('auto_consolidate'
