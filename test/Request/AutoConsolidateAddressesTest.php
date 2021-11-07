@@ -42,4 +42,12 @@ class AutoConsolidateAddressesTest extends TestCase
     public function testGetMethod()
     {
         $cut = new AutoConsolidateAddresses();
-        $this->assertEquals('auto_consolidate'
+        $this->assertEquals('auto_consolidate', $cut->getMethod());
+    }
+
+    /**
+     * Tests if request can be configured via setter
+     *
+     * @group request
+     *
+     * @covers \Sake\Bl
