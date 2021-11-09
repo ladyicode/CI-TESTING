@@ -50,4 +50,5 @@ class AutoConsolidateAddressesTest extends TestCase
      *
      * @group request
      *
-     * @covers \Sake\Bl
+     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::setDays
+     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::getDa
