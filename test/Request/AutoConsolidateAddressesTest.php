@@ -61,4 +61,11 @@ class AutoConsolidateAddressesTest extends TestCase
 
         $cut->setDays($days);
 
-     
+        $this->assertEquals((int) $days, $cut->getDays());
+    }
+
+    /**
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @depends testIf
