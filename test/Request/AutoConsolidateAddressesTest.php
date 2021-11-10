@@ -51,4 +51,14 @@ class AutoConsolidateAddressesTest extends TestCase
      * @group request
      *
      * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::setDays
-     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::getDa
+     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::getDays
+     */
+    public function testIfRequestDataCanBeSet()
+    {
+        $cut = new AutoConsolidateAddresses();
+
+        $days = '10';
+
+        $cut->setDays($days);
+
+     
