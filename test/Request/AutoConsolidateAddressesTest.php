@@ -68,4 +68,10 @@ class AutoConsolidateAddressesTest extends TestCase
      * Tests if getArguments returns request arguments
      *
      * @group request
-     * @depends testIf
+     * @depends testIfRequestDataCanBeSet
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses::getArguments
+     */
+    public function testGetArguments()
+    {
+        $cut = 
