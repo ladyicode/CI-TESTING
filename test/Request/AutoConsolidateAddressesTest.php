@@ -80,4 +80,6 @@ class AutoConsolidateAddressesTest extends TestCase
 
         $cut->setDays($days);
 
-        $this->assertEquals(array('days' => $days), $cut->getArguments())
+        $this->assertEquals(array('days' => $days), $cut->getArguments());
+    }
+}
