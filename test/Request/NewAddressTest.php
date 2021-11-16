@@ -45,3 +45,44 @@ class NewAddressTest extends TestCase
         $cut = new NewAddress();
         $this->assertEquals('new_address', $cut->getMethod());
     }
+
+    /**
+     * Tests if request can be configured via setter
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\NewAddress::setLabel
+     * @covers \Sake\BlockchainWalletApi\Request\NewAddress::getLabel
+     */
+    public function testIfRequestDataCanBeSet()
+    {
+        $cut = new NewAddress();
+
+        $label = 'test wallet';
+
+        $cut->setLabel($label);
+
+        $this->assertEquals($label, $cut->getLabel());
+    }
+
+    /**
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @depends testIfRequestDataCanBeSet
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\NewAddress::getArguments
+     */
+    public function testGetArguments()
+    {
+        $cut = new NewAddress();
+
+        $this->assertEquals(array(), $cut->getArguments());
+
+        $label = 'test wallet';
+
+        $cut->setLabel($label);
+
+        $this->assertEquals(array('label' => $label), $cut->getArguments());
+    }
+}
