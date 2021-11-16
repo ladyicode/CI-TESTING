@@ -61,3 +61,81 @@ class SendManyTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Request\SendMany::setNote
      * @covers \Sake\BlockchainWalletApi\Request\SendMany::getNote
      * @covers \Sake\BlockchainWalletApi\Request\SendMany::setShared
+     * @covers \Sake\BlockchainWalletApi\Request\SendMany::getShared
+     */
+    public function testIfRequestDataCanBeSet()
+    {
+        $cut = new SendMany();
+
+        $recipients = array(
+            new Recipient('regl4jtwe8flmf23knfsd', 10000),
+            new Recipient('23dskflsfuo2u4ourjsd', 20000),
+            new Recipient('34tfskdlfcvkdjhvkjwehf', 30000),
+        );
+
+        $fee = '100';
+        $from = '1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC';
+        $note = 'test';
+        $shared = 'true';
+
+        $cut->setRecipients($recipients);
+        $cut->setFee($fee);
+        $cut->setFrom($from);
+        $cut->setNote($note);
+        $cut->setShared($shared);
+
+        $this->assertEquals($recipients, $cut->getRecipients());
+        $this->assertEquals((int) $fee, $cut->getFee());
+        $this->assertEquals($from, $cut->getFrom());
+        $this->assertEquals($note, $cut->getNote());
+        $this->assertEquals((bool) $shared, $cut->getShared());
+    }
+
+    /**
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @depends testIfRequestDataCanBeSet
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\SendMany::getArguments
+     */
+    public function testGetArguments()
+    {
+        $recipients = array(
+            new Recipient('regl4jtwe8flmf23knfsd', 10000),
+            new Recipient('23dskflsfuo2u4ourjsd', 20000),
+            new Recipient('34tfskdlfcvkdjhvkjwehf', 30000),
+        );
+
+        $data = array(
+            'recipients' => json_encode(
+                array(
+                    'regl4jtwe8flmf23knfsd' => 10000,
+                    '23dskflsfuo2u4ourjsd' => 20000,
+                    '34tfskdlfcvkdjhvkjwehf' => 30000,
+                )
+            )
+        );
+
+        $cut = new SendMany();
+
+        $cut->setRecipients($recipients);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['from'] = '1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC';
+        $cut->setFrom($data['from']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['shared'] = false;
+        $cut->setShared($data['shared']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['fee'] = '100';
+        $cut->setFee($data['fee']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['note'] = 'test';
+        $cut->setNote($data['note']);
+        $this->assertEquals($data, $cut->getArguments());
+    }
+}
