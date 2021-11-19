@@ -10,4 +10,11 @@
 namespace SakeTest\BlockchainWalletApi\Request;
 
 use PHPUnit_Framework_TestCase as TestCase;
-use Sake\BlockchainWallet
+use Sake\BlockchainWalletApi\Request\Send;
+
+/**
+ * Class SendTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Request\Send
+ */
+class SendTest ext
