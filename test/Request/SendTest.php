@@ -17,4 +17,13 @@ use Sake\BlockchainWalletApi\Request\Send;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\Request\Send
  */
-class SendTest ext
+class SendTest extends TestCase
+{
+    /**
+     * Tests if class implements request interface
+     *
+     * @group request
+     *
+     * @codeCoverageIgnore
+     */
+    
