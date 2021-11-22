@@ -26,4 +26,7 @@ class SendTest extends TestCase
      *
      * @codeCoverageIgnore
      */
-    
+    public function testIsRequestClass()
+    {
+        $cut = new Send();
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut)
