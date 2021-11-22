@@ -29,4 +29,12 @@ class SendTest extends TestCase
     public function testIsRequestClass()
     {
         $cut = new Send();
-        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut)
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Request\RequestInterface', $cut);
+    }
+
+    /**
+     * Tests if getMethod returns the correct api method
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWallet
