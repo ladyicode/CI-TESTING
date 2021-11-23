@@ -37,4 +37,9 @@ class SendTest extends TestCase
      *
      * @group request
      *
-     * @covers \Sake\BlockchainWallet
+     * @covers \Sake\BlockchainWalletApi\Request\Send::getMethod
+     */
+    public function testGetMethod()
+    {
+        $cut = new Send();
+        $this->assertEquals('payment', $cut->getMet
