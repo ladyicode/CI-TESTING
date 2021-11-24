@@ -51,4 +51,7 @@ class SendTest extends TestCase
      * @group request
      *
      * @covers \Sake\BlockchainWalletApi\Request\Send::setAmount
-     * @covers \Sake
+     * @covers \Sake\BlockchainWalletApi\Request\Send::getAmount
+     * @covers \Sake\BlockchainWalletApi\Request\Send::setFee
+     * @covers \Sake\BlockchainWalletApi\Request\Send::getFee
+     * 
