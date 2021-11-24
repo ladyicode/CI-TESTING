@@ -42,4 +42,13 @@ class SendTest extends TestCase
     public function testGetMethod()
     {
         $cut = new Send();
-        $this->assertEquals('payment', $cut->getMet
+        $this->assertEquals('payment', $cut->getMethod());
+    }
+
+    /**
+     * Tests if request can be configured via setter
+     *
+     * @group request
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\Send::setAmount
+     * @covers \Sake
