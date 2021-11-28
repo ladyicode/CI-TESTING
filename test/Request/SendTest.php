@@ -69,4 +69,9 @@ class SendTest extends TestCase
 
         $amount = '10000';
         $fee = '100';
-        $from 
+        $from = '1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC';
+        $note = 'test';
+        $shared = 'true';
+        $to = '1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq';
+
+        $cut->setAmount
