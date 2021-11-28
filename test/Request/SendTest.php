@@ -61,4 +61,12 @@ class SendTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Request\Send::setShared
      * @covers \Sake\BlockchainWalletApi\Request\Send::getShared
      * @covers \Sake\BlockchainWalletApi\Request\Send::setTo
-     * @covers \Sake\Bl
+     * @covers \Sake\BlockchainWalletApi\Request\Send::getTo
+     */
+    public function testIfRequestDataCanBeSet()
+    {
+        $cut = new Send();
+
+        $amount = '10000';
+        $fee = '100';
+        $from 
