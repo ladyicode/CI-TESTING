@@ -79,4 +79,8 @@ class SendTest extends TestCase
         $cut->setFrom($from);
         $cut->setNote($note);
         $cut->setShared($shared);
-        $cut-
+        $cut->setTo($to);
+
+        $this->assertEquals((int) $amount, $cut->getAmount());
+        $this->assertEquals((int) $fee, $cut->getFee());
+        $this->a
