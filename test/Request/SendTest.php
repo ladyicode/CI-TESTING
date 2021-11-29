@@ -74,4 +74,9 @@ class SendTest extends TestCase
         $shared = 'true';
         $to = '1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq';
 
-        $cut->setAmount
+        $cut->setAmount($amount);
+        $cut->setFee($fee);
+        $cut->setFrom($from);
+        $cut->setNote($note);
+        $cut->setShared($shared);
+        $cut-
