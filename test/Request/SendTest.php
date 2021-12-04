@@ -86,4 +86,11 @@ class SendTest extends TestCase
         $this->assertEquals($from, $cut->getFrom());
         $this->assertEquals($note, $cut->getNote());
         $this->assertEquals((bool) $shared, $cut->getShared());
-        $t
+        $this->assertEquals($to, $cut->getTo());
+    }
+
+    /**
+     * Tests if getArguments returns request arguments
+     *
+     * @group request
+     * @dep
