@@ -99,4 +99,11 @@ class SendTest extends TestCase
      */
     public function testGetArguments()
     {
-   
+        $data = array(
+            'to' => '1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq',
+            'amount' => 100000,
+        );
+
+        $cut = new Send();
+
+      
