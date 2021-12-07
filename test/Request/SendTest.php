@@ -93,4 +93,10 @@ class SendTest extends TestCase
      * Tests if getArguments returns request arguments
      *
      * @group request
-     * @dep
+     * @depends testIfRequestDataCanBeSet
+     *
+     * @covers \Sake\BlockchainWalletApi\Request\Send::getArguments
+     */
+    public function testGetArguments()
+    {
+   
