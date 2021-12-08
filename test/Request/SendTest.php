@@ -106,4 +106,8 @@ class SendTest extends TestCase
 
         $cut = new Send();
 
-      
+        $cut->setTo($data['to']);
+        $cut->setAmount($data['amount']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['from'] = '1Q1AtvCyKhtveGm
