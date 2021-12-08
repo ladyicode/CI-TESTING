@@ -110,4 +110,8 @@ class SendTest extends TestCase
         $cut->setAmount($data['amount']);
         $this->assertEquals($data, $cut->getArguments());
 
-        $data['from'] = '1Q1AtvCyKhtveGm
+        $data['from'] = '1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC';
+        $cut->setFrom($data['from']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['shared'] = fa
