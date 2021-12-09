@@ -119,4 +119,9 @@ class SendTest extends TestCase
         $this->assertEquals($data, $cut->getArguments());
 
         $data['fee'] = '100';
-        $cut->set
+        $cut->setFee($data['fee']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['note'] = 'test';
+        $cut->setNote($data['note']);
+        $this->assertEquals($data, $c
