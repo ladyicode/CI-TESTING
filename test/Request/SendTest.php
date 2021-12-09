@@ -114,4 +114,9 @@ class SendTest extends TestCase
         $cut->setFrom($data['from']);
         $this->assertEquals($data, $cut->getArguments());
 
-        $data['shared'] = fa
+        $data['shared'] = false;
+        $cut->setShared($data['shared']);
+        $this->assertEquals($data, $cut->getArguments());
+
+        $data['fee'] = '100';
+        $cut->set
