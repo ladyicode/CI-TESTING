@@ -124,4 +124,6 @@ class SendTest extends TestCase
 
         $data['note'] = 'test';
         $cut->setNote($data['note']);
-        $this->assertEquals($data, $c
+        $this->assertEquals($data, $cut->getArguments());
+    }
+}
