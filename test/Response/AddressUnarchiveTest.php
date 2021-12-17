@@ -28,4 +28,9 @@ class AddressUnarchiveTest extends TestCase
      */
     public function testIsResponseClass()
     {
-        $cut = new AddressUnarchiv
+        $cut = new AddressUnarchive();
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
+    }
+
+    /**
+     * Tests if response can be config
