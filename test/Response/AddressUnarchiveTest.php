@@ -21,3 +21,11 @@ class AddressUnarchiveTest extends TestCase
 {
     /**
      * Tests if class implements response interface
+     *
+     * @group response
+     *
+     * @codeCoverageIgnore
+     */
+    public function testIsResponseClass()
+    {
+        $cut = new AddressUnarchiv
