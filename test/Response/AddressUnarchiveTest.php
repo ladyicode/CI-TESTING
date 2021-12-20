@@ -38,4 +38,8 @@ class AddressUnarchiveTest extends TestCase
      * @group response
      *
      * @covers \Sake\BlockchainWalletApi\Response\AddressUnarchive::setActive
-     * @covers \Sake\Blo
+     * @covers \Sake\BlockchainWalletApi\Response\AddressUnarchive::getActive
+     */
+    public function testIfResponseDataCanBeSet()
+    {
+        $cut = new AddressUnarchi
