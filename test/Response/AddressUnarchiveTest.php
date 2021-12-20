@@ -33,4 +33,9 @@ class AddressUnarchiveTest extends TestCase
     }
 
     /**
-     * Tests if response can be config
+     * Tests if response can be configured via setter
+     *
+     * @group response
+     *
+     * @covers \Sake\BlockchainWalletApi\Response\AddressUnarchive::setActive
+     * @covers \Sake\Blo
