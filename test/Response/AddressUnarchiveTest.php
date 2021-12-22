@@ -42,4 +42,10 @@ class AddressUnarchiveTest extends TestCase
      */
     public function testIfResponseDataCanBeSet()
     {
-        $cut = new AddressUnarchi
+        $cut = new AddressUnarchive();
+
+        $address = 'sf2lkdsf23987ancxsacj23sdsf';
+
+        $cut->setActive($address);
+
+        $this->assertEquals($address, $cut->get
