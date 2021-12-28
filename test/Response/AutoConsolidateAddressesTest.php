@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Sake
@@ -10,14 +11,14 @@
 namespace SakeTest\BlockchainWalletApi\Response;
 
 use PHPUnit_Framework_TestCase as TestCase;
-use Sake\BlockchainWalletApi\Response\AddressUnarchive;
+use Sake\BlockchainWalletApi\Response\AutoConsolidateAddresses;
 
 /**
- * Class AddressUnarchiveTest
+ * Class AutoConsolidateAddressesTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Response\AddressUnarchive
+ * Tests integrity of \Sake\BlockchainWalletApi\Response\AutoConsolidateAddresses
  */
-class AddressUnarchiveTest extends TestCase
+class AutoConsolidateAddressesTest extends TestCase
 {
     /**
      * Tests if class implements response interface
@@ -28,7 +29,7 @@ class AddressUnarchiveTest extends TestCase
      */
     public function testIsResponseClass()
     {
-        $cut = new AddressUnarchive();
+        $cut = new AutoConsolidateAddresses();
         $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
     }
 
@@ -37,17 +38,20 @@ class AddressUnarchiveTest extends TestCase
      *
      * @group response
      *
-     * @covers \Sake\BlockchainWalletApi\Response\AddressUnarchive::setActive
-     * @covers \Sake\BlockchainWalletApi\Response\AddressUnarchive::getActive
+     * @covers \Sake\BlockchainWalletApi\Response\AutoConsolidateAddresses::setConsolidated
+     * @covers \Sake\BlockchainWalletApi\Response\AutoConsolidateAddresses::getConsolidated
      */
     public function testIfResponseDataCanBeSet()
     {
-        $cut = new AddressUnarchive();
+        $cut = new AutoConsolidateAddresses();
 
-        $address = 'sf2lkdsf23987ancxsacj23sdsf';
+        $addresses = array(
+            '1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq',
+            '34tfskdlfcvkdjhvkjwehf',
+        );
 
-        $cut->setActive($address);
+        $cut->setConsolidated($addresses);
 
-        $this->assertEquals($address, $cut->getActive());
+        $this->assertEquals($addresses, $cut->getConsolidated());
     }
 }
