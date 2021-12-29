@@ -10,4 +10,12 @@
 namespace SakeTest\BlockchainWalletApi\Response;
 
 use PHPUnit_Framework_TestCase as TestCase;
-use Sake\BlockchainWalletApi\Response\Address
+use Sake\BlockchainWalletApi\Response\Address;
+use Sake\BlockchainWalletApi\Response\ListAddresses;
+
+/**
+ * Class ListAddressesTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Response\ListAddresses
+ */
+class 
