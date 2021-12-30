@@ -18,4 +18,10 @@ use Sake\BlockchainWalletApi\Response\ListAddresses;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\Response\ListAddresses
  */
-class 
+class ListAddressesTest extends TestCase
+{
+    /**
+     * Tests if class implements response interface
+     *
+     * @group response
+     *
