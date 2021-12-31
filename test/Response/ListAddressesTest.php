@@ -25,3 +25,9 @@ class ListAddressesTest extends TestCase
      *
      * @group response
      *
+     * @codeCoverageIgnore
+     */
+    public function testIsResponseClass()
+    {
+        $cut = new ListAddresses();
+        $this->assertInstanceOf('\Sake\Blockcha
