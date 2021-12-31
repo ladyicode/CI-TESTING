@@ -30,4 +30,10 @@ class ListAddressesTest extends TestCase
     public function testIsResponseClass()
     {
         $cut = new ListAddresses();
-        $this->assertInstanceOf('\Sake\Blockcha
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
+    }
+
+    /**
+     * Tests if response can be configured via setter
+     *
+     * @dataProvider dataProviderFo
