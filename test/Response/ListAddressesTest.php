@@ -40,4 +40,7 @@ class ListAddressesTest extends TestCase
      * @group response
      *
      * @covers \Sake\BlockchainWalletApi\Response\ListAddresses::setAddresses
-     * @cover
+     * @covers \Sake\BlockchainWalletApi\Response\ListAddresses::getAddresses
+     */
+    public function testIfResponseDataCanBeSet($addresses, $expectedAddresses)
+  
