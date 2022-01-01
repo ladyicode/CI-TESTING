@@ -36,4 +36,8 @@ class ListAddressesTest extends TestCase
     /**
      * Tests if response can be configured via setter
      *
-     * @dataProvider dataProviderFo
+     * @dataProvider dataProviderForTestIfResponseDataCanBeSet
+     * @group response
+     *
+     * @covers \Sake\BlockchainWalletApi\Response\ListAddresses::setAddresses
+     * @cover
