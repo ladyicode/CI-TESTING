@@ -43,4 +43,12 @@ class ListAddressesTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Response\ListAddresses::getAddresses
      */
     public function testIfResponseDataCanBeSet($addresses, $expectedAddresses)
-  
+    {
+        $cut = new ListAddresses();
+
+        $cut->setAddresses($addresses);
+
+        $this->assertEquals($expectedAddresses, $cut->getAddresses());
+    }
+
+    /**
