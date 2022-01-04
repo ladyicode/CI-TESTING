@@ -56,3 +56,8 @@ class ListAddressesTest extends TestCase
      *
      * @return array
      */
+    public function dataProviderForTestIfResponseDataCanBeSet()
+    {
+        $address = new Address();
+        $address->setBalance(100000);
+        $ad
