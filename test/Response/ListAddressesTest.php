@@ -52,3 +52,7 @@ class ListAddressesTest extends TestCase
     }
 
     /**
+     * data provider for the test method testIsValidWithValuesAndValidatorsShouldWorkAsAspected()
+     *
+     * @return array
+     */
