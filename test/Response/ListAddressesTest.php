@@ -65,4 +65,10 @@ class ListAddressesTest extends TestCase
         $address->setTotalReceived(1000000);
 
         $addresses = array(
-    
+            $address->getAddress() => $address
+        );
+
+        return array(
+            array(
+                'addresses' => $addresses,
+                'expect
