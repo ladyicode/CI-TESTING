@@ -60,4 +60,9 @@ class ListAddressesTest extends TestCase
     {
         $address = new Address();
         $address->setBalance(100000);
-        $ad
+        $address->setAddress('sdfwfjdsfg4wr23fecdsb');
+        $address->setLabel('test address');
+        $address->setTotalReceived(1000000);
+
+        $addresses = array(
+    
