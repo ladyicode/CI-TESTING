@@ -71,4 +71,8 @@ class ListAddressesTest extends TestCase
         return array(
             array(
                 'addresses' => $addresses,
-                'expect
+                'expectedAddresses' => $addresses,
+            ),
+        );
+    }
+}
