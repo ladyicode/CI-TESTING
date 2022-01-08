@@ -11,14 +11,14 @@
 namespace SakeTest\BlockchainWalletApi\Response;
 
 use PHPUnit_Framework_TestCase as TestCase;
-use Sake\BlockchainWalletApi\Response\SendMany;
+use Sake\BlockchainWalletApi\Response\Send;
 
 /**
- * Class SendManyTest
+ * Class SendTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Response\SendMany
+ * Tests integrity of \Sake\BlockchainWalletApi\Response\Send
  */
-class SendManyTest extends TestCase
+class SendTest extends TestCase
 {
     /**
      * Tests if class implements response interface
@@ -29,7 +29,7 @@ class SendManyTest extends TestCase
      */
     public function testIsResponseClass()
     {
-        $cut = new SendMany();
+        $cut = new Send();
         $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
     }
 
@@ -38,22 +38,27 @@ class SendManyTest extends TestCase
      *
      * @group response
      *
-     * @covers \Sake\BlockchainWalletApi\Response\SendMany::setMessage
-     * @covers \Sake\BlockchainWalletApi\Response\SendMany::getMessage
-     * @covers \Sake\BlockchainWalletApi\Response\SendMany::setTxHash
-     * @covers \Sake\BlockchainWalletApi\Response\SendMany::getTxHash
+     * @covers \Sake\BlockchainWalletApi\Response\Send::setMessage
+     * @covers \Sake\BlockchainWalletApi\Response\Send::getMessage
+     * @covers \Sake\BlockchainWalletApi\Response\Send::setTxHash
+     * @covers \Sake\BlockchainWalletApi\Response\Send::getTxHash
+     * @covers \Sake\BlockchainWalletApi\Response\Send::setNotice
+     * @covers \Sake\BlockchainWalletApi\Response\Send::getNotice
      */
     public function testIfResponseDataCanBeSet()
     {
-        $cut = new SendMany();
+        $cut = new Send();
 
         $message = 'test wallet';
+        $notice = 'message';
         $txHash = 'sf2lkdsf235jfghj2sd996746987ancxsacj23sdsf';
 
         $cut->setMessage($message);
         $cut->setTxHash($txHash);
+        $cut->setNotice($notice);
 
         $this->assertEquals($message, $cut->getMessage());
         $this->assertEquals($txHash, $cut->getTxHash());
+        $this->assertEquals($notice, $cut->getNotice());
     }
 }
