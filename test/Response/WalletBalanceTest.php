@@ -17,4 +17,13 @@ use Sake\BlockchainWalletApi\Response\WalletBalance;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\Response\WalletBalance
  */
-class WalletBalanceTest extends T
+class WalletBalanceTest extends TestCase
+{
+    /**
+     * Tests if class implements response interface
+     *
+     * @group response
+     *
+     * @codeCoverageIgnore
+     */
+    publ
