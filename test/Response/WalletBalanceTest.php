@@ -26,4 +26,10 @@ class WalletBalanceTest extends TestCase
      *
      * @codeCoverageIgnore
      */
-    publ
+    public function testIsResponseClass()
+    {
+        $cut = new WalletBalance();
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
+    }
+
+  
