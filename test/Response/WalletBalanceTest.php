@@ -32,4 +32,8 @@ class WalletBalanceTest extends TestCase
         $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\ResponseInterface', $cut);
     }
 
-  
+    /**
+     * Tests if getMethod returns the correct api method
+     *
+     * @dataProvider dataProviderForTestIfResponseDataCanBeSet
+     * @group respon
