@@ -36,4 +36,9 @@ class WalletBalanceTest extends TestCase
      * Tests if getMethod returns the correct api method
      *
      * @dataProvider dataProviderForTestIfResponseDataCanBeSet
-     * @group respon
+     * @group response
+     *
+     * @covers \Sake\BlockchainWalletApi\Response\WalletBalance::getBalance
+     * @covers \Sake\BlockchainWalletApi\Response\WalletBalance::setBalance
+     */
+    publi
