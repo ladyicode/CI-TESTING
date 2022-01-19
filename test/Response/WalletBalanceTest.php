@@ -41,4 +41,10 @@ class WalletBalanceTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Response\WalletBalance::getBalance
      * @covers \Sake\BlockchainWalletApi\Response\WalletBalance::setBalance
      */
-    publi
+    public function testIfResponseDataCanBeSet($balance, $expectedBalance)
+    {
+        $cut = new WalletBalance();
+
+        $cut->setBalance($balance);
+
+   
