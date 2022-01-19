@@ -47,4 +47,8 @@ class WalletBalanceTest extends TestCase
 
         $cut->setBalance($balance);
 
-   
+        $this->assertEquals($expectedBalance, $cut->getBalance());
+    }
+
+    /**
+     * data provider for the test method testIsValidWithValuesAndValidatorsShouldWorkAs
