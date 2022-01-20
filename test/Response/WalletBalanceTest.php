@@ -51,4 +51,11 @@ class WalletBalanceTest extends TestCase
     }
 
     /**
-     * data provider for the test method testIsValidWithValuesAndValidatorsShouldWorkAs
+     * data provider for the test method testIsValidWithValuesAndValidatorsShouldWorkAsAspected()
+     *
+     * @return array
+     */
+    public function dataProviderForTestIfResponseDataCanBeSet()
+    {
+        return array(
+            ar
