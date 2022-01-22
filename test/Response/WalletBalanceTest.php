@@ -58,4 +58,10 @@ class WalletBalanceTest extends TestCase
     public function dataProviderForTestIfResponseDataCanBeSet()
     {
         return array(
-            ar
+            array(
+                'balance' => 50000,
+                'expectedBalance' => 50000,
+            ),
+            array(
+                'balance' => '20000',
+    
