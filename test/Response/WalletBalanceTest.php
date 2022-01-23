@@ -64,4 +64,8 @@ class WalletBalanceTest extends TestCase
             ),
             array(
                 'balance' => '20000',
-    
+                'expectedBalance' => 20000,
+            ),
+        );
+    }
+}
