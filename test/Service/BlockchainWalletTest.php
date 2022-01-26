@@ -8,3 +8,7 @@
  */
 
 namespace SakeTest\BlockchainWalletApi\Service;
+
+use Sake\BlockchainWalletApi\Request;
+use Sake\BlockchainWalletApi\Response;
+use Sake\BlockchainWalletApi\Service\BlockchainWa
