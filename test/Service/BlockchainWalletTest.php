@@ -11,4 +11,8 @@ namespace SakeTest\BlockchainWalletApi\Service;
 
 use Sake\BlockchainWalletApi\Request;
 use Sake\BlockchainWalletApi\Response;
-use Sake\BlockchainWalletApi\Service\BlockchainWa
+use Sake\BlockchainWalletApi\Service\BlockchainWallet;
+use Sake\BlockchainWalletApi\Service\BlockchainWalletOptions;
+use Zend\Http;
+use PHPUnit_Framework_TestCase as TestCase;
+use Zend\Http\Response as HttpResponse;
