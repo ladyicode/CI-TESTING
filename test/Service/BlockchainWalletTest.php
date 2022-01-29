@@ -23,4 +23,9 @@ use Zend\ServiceManager\ServiceManager;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\Service\BlockchainWallet
  */
-c
+class BlockchainWalletTest extends TestCase
+{
+    /**
+     * Tests send() with address balance request
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\Block
