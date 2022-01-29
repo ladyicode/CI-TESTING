@@ -16,3 +16,11 @@ use Sake\BlockchainWalletApi\Service\BlockchainWalletOptions;
 use Zend\Http;
 use PHPUnit_Framework_TestCase as TestCase;
 use Zend\Http\Response as HttpResponse;
+use Zend\ServiceManager\ServiceManager;
+
+/**
+ * Class BlockChainWalletTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\BlockchainWallet
+ */
+c
