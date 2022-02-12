@@ -37,4 +37,8 @@ class BlockchainWalletTest extends TestCase
     {
         $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/address_balance.txt'));
 
-        $request = new Request\Ad
+        $request = new Request\AddressBalance();
+        $request->setAddress('efjsdkfjkwefkwejfkesf');
+
+        /* @var $response Response\AddressBalance */
+        $r
