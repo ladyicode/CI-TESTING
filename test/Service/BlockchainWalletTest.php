@@ -41,4 +41,9 @@ class BlockchainWalletTest extends TestCase
         $request->setAddress('efjsdkfjkwefkwejfkesf');
 
         /* @var $response Response\AddressBalance */
-        $r
+        $response = $service->send($request);
+
+        $this->assertEquals(0, $response->getBalance());
+
+        $this->assertEquals(
+            $this->getLastRawReq
