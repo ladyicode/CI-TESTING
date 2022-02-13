@@ -48,4 +48,12 @@ class BlockchainWalletTest extends TestCase
         $this->assertEquals(
             $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/address_balance.txt'),
             $this->getLastRawRequest($service),
-            'Requests doe
+            'Requests does not match'
+        );
+    }
+
+    /**
+     * Tests send() with wallet balance request
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::send
+     
