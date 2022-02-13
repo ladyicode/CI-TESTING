@@ -46,4 +46,6 @@ class BlockchainWalletTest extends TestCase
         $this->assertEquals(0, $response->getBalance());
 
         $this->assertEquals(
-            $this->getLastRawReq
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/address_balance.txt'),
+            $this->getLastRawRequest($service),
+            'Requests doe
