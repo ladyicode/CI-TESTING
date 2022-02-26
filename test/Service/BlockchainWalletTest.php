@@ -62,4 +62,8 @@ class BlockchainWalletTest extends TestCase
      */
     public function testSendWithRequestWalletBalance()
     {
-        $service = $this->getStubForTest(file_get_cont
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/wallet_balance.txt'));
+
+        $request = new Request\WalletBalance();
+
+        /* @var $response Response\WalletBalance */
