@@ -67,3 +67,9 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\WalletBalance();
 
         /* @var $response Response\WalletBalance */
+        $response = $service->send($request);
+
+        $this->assertEquals(0, $response->getBalance());
+
+        $this->assertEquals(
+            $this->g
