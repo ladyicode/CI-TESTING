@@ -88,4 +88,9 @@ class BlockchainWalletTest extends TestCase
      */
     public function testSendWithRequestNewAddress()
     {
-        $service = $this->getStubForTest(file_get_conte
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/new_address.txt'));
+        $label = 'Order No : 1234';
+
+        $request = new Request\NewAddress();
+
+        $request->setLabel($label);
