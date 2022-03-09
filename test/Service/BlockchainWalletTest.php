@@ -102,4 +102,7 @@ class BlockchainWalletTest extends TestCase
         $this->assertEquals('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', $response->getAddress());
 
         $this->assertEquals(
-            $this->getL
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/new_address.txt'),
+            $this->getLastRawRequest($service),
+            'Requests does not match'
+ 
