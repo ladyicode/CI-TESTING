@@ -98,4 +98,8 @@ class BlockchainWalletTest extends TestCase
         /* @var $response Response\NewAddress */
         $response = $service->send($request);
 
-        $this->assertEquals($label, $response->getLa
+        $this->assertEquals($label, $response->getLabel());
+        $this->assertEquals('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', $response->getAddress());
+
+        $this->assertEquals(
+            $this->getL
