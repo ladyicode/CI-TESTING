@@ -123,4 +123,9 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\ListAddresses();
 
         /* @var $response Response\ListAddresses */
-   
+        $response = $service->send($request);
+
+        $addresses = $response->getAddresses();
+
+        $this->assertCount(3, $addresses);
+        $this->assertArrayHasKey('1Q1AtvCyKhtveGm
