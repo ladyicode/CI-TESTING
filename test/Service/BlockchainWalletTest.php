@@ -118,4 +118,9 @@ class BlockchainWalletTest extends TestCase
      */
     public function testSendWithRequestListAddresses()
     {
-        $service = $this->getStubForTest(file_get_contents(__DIR__ 
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/list_addresses.txt'));
+
+        $request = new Request\ListAddresses();
+
+        /* @var $response Response\ListAddresses */
+   
