@@ -130,4 +130,7 @@ class BlockchainWalletTest extends TestCase
         $this->assertCount(3, $addresses);
         $this->assertArrayHasKey('1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC', $addresses);
         $this->assertArrayHasKey('1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq', $addresses);
-        $this->assertArrayHasKey(
+        $this->assertArrayHasKey('17p49XUC2fw4Fn53WjZqYAm4APKqhNPEkY', $addresses);
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\Address', current($addresses));
+
+  
