@@ -128,4 +128,6 @@ class BlockchainWalletTest extends TestCase
         $addresses = $response->getAddresses();
 
         $this->assertCount(3, $addresses);
-        $this->assertArrayHasKey('1Q1AtvCyKhtveGm
+        $this->assertArrayHasKey('1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC', $addresses);
+        $this->assertArrayHasKey('1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq', $addresses);
+        $this->assertArrayHasKey(
