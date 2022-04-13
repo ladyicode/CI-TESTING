@@ -133,4 +133,6 @@ class BlockchainWalletTest extends TestCase
         $this->assertArrayHasKey('17p49XUC2fw4Fn53WjZqYAm4APKqhNPEkY', $addresses);
         $this->assertInstanceOf('\Sake\BlockchainWalletApi\Response\Address', current($addresses));
 
-  
+        $this->assertEquals(
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/list_addresses.txt'),
+            $this->getLastRawR
