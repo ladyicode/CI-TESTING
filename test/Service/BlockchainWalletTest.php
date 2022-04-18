@@ -135,4 +135,12 @@ class BlockchainWalletTest extends TestCase
 
         $this->assertEquals(
             $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/list_addresses.txt'),
-            $this->getLastRawR
+            $this->getLastRawRequest($service),
+            'Requests does not match'
+        );
+    }
+
+    /**
+     * Tests send() with send request
+     *
+     * @covers \Sake\BlockchainWalletApi\
