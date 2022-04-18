@@ -145,4 +145,9 @@ class BlockchainWalletTest extends TestCase
      *
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::send
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::__construct
-     * @covers \Sake\BlockchainWalletApi\Service\Blockch
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
+     * @group service
+     */
+    public function testSendWithRequestSend()
+    {
+        $service = $this->getStubForTest(file_get_conte
