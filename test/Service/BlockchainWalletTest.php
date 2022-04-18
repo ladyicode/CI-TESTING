@@ -143,4 +143,6 @@ class BlockchainWalletTest extends TestCase
     /**
      * Tests send() with send request
      *
-     * @covers \Sake\BlockchainWalletApi\
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::send
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::__construct
+     * @covers \Sake\BlockchainWalletApi\Service\Blockch
