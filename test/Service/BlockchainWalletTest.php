@@ -150,4 +150,9 @@ class BlockchainWalletTest extends TestCase
      */
     public function testSendWithRequestSend()
     {
-        $service = $this->getStubForTest(file_get_conte
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/send.txt'));
+
+        $request = new Request\Send();
+
+        $request->setAmount(10000000);
+        $request->se
