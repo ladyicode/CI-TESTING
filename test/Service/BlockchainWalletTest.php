@@ -155,4 +155,9 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\Send();
 
         $request->setAmount(10000000);
-        $request->se
+        $request->setTo('1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq');
+
+        /* @var $response Response\Send */
+        $response = $service->send($request);
+
+        $this->assertEquals('Sent 0.1 BTC to 1A8JiWc
