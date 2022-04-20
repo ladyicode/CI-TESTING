@@ -162,4 +162,8 @@ class BlockchainWalletTest extends TestCase
 
         $this->assertEquals('Sent 0.1 BTC to 1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq', $response->getMessage());
         $this->assertEquals(
-            'f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c1
+            'f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c',
+            $response->getTxHash()
+        );
+        $this->assertEquals(
+            'Some funds are pending confirmation and cannot be sp
