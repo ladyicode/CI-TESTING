@@ -160,4 +160,6 @@ class BlockchainWalletTest extends TestCase
         /* @var $response Response\Send */
         $response = $service->send($request);
 
-        $this->assertEquals('Sent 0.1 BTC to 1A8JiWc
+        $this->assertEquals('Sent 0.1 BTC to 1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq', $response->getMessage());
+        $this->assertEquals(
+            'f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c1
