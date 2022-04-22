@@ -166,4 +166,9 @@ class BlockchainWalletTest extends TestCase
             $response->getTxHash()
         );
         $this->assertEquals(
-            'Some funds are pending confirmation and cannot be sp
+            'Some funds are pending confirmation and cannot be spent yet (Value 0.001 BTC)',
+            $response->getNotice()
+        );
+
+        $this->assertEquals(
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAs
