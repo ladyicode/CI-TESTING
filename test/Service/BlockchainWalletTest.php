@@ -188,3 +188,7 @@ class BlockchainWalletTest extends TestCase
     public function testSendWithRequestSendMany()
     {
         $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/send_many.txt'));
+
+        $recipients = array(
+            new Request\Recipient('regl4jtwe8flmf23knfsd', 10000),
+            new Request\Recipient('23dsk
