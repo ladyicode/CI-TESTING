@@ -185,4 +185,6 @@ class BlockchainWalletTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
      * @group service
      */
-   
+    public function testSendWithRequestSendMany()
+    {
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/send_many.txt'));
