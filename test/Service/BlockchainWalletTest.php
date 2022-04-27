@@ -204,4 +204,9 @@ class BlockchainWalletTest extends TestCase
 
         $this->assertEquals('Sent To Multiple Recipients', $response->getMessage());
         $this->assertEquals(
-            'f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c
+            'f322d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c',
+            $response->getTxHash()
+        );
+
+        $this->assertEquals(
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/s
