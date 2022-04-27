@@ -191,4 +191,8 @@ class BlockchainWalletTest extends TestCase
 
         $recipients = array(
             new Request\Recipient('regl4jtwe8flmf23knfsd', 10000),
-            new Request\Recipient('23dsk
+            new Request\Recipient('23dskflsfuo2u4ourjsd', 20000),
+            new Request\Recipient('34tfskdlfcvkdjhvkjwehf', 30000),
+        );
+
+        $request = new Reque
