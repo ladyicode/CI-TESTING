@@ -195,4 +195,11 @@ class BlockchainWalletTest extends TestCase
             new Request\Recipient('34tfskdlfcvkdjhvkjwehf', 30000),
         );
 
-        $request = new Reque
+        $request = new Request\SendMany();
+
+        $request->setRecipients($recipients);
+
+        /* @var $response Response\Send */
+        $response = $service->send($request);
+
+        $this->asse
