@@ -231,4 +231,7 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\AddressArchive();
         $request->setAddress($address);
 
-    
+        /* @var $response Response\AddressArchive */
+        $response = $service->send($request);
+
+        $this->assertEquals($address, $respons
