@@ -234,4 +234,8 @@ class BlockchainWalletTest extends TestCase
         /* @var $response Response\AddressArchive */
         $response = $service->send($request);
 
-        $this->assertEquals($address, $respons
+        $this->assertEquals($address, $response->getArchived());
+
+        $this->assertEquals(
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/address_archive.txt'),
+            $
