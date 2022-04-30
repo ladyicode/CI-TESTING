@@ -223,4 +223,7 @@ class BlockchainWalletTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
      * @group service
      */
-    public function
+    public function testSendWithRequestAddressArchive()
+    {
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/address_archive.txt'));
+  
