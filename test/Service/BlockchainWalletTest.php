@@ -226,4 +226,9 @@ class BlockchainWalletTest extends TestCase
     public function testSendWithRequestAddressArchive()
     {
         $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/address_archive.txt'));
-  
+        $address = '18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy';
+
+        $request = new Request\AddressArchive();
+        $request->setAddress($address);
+
+    
