@@ -238,4 +238,11 @@ class BlockchainWalletTest extends TestCase
 
         $this->assertEquals(
             $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/address_archive.txt'),
-            $
+            $this->getLastRawRequest($service),
+            'Requests does not match'
+        );
+    }
+
+    /**
+     * Tests send() with unarchive address request
+   
