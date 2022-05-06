@@ -245,4 +245,7 @@ class BlockchainWalletTest extends TestCase
 
     /**
      * Tests send() with unarchive address request
-   
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::send
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::__construct
+     * @covers
