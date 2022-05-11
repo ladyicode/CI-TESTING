@@ -253,3 +253,5 @@ class BlockchainWalletTest extends TestCase
      */
     public function testSendWithRequestAddressUnarchive()
     {
+        $service = $this->getStubForTest(file_get_contents(__DIR__ . '/TestAsset/Response/address_unarchive.txt'));
+        $address = '18fyqiZzndTxdVo7g9ouR
