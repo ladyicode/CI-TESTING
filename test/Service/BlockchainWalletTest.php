@@ -259,4 +259,8 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\AddressUnarchive();
         $request->setAddress($address);
 
-        /* @var $response Response\AddressUnar
+        /* @var $response Response\AddressUnarchive */
+        $response = $service->send($request);
+
+        $this->assertEquals('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', $response->getActive());
+
