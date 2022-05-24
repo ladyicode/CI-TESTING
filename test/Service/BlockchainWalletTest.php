@@ -274,4 +274,6 @@ class BlockchainWalletTest extends TestCase
     /**
      * Tests send() with auto consolidate addresses request
      *
- 
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::send
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::__construct
+     * @covers \
