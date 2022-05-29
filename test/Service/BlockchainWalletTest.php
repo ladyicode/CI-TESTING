@@ -279,4 +279,7 @@ class BlockchainWalletTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
      * @group service
      */
-    public function testSendWithRequestAutoConsoli
+    public function testSendWithRequestAutoConsolidateAddresses()
+    {
+        $service = $this->getStubForTest(
+            file_get_contents(__DIR__ . '/TestAsset/Response/auto_consolidate_addresses.tx
