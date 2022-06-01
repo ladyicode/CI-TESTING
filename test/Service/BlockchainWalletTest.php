@@ -282,4 +282,10 @@ class BlockchainWalletTest extends TestCase
     public function testSendWithRequestAutoConsolidateAddresses()
     {
         $service = $this->getStubForTest(
-            file_get_contents(__DIR__ . '/TestAsset/Response/auto_consolidate_addresses.tx
+            file_get_contents(__DIR__ . '/TestAsset/Response/auto_consolidate_addresses.txt')
+        );
+
+        $request = new Request\AutoConsolidateAddresses();
+        $request->setDays(10);
+
+        /* @var $response Response\
