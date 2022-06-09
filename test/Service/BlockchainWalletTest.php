@@ -291,4 +291,9 @@ class BlockchainWalletTest extends TestCase
         /* @var $response Response\AutoConsolidateAddresses */
         $response = $service->send($request);
 
-        $consolidated = array('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', '1Q1At
+        $consolidated = array('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', '1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC');
+
+        $this->assertEquals($consolidated, $response->getConsolidated());
+
+        $this->assertEquals(
+            $this->getLastR
