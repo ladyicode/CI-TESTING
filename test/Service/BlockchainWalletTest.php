@@ -288,4 +288,7 @@ class BlockchainWalletTest extends TestCase
         $request = new Request\AutoConsolidateAddresses();
         $request->setDays(10);
 
-        /* @var $response Response\
+        /* @var $response Response\AutoConsolidateAddresses */
+        $response = $service->send($request);
+
+        $consolidated = array('18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy', '1Q1At
