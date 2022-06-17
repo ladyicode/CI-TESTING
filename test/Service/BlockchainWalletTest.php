@@ -298,4 +298,11 @@ class BlockchainWalletTest extends TestCase
         $this->assertEquals(
             $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/auto_consolidate_addresses.txt'),
             $this->getLastRawRequest($service),
-            '
+            'Requests does not match'
+        );
+    }
+
+    /**
+     * Test if getUri() returns correct blockchain wallet api uri
+     *
+     * @covers \Sake\BlockchainWal
