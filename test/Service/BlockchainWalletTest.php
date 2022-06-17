@@ -296,4 +296,6 @@ class BlockchainWalletTest extends TestCase
         $this->assertEquals($consolidated, $response->getConsolidated());
 
         $this->assertEquals(
-            $this->getLastR
+            $this->getLastRawRequestExpected(__DIR__ . '/TestAsset/Request/auto_consolidate_addresses.txt'),
+            $this->getLastRawRequest($service),
+            '
