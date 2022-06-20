@@ -310,4 +310,8 @@ class BlockchainWalletTest extends TestCase
      * @group service
      *
      * @param Request\RequestInterface $request
-  
+     * @param string $expected Expected uri
+     */
+    public function testGetUri(Request\RequestInterface $request, $expected)
+    {
+        $class = new \Reflect
