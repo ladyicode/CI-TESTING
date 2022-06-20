@@ -314,4 +314,8 @@ class BlockchainWalletTest extends TestCase
      */
     public function testGetUri(Request\RequestInterface $request, $expected)
     {
-        $class = new \Reflect
+        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWallet');
+        $method = $class->getMethod('getUri');
+        $method->setAccessible(true);
+
+     
