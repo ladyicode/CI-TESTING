@@ -318,4 +318,8 @@ class BlockchainWalletTest extends TestCase
         $method = $class->getMethod('getUri');
         $method->setAccessible(true);
 
-     
+        $this->assertEquals($expected, $method->invoke($this->getStubForTest(), $request));
+    }
+
+    /**
+     * Test if getArguments() returns api argum
