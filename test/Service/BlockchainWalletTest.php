@@ -336,4 +336,10 @@ class BlockchainWalletTest extends TestCase
         $expected = array(
             'password' => 'mainpwd',
             'second_password' => 'secpwd',
-        
+        );
+
+        $this->assertEquals($expected, $method->invoke($this->getStubForTest(), new Request\WalletBalance()));
+    }
+
+    /**
+     * Test if getUri() returns cor
