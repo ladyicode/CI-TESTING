@@ -322,4 +322,10 @@ class BlockchainWalletTest extends TestCase
     }
 
     /**
-     * Test if getArguments() returns api argum
+     * Test if getArguments() returns api arguments
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::getArguments
+     * @group service
+     */
+    public function testGetArguments()
+ 
