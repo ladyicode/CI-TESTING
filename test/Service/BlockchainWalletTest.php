@@ -328,4 +328,7 @@ class BlockchainWalletTest extends TestCase
      * @group service
      */
     public function testGetArguments()
+    {
+        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWallet');
+        $method = $class->getMethod('getArguments');
  
