@@ -331,4 +331,9 @@ class BlockchainWalletTest extends TestCase
     {
         $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWallet');
         $method = $class->getMethod('getArguments');
- 
+        $method->setAccessible(true);
+
+        $expected = array(
+            'password' => 'mainpwd',
+            'second_password' => 'secpwd',
+        
