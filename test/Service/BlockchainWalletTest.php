@@ -347,4 +347,6 @@ class BlockchainWalletTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
      * @group service
      */
-   
+    public function testExtractDataShouldThrowExceptionIfRequestFailed()
+    {
+        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWal
