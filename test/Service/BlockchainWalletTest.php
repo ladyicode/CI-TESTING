@@ -356,4 +356,9 @@ class BlockchainWalletTest extends TestCase
         $response = new HttpResponse();
         $response->setStatusCode(HttpResponse::STATUS_CODE_404);
 
-        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Server responde
+        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Server responded');
+        $method->invoke($this->getStubForTest(), $response, new Response\WalletBalance());
+    }
+
+    /**
+     * Test if getUri() re
