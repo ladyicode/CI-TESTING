@@ -368,4 +368,9 @@ class BlockchainWalletTest extends TestCase
      */
     public function testExtractDataShouldThrowExceptionResponseIsEmpty()
     {
-        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\Blockchai
+        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWallet');
+        $method = $class->getMethod('extractData');
+        $method->setAccessible(true);
+
+        $response = new HttpResponse();
+        $respon
