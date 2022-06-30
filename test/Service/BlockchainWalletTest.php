@@ -373,4 +373,6 @@ class BlockchainWalletTest extends TestCase
         $method->setAccessible(true);
 
         $response = new HttpResponse();
-        $respon
+        $response->setStatusCode(HttpResponse::STATUS_CODE_200);
+
+        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Received 
