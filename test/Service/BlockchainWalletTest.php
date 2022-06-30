@@ -375,4 +375,9 @@ class BlockchainWalletTest extends TestCase
         $response = new HttpResponse();
         $response->setStatusCode(HttpResponse::STATUS_CODE_200);
 
-        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Received 
+        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Received no data');
+        $method->invoke($this->getStubForTest(), $response, new Response\WalletBalance());
+    }
+
+    /**
+     * Test if getUri() return
