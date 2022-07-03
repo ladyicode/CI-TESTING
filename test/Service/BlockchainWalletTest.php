@@ -392,3 +392,5 @@ class BlockchainWalletTest extends TestCase
         $method->setAccessible(true);
 
         $response = new HttpResponse();
+        $response->setStatusCode(HttpResponse::STATUS_CODE_200);
+        $response->setContent(json_encode(array('error' => 'test error
