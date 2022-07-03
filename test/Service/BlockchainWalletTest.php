@@ -387,4 +387,8 @@ class BlockchainWalletTest extends TestCase
      */
     public function testExtractDataShouldThrowExceptionIfApiErrorOccured()
     {
-        $class = new \ReflectionClass('\Sake\Block
+        $class = new \ReflectionClass('\Sake\BlockchainWalletApi\Service\BlockchainWallet');
+        $method = $class->getMethod('extractData');
+        $method->setAccessible(true);
+
+        $response = new HttpResponse();
