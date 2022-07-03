@@ -380,4 +380,7 @@ class BlockchainWalletTest extends TestCase
     }
 
     /**
-     * Test if getUri() return
+     * Test if getUri() returns correct blockchain wallet api uri
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
+     * @group servic
