@@ -383,4 +383,8 @@ class BlockchainWalletTest extends TestCase
      * Test if getUri() returns correct blockchain wallet api uri
      *
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::extractData
-     * @group servic
+     * @group service
+     */
+    public function testExtractDataShouldThrowExceptionIfApiErrorOccured()
+    {
+        $class = new \ReflectionClass('\Sake\Block
