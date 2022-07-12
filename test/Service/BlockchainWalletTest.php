@@ -396,4 +396,10 @@ class BlockchainWalletTest extends TestCase
         $response->setContent(json_encode(array('error' => 'test error')));
 
         $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'test error');
-        $method->invoke($this->getStub
+        $method->invoke($this->getStubForTest(), $response, new Response\WalletBalance());
+    }
+
+    /**
+     * Test if isValid() should correct validate requests
+     *
+     * @covers \Sake\Block
