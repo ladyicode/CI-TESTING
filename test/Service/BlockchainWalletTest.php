@@ -402,4 +402,8 @@ class BlockchainWalletTest extends TestCase
     /**
      * Test if isValid() should correct validate requests
      *
-     * @covers \Sake\Block
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::isValid
+     * @dataProvider dataProviderForTestIsValid
+     * @group service
+     *
+     * @param Request\RequestInterface $req
