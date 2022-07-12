@@ -393,4 +393,7 @@ class BlockchainWalletTest extends TestCase
 
         $response = new HttpResponse();
         $response->setStatusCode(HttpResponse::STATUS_CODE_200);
-        $response->setContent(json_encode(array('error' => 'test error
+        $response->setContent(json_encode(array('error' => 'test error')));
+
+        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'test error');
+        $method->invoke($this->getStub
