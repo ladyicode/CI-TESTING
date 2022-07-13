@@ -406,4 +406,9 @@ class BlockchainWalletTest extends TestCase
      * @dataProvider dataProviderForTestIsValid
      * @group service
      *
-     * @param Request\RequestInterface $req
+     * @param Request\RequestInterface $request
+     * @param string $expected Expected validation result
+     */
+    public function testIsValid(Request\RequestInterface $request, $expected)
+    {
+       
