@@ -421,4 +421,8 @@ class BlockchainWalletTest extends TestCase
      *
      * @param string $response Http response
      * @param array $methods Methods for test doubles
-     * @return \PHPUnit_Framework_MockObject_MockObje
+     * @return \PHPUnit_Framework_MockObject_MockObject
+     */
+    protected function getStubForTest($response = null, array $methods = null)
+    {
+        $hydratorFactory = new \Sake\BlockchainWalletApi\Service\Hyd
