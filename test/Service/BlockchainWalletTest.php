@@ -411,4 +411,11 @@ class BlockchainWalletTest extends TestCase
      */
     public function testIsValid(Request\RequestInterface $request, $expected)
     {
-       
+        $service = $this->getStubForTest();
+
+        $this->assertEquals($expected, $service->isValid($request));
+    }
+
+    /**
+     * Returns stub of test object
+    
