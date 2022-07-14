@@ -418,4 +418,7 @@ class BlockchainWalletTest extends TestCase
 
     /**
      * Returns stub of test object
-    
+     *
+     * @param string $response Http response
+     * @param array $methods Methods for test doubles
+     * @return \PHPUnit_Framework_MockObject_MockObje
