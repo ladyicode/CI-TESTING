@@ -425,4 +425,10 @@ class BlockchainWalletTest extends TestCase
      */
     protected function getStubForTest($response = null, array $methods = null)
     {
-        $hydratorFactory = new \Sake\BlockchainWalletApi\Service\Hyd
+        $hydratorFactory = new \Sake\BlockchainWalletApi\Service\HydratorFactory();
+
+        $stub = $this->getMock(
+            '\Sake\BlockchainWalletApi\Service\BlockchainWallet',
+            $methods,
+            array(
+      
