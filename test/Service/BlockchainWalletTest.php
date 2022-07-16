@@ -431,4 +431,7 @@ class BlockchainWalletTest extends TestCase
             '\Sake\BlockchainWalletApi\Service\BlockchainWallet',
             $methods,
             array(
-      
+                new Http\Client(null, array('adapter' => new Http\Client\Adapter\Test())),
+                new BlockchainWalletOptions(
+                    array(
+                  
