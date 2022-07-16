@@ -434,4 +434,7 @@ class BlockchainWalletTest extends TestCase
                 new Http\Client(null, array('adapter' => new Http\Client\Adapter\Test())),
                 new BlockchainWalletOptions(
                     array(
-                  
+                        'url' => 'https://blockchain.info/de/merchant/',
+                        'guid' => 'test43',
+                        'main_password' => 'mainpwd',
+       
