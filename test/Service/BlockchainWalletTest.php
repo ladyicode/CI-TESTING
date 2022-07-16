@@ -437,4 +437,6 @@ class BlockchainWalletTest extends TestCase
                         'url' => 'https://blockchain.info/de/merchant/',
                         'guid' => 'test43',
                         'main_password' => 'mainpwd',
-       
+                        'second_password' => 'secpwd',
+                        'hydrator' => $hydratorFactory->createService(new ServiceManager())
+                
