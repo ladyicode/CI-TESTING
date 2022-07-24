@@ -439,4 +439,11 @@ class BlockchainWalletTest extends TestCase
                         'main_password' => 'mainpwd',
                         'second_password' => 'secpwd',
                         'hydrator' => $hydratorFactory->createService(new ServiceManager())
-                
+                    )
+                )
+            )
+        );
+
+        if (null !== $response) {
+            $stub->getClient()->getAdapter()->setResponse($response);
+        }
