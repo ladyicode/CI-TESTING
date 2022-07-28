@@ -447,3 +447,11 @@ class BlockchainWalletTest extends TestCase
         if (null !== $response) {
             $stub->getClient()->getAdapter()->setResponse($response);
         }
+        return $stub;
+    }
+
+    /**
+     * Returns last raw request from client
+     *
+     * @param BlockchainWallet $service
+     * @return stri
