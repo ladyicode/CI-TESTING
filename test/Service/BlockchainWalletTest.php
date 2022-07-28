@@ -454,4 +454,9 @@ class BlockchainWalletTest extends TestCase
      * Returns last raw request from client
      *
      * @param BlockchainWallet $service
-     * @return stri
+     * @return string Raw request
+     */
+    protected function getLastRawRequest(BlockchainWallet $service)
+    {
+        // workaround for crlf line endings
+        return preg_r
