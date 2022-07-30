@@ -465,4 +465,9 @@ class BlockchainWalletTest extends TestCase
     /**
      * Returns last raw request from client
      *
-     * @par
+     * @param string $file File for content
+     * @return string Expected request
+     */
+    protected function getLastRawRequestExpected($file)
+    {
+        return trim(file_get_content
