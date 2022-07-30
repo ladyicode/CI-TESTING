@@ -470,4 +470,12 @@ class BlockchainWalletTest extends TestCase
      */
     protected function getLastRawRequestExpected($file)
     {
-        return trim(file_get_content
+        return trim(file_get_contents($file));
+    }
+
+    /**
+     * Tests getOptions()
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::getOptions
+     * @group service
+  
