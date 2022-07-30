@@ -459,4 +459,10 @@ class BlockchainWalletTest extends TestCase
     protected function getLastRawRequest(BlockchainWallet $service)
     {
         // workaround for crlf line endings
-        return preg_r
+        return preg_replace('~\R~u', "\n", trim($service->getClient()->getLastRawRequest()));
+    }
+
+    /**
+     * Returns last raw request from client
+     *
+     * @par
