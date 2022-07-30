@@ -478,4 +478,8 @@ class BlockchainWalletTest extends TestCase
      *
      * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::getOptions
      * @group service
-  
+     */
+    public function testGetOptions()
+    {
+        $service = $this->getStubForTest();
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Service\
