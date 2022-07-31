@@ -501,4 +501,10 @@ class BlockchainWalletTest extends TestCase
      * data provider for the test method testGetUri()
      *
      * @return array
-     *
+     */
+    public function dataProviderForTestGetUri()
+    {
+        return array(
+            array(
+                'request' => new Request\AddressArchive(),
+ 
