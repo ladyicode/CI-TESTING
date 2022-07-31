@@ -488,4 +488,10 @@ class BlockchainWalletTest extends TestCase
     /**
      * Tests getClient()
      *
-     * @covers \Sake\BlockchainWalletApi\Service\Blo
+     * @covers \Sake\BlockchainWalletApi\Service\BlockchainWallet::getClient
+     * @group service
+     */
+    public function testGetClient()
+    {
+        $service = $this->getStubForTest();
+        $this
