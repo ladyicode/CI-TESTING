@@ -494,4 +494,11 @@ class BlockchainWalletTest extends TestCase
     public function testGetClient()
     {
         $service = $this->getStubForTest();
-        $this
+        $this->assertInstanceOf('\Zend\Http\Client', $service->getClient());
+    }
+
+    /**
+     * data provider for the test method testGetUri()
+     *
+     * @return array
+     *
