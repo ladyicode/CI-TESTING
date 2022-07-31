@@ -482,4 +482,10 @@ class BlockchainWalletTest extends TestCase
     public function testGetOptions()
     {
         $service = $this->getStubForTest();
-        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Service\
+        $this->assertInstanceOf('\Sake\BlockchainWalletApi\Service\BlockchainWalletOptions', $service->getOptions());
+    }
+
+    /**
+     * Tests getClient()
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\Blo
