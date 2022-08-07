@@ -507,4 +507,7 @@ class BlockchainWalletTest extends TestCase
         return array(
             array(
                 'request' => new Request\AddressArchive(),
- 
+                'expected' => 'https://blockchain.info/de/merchant/test43/archive_address',
+            ),
+            array(
+                'request' => n
