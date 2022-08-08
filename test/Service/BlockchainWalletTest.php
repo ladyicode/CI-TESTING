@@ -513,4 +513,6 @@ class BlockchainWalletTest extends TestCase
                 'request' => new Request\AddressBalance(),
                 'expected' => 'https://blockchain.info/de/merchant/test43/address_balance',
             ),
-  
+            array(
+                'request' => new Request\AddressUnarchive(),
+                'expected' => 'https://blockchain.info/de/merchant/test43/unarchive_address',
