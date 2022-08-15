@@ -519,4 +519,7 @@ class BlockchainWalletTest extends TestCase
             ),
             array(
                 'request' => new Request\AutoConsolidateAddresses(),
-                'expected' => 'https://blo
+                'expected' => 'https://blockchain.info/de/merchant/test43/auto_consolidate',
+            ),
+            array(
+                'request' => new Request\ListAddresses
