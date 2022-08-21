@@ -530,4 +530,7 @@ class BlockchainWalletTest extends TestCase
                 'expected' => 'https://blockchain.info/de/merchant/test43/new_address',
             ),
             array(
-          
+                'request' => new Request\Send(),
+                'expected' => 'https://blockchain.info/de/merchant/test43/payment',
+            ),
+           
