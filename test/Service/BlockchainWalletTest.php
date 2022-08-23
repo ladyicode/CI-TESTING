@@ -536,3 +536,8 @@ class BlockchainWalletTest extends TestCase
             array(
                 'request' => new Request\SendMany(),
                 'expected' => 'https://blockchain.info/de/merchant/test43/sendmany',
+            ),
+            array(
+                'request' => new Request\WalletBalance(),
+                'expected' => 'https://blockchain.info/de/merchant/test43/balance',
+     
