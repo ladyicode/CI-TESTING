@@ -549,4 +549,9 @@ class BlockchainWalletTest extends TestCase
      *
      * @return array
      */
-    public function dat
+    public function dataProviderForTestIsValid()
+    {
+        $addressArchive = new Request\AddressArchive();
+        $addressArchive->setAddress('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
+
+      
