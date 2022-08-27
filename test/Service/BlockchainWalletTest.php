@@ -554,4 +554,7 @@ class BlockchainWalletTest extends TestCase
         $addressArchive = new Request\AddressArchive();
         $addressArchive->setAddress('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
 
-      
+        $addressBalance = new Request\AddressBalance();
+        $addressBalance->setAddress('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
+
+        $addres
