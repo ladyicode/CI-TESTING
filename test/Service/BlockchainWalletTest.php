@@ -557,4 +557,8 @@ class BlockchainWalletTest extends TestCase
         $addressBalance = new Request\AddressBalance();
         $addressBalance->setAddress('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
 
-        $addres
+        $addressBalanceInvalid = clone $addressBalance;
+        $addressBalanceInvalid->setConfirmations(-1);
+
+        $addressUnarchive = new Request\AddressUnarchive();
+        $addressUnarchiv
