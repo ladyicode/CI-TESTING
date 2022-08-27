@@ -540,4 +540,13 @@ class BlockchainWalletTest extends TestCase
             array(
                 'request' => new Request\WalletBalance(),
                 'expected' => 'https://blockchain.info/de/merchant/test43/balance',
-     
+            ),
+        );
+    }
+
+    /**
+     * data provider for the test method testIsValid()
+     *
+     * @return array
+     */
+    public function dat
