@@ -569,4 +569,10 @@ class BlockchainWalletTest extends TestCase
         $listAddressesInvalid = new Request\ListAddresses();
         $listAddressesInvalid->setConfirmations(400);
 
-        $se
+        $send = new Request\Send();
+        $send->setTo('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
+        $send->setAmount(10000);
+
+        return array(
+            array(
+ 
