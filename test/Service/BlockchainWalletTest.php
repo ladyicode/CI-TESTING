@@ -564,4 +564,9 @@ class BlockchainWalletTest extends TestCase
         $addressUnarchive->setAddress('13c7aMAEoS1QkwK49GctvEE7ZBkSfvaXCo');
 
         $autoConsolidateAddresses = new Request\AutoConsolidateAddresses();
-        $autoConsolidateAddre
+        $autoConsolidateAddresses->setDays(60);
+
+        $listAddressesInvalid = new Request\ListAddresses();
+        $listAddressesInvalid->setConfirmations(400);
+
+        $se
