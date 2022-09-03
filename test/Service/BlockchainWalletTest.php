@@ -589,4 +589,10 @@ class BlockchainWalletTest extends TestCase
             array(
                 'request' => $addressBalanceInvalid,
                 'expected' => false,
-            )
+            ),
+            array(
+                'request' => new Request\AddressBalance(),
+                'expected' => false,
+            ),
+            array(
+        
