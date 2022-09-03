@@ -575,4 +575,8 @@ class BlockchainWalletTest extends TestCase
 
         return array(
             array(
- 
+                'request' => $addressArchive,
+                'expected' => true,
+            ),
+            array(
+                'request' => new Request\Addr
