@@ -579,4 +579,9 @@ class BlockchainWalletTest extends TestCase
                 'expected' => true,
             ),
             array(
-                'request' => new Request\Addr
+                'request' => new Request\AddressArchive(),
+                'expected' => false,
+            ),
+            array(
+                'request' => $addressBalance,
+               
