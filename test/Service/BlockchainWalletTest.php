@@ -595,4 +595,9 @@ class BlockchainWalletTest extends TestCase
                 'expected' => false,
             ),
             array(
-        
+                'request' => $addressUnarchive,
+                'expected' => true,
+            ),
+            array(
+                'request' => new Request\AddressUnarchive(),
+         
