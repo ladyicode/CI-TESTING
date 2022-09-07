@@ -609,4 +609,10 @@ class BlockchainWalletTest extends TestCase
             array(
                 'request' => new Request\AutoConsolidateAddresses(),
                 'expected' => false,
-      
+            ),
+            array(
+                'request' => $listAddressesInvalid,
+                'expected' => false,
+            ),
+            array(
+                'request
