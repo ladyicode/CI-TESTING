@@ -600,4 +600,9 @@ class BlockchainWalletTest extends TestCase
             ),
             array(
                 'request' => new Request\AddressUnarchive(),
+                'expected' => false,
+            ),
+            array(
+                'request' => $autoConsolidateAddresses,
+                'expected' => true,
          
