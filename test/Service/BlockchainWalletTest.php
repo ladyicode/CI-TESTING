@@ -631,4 +631,9 @@ class BlockchainWalletTest extends TestCase
                 'expected' => false,
             ),
             array(
-                'req
+                'request' => new Request\SendMany(),
+                'expected' => false,
+            ),
+            array(
+                'request' => new Request\WalletBalance(),
+  
