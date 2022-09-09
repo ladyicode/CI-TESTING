@@ -625,4 +625,10 @@ class BlockchainWalletTest extends TestCase
             array(
                 'request' => $send,
                 'expected' => true,
-         
+            ),
+            array(
+                'request' => new Request\Send(),
+                'expected' => false,
+            ),
+            array(
+                'req
