@@ -619,4 +619,10 @@ class BlockchainWalletTest extends TestCase
                 'expected' => true,
             ),
             array(
-                'request' => n
+                'request' => new Request\NewAddress(),
+                'expected' => true,
+            ),
+            array(
+                'request' => $send,
+                'expected' => true,
+         
