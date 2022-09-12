@@ -636,4 +636,8 @@ class BlockchainWalletTest extends TestCase
             ),
             array(
                 'request' => new Request\WalletBalance(),
-  
+                'expected' => true,
+            ),
+        );
+    }
+}
