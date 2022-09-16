@@ -10,4 +10,9 @@
 namespace SakeTest\BlockchainWalletApi\Service;
 
 use Sake\BlockchainWalletApi\Service\HydratorFactory;
-use SakeTes
+use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
+
+/**
+ * Class BlockChainWalletFactoryTest
+ *
+ * Tests integrity of \Sake\Blockchain
