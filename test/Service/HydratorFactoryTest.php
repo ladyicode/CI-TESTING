@@ -15,4 +15,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 /**
  * Class BlockChainWalletFactoryTest
  *
- * Tests integrity of \Sake\Blockchain
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\HydratorFactory
+ */
+class HydratorFactoryTestTestCase extends TestCase
+{
+    /**
+     * Tests createService() returns a valid and configu
