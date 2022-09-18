@@ -30,4 +30,7 @@ class HydratorFactoryTestTestCase extends TestCase
         $cut = new HydratorFactory();
 
         /* @var $hydrator \Zend\Stdlib\Hydrator\ClassMethods */
-        $hydrator = $cut->crea
+        $hydrator = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\Stdlib\Hydrator\ClassMethods', $hydrator);
+        $this->assertTrue($hydrator->hasSt
