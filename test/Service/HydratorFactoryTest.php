@@ -33,4 +33,7 @@ class HydratorFactoryTestTestCase extends TestCase
         $hydrator = $cut->createService($this->serviceManager);
 
         $this->assertInstanceOf('\Zend\Stdlib\Hydrator\ClassMethods', $hydrator);
-        $this->assertTrue($hydrator->hasSt
+        $this->assertTrue($hydrator->hasStrategy('addresses'));
+        $this->assertTrue($hydrator->hasStrategy('consolidated'));
+        $this->assertTrue($hydrator->hasFilter('method'));
+       
