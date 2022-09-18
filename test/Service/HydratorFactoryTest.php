@@ -20,4 +20,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 class HydratorFactoryTestTestCase extends TestCase
 {
     /**
-     * Tests createService() returns a valid and configu
+     * Tests createService() returns a valid and configured service instance.
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\HydratorFactory::createService
+     * @group factory
+     */
+    publi
