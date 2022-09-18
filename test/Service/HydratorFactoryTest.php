@@ -25,4 +25,9 @@ class HydratorFactoryTestTestCase extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\HydratorFactory::createService
      * @group factory
      */
-    publi
+    public function testCreateService()
+    {
+        $cut = new HydratorFactory();
+
+        /* @var $hydrator \Zend\Stdlib\Hydrator\ClassMethods */
+        $hydrator = $cut->crea
