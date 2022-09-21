@@ -36,4 +36,6 @@ class HydratorFactoryTestTestCase extends TestCase
         $this->assertTrue($hydrator->hasStrategy('addresses'));
         $this->assertTrue($hydrator->hasStrategy('consolidated'));
         $this->assertTrue($hydrator->hasFilter('method'));
-       
+        $this->assertTrue($hydrator->hasFilter('arguments'));
+    }
+}
