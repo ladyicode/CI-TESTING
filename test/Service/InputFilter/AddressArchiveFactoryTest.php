@@ -9,4 +9,10 @@
 
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
-use \Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFacto
+use \Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFactory;
+use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
+
+/**
+ * Class AddressArchiveTest
+ *
+ * Tests integrity of \Sake\Bl
