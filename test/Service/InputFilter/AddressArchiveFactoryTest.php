@@ -20,4 +20,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 class AddressArchiveTest extends TestCase
 {
     /**
-     * Tests createService() returns a valid an
+     * Tests createService() returns a valid and configured input filter instance.
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFactory::createService
+     * @group factory
+     */
+    
