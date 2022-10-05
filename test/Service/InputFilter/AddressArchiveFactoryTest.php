@@ -25,4 +25,9 @@ class AddressArchiveTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressArchiveFactory::createService
      * @group factory
      */
-    
+    public function testCreateService()
+    {
+        $cut = new AddressArchiveFactory();
+
+        /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
+       
