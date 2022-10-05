@@ -30,4 +30,6 @@ class AddressArchiveTest extends TestCase
         $cut = new AddressArchiveFactory();
 
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
-       
+        $inputFilter = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $i
