@@ -14,4 +14,10 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 
 /**
  * Class AddressBalanceTest
- 
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory
+ */
+class AddressBalanceTest extends TestCase
+{
+    /**
+     * Tests createSer
