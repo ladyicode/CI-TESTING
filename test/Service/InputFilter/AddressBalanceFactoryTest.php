@@ -22,4 +22,11 @@ class AddressBalanceTest extends TestCase
     /**
      * Tests createService() returns a valid and configured input filter instance.
      *
-     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory::createSe
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory::createService
+     * @group factory
+     */
+    public function testCreateService()
+    {
+        $cut = new AddressBalanceFactory();
+
+        /* @var $inp
