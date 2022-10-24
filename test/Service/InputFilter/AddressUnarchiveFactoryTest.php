@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Sake
@@ -9,31 +10,30 @@
 
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
-use \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory;
+use \Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarchiveFactory;
 use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 
 /**
- * Class AddressBalanceTest
+ * Class AddressUnarchiveTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarchiveFactory
  */
-class AddressBalanceTest extends TestCase
+class AddressUnarchiveTest extends TestCase
 {
     /**
      * Tests createService() returns a valid and configured input filter instance.
      *
-     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressBalanceFactory::createService
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AddressUnarchiveFactory::createService
      * @group factory
      */
     public function testCreateService()
     {
-        $cut = new AddressBalanceFactory();
+        $cut = new AddressUnarchiveFactory();
 
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
         $inputFilter = $cut->createService($this->serviceManager);
 
         $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
         $this->assertTrue($inputFilter->has('address'));
-        $this->assertTrue($inputFilter->has('confirmations'));
     }
 }
