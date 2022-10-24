@@ -32,4 +32,7 @@ class AddressBalanceTest extends TestCase
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
         $inputFilter = $cut->createService($this->serviceManager);
 
-        $this->assertInstanceOf('\Zend\InputFilter\InputFi
+        $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
+        $this->assertTrue($inputFilter->has('address'));
+        $this->assertTrue($inputFilter->has('confirmations'));
+   
