@@ -29,4 +29,7 @@ class AddressBalanceTest extends TestCase
     {
         $cut = new AddressBalanceFactory();
 
-        /* @var $inp
+        /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
+        $inputFilter = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\InputFilter\InputFi
