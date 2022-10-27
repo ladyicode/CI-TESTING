@@ -10,4 +10,9 @@
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
 use \Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory;
-use SakeTest\Blockchain
+use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
+
+/**
+ * Class AutoConsolidateAddressesTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter
