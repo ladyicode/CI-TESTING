@@ -15,4 +15,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 /**
  * Class AutoConsolidateAddressesTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory
+ */
+class AutoConsolidateAddressesTest extends TestCase
+{
+    /**
+     * Tests createService() return
