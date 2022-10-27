@@ -7,4 +7,7 @@
  * @license   http://github.com/sandrokeil/BlockchainWalletApi/blob/master/LICENSE.txt New BSD License
  */
 
-namesp
+namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
+
+use \Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory;
+use SakeTest\Blockchain
