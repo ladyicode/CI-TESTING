@@ -20,4 +20,7 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 class AutoConsolidateAddressesTest extends TestCase
 {
     /**
-     * Tests createService() return
+     * Tests createService() returns a valid and configured input filter instance.
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory::createService
+     *
