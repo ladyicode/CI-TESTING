@@ -23,4 +23,10 @@ class AutoConsolidateAddressesTest extends TestCase
      * Tests createService() returns a valid and configured input filter instance.
      *
      * @covers \Sake\BlockchainWalletApi\Service\InputFilter\AutoConsolidateAddressesFactory::createService
-     *
+     * @group factory
+     */
+    public function testCreateService()
+    {
+        $cut = new AutoConsolidateAddressesFactory();
+
+        /* @var $inputFilter \Zen
