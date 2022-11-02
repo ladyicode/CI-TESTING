@@ -29,4 +29,7 @@ class AutoConsolidateAddressesTest extends TestCase
     {
         $cut = new AutoConsolidateAddressesFactory();
 
-        /* @var $inputFilter \Zen
+        /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
+        $inputFilter = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\InputF
