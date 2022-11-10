@@ -9,4 +9,10 @@
 
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
-use \Sake\BlockchainWalletApi\Service\InputFilter\Li
+use \Sake\BlockchainWalletApi\Service\InputFilter\ListAddressesFactory;
+use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
+
+/**
+ * Class ListAddressesTest
+ *
+ * 
