@@ -20,4 +20,6 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 class ListAddressesTest extends TestCase
 {
     /**
-     * Tests createServi
+     * Tests createService() returns a valid and configured input filter instance.
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\ListAddressesFactory::c
