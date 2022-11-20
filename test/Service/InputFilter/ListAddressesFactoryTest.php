@@ -32,4 +32,7 @@ class ListAddressesTest extends TestCase
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
         $inputFilter = $cut->createService($this->serviceManager);
 
-        $this->assertInstanceOf('\Zend\InputFilter\I
+        $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
+        $this->assertTrue($inputFilter->has('confirmations'));
+    }
+}
