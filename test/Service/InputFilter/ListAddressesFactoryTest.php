@@ -29,4 +29,7 @@ class ListAddressesTest extends TestCase
     {
         $cut = new ListAddressesFactory();
 
-        /* @
+        /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
+        $inputFilter = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\InputFilter\I
