@@ -10,29 +10,33 @@
 
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
-use \Sake\BlockchainWalletApi\Service\InputFilter\NewAddressFactory;
+use \Sake\BlockchainWalletApi\Service\InputFilter\SendFactory;
 use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 
 /**
- * Class NewAddressTest
+ * Class SendFactoryTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\NewAddressFactory
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\SendFactory
  */
-class NewAddressTest extends TestCase
+class SendFactoryTest extends TestCase
 {
     /**
      * Tests createService() returns a valid and configured input filter instance.
      *
-     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\NewAddressFactory::createService
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\SendFactory::createService
      * @group factory
      */
     public function testCreateService()
     {
-        $cut = new NewAddressFactory();
+        $cut = new SendFactory();
 
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
         $inputFilter = $cut->createService($this->serviceManager);
 
         $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
+        $this->assertTrue($inputFilter->has('to'));
+        $this->assertTrue($inputFilter->has('amount'));
+        $this->assertTrue($inputFilter->has('from'));
+        $this->assertTrue($inputFilter->has('fee'));
     }
 }
