@@ -22,4 +22,11 @@ class ListAddressesTest extends TestCase
     /**
      * Tests createService() returns a valid and configured input filter instance.
      *
-     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\ListAddressesFactory::c
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\ListAddressesFactory::createService
+     * @group factory
+     */
+    public function testCreateService()
+    {
+        $cut = new ListAddressesFactory();
+
+        /* @
