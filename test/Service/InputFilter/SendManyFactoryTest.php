@@ -10,4 +10,9 @@
 namespace SakeTest\BlockchainWalletApi\Service\InputFilter;
 
 use \Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory;
-use SakeTest\BlockchainWa
+use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
+
+/**
+ * Class SendManyFactoryTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\Send
