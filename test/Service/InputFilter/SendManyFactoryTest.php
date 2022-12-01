@@ -25,4 +25,9 @@ class SendManyFactoryTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory::createService
      * @group factory
      */
-    publ
+    public function testCreateService()
+    {
+        $cut = new SendManyFactory();
+
+        /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
+        $in
