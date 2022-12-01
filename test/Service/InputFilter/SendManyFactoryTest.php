@@ -15,4 +15,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 /**
  * Class SendManyFactoryTest
  *
- * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\Send
+ * Tests integrity of \Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory
+ */
+class SendManyFactoryTest extends TestCase
+{
+    /**
+     * Tests createService() returns a valid and configured input fi
