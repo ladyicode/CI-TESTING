@@ -20,4 +20,9 @@ use SakeTest\BlockchainWalletApi\Service\AbstractFactoryTestCase as TestCase;
 class SendManyFactoryTest extends TestCase
 {
     /**
-     * Tests createService() returns a valid and configured input fi
+     * Tests createService() returns a valid and configured input filter instance.
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\InputFilter\SendManyFactory::createService
+     * @group factory
+     */
+    publ
