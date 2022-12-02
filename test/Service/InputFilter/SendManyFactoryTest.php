@@ -30,4 +30,7 @@ class SendManyFactoryTest extends TestCase
         $cut = new SendManyFactory();
 
         /* @var $inputFilter \Zend\InputFilter\InputFilterInterface */
-        $in
+        $inputFilter = $cut->createService($this->serviceManager);
+
+        $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
+        $this->assertTrue($i
