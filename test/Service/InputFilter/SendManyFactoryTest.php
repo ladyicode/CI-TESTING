@@ -33,4 +33,8 @@ class SendManyFactoryTest extends TestCase
         $inputFilter = $cut->createService($this->serviceManager);
 
         $this->assertInstanceOf('\Zend\InputFilter\InputFilterInterface', $inputFilter);
-        $this->assertTrue($i
+        $this->assertTrue($inputFilter->has('recipients'));
+        $this->assertTrue($inputFilter->has('from'));
+        $this->assertTrue($inputFilter->has('fee'));
+    }
+}
