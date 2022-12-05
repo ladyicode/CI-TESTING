@@ -1,0 +1,3 @@
+GET /de/merchant/test43/address_balance?password=mainpwd&second_password=secpwd&address=efjsdkfjkwefkwejfkesf&confirmations=0 HTTP/1.1
+Host: blockchain.info
+Conne

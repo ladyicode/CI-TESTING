@@ -91,3 +91,9 @@ class ResponsePluginManagerTest extends TestCase
                 'expected' => '\Sake\BlockchainWalletApi\Response\SendMany',
             ),
             array(
+                'plugin' => 'balance',
+                'expected' => '\Sake\BlockchainWalletApi\Response\WalletBalance',
+            ),
+        );
+    }
+}
