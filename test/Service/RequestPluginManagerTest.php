@@ -32,3 +32,68 @@ class RequestPluginManagerTest extends TestCase
     public function testValidatePlugin($plugin, $expected)
     {
         $manager = new RequestPluginManager();
+
+        $this->assertInstanceOf($expected, $manager->get($plugin));
+    }
+
+    /**
+     * Tests validatePlugin() should throw runtime exception if request interface is missing
+     *
+     * @covers \Sake\BlockchainWalletApi\Service\RequestPluginManager::validatePlugin
+     * @group service
+     */
+    public function testValidatePluginThrowsRuntimeExceptionIfInterfaceIsMissong()
+    {
+        $manager = new RequestPluginManager();
+
+        $this->setExpectedException('\Sake\BlockchainWalletApi\Exception\RuntimeException', 'Plugin of type');
+        $manager->validatePlugin(new \stdClass());
+    }
+
+    /**
+     * data provider for the test method testValidatePlugin()
+     *
+     * @return array
+     */
+    public function dataProviderForTestValidatePlugin()
+    {
+        return array(
+            array(
+                'plugin' => 'archive_address',
+                'expected' => '\Sake\BlockchainWalletApi\Request\AddressArchive',
+            ),
+            array(
+                'plugin' => 'address_balance',
+                'expected' => '\Sake\BlockchainWalletApi\Request\AddressBalance',
+            ),
+            array(
+                'plugin' => 'unarchive_address',
+                'expected' => '\Sake\BlockchainWalletApi\Request\AddressUnarchive',
+            ),
+            array(
+                'plugin' => 'auto_consolidate',
+                'expected' => '\Sake\BlockchainWalletApi\Request\AutoConsolidateAddresses',
+            ),
+            array(
+                'plugin' => 'list',
+                'expected' => '\Sake\BlockchainWalletApi\Request\ListAddresses',
+            ),
+            array(
+                'plugin' => 'new_address',
+                'expected' => '\Sake\BlockchainWalletApi\Request\NewAddress',
+            ),
+            array(
+                'plugin' => 'payment',
+                'expected' => '\Sake\BlockchainWalletApi\Request\Send',
+            ),
+            array(
+                'plugin' => 'sendmany',
+                'expected' => '\Sake\BlockchainWalletApi\Request\SendMany',
+            ),
+            array(
+                'plugin' => 'balance',
+                'expected' => '\Sake\BlockchainWalletApi\Request\WalletBalance',
+            ),
+        );
+    }
+}
