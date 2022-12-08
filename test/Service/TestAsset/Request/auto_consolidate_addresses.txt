@@ -1,0 +1,3 @@
+GET /de/merchant/test43/auto_consolidate?password=mainpwd&second_password=secpwd&days=10 HTTP/1.1
+Host: blockchain.info
+Connection: clos
