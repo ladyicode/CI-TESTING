@@ -1,0 +1,1 @@
+GET /de/merchant/test43/payment?password=mainpwd&second_password=se
