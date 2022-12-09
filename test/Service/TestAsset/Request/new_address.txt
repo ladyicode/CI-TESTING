@@ -1,0 +1,1 @@
+GET /de/merchant/test43/new_address?password=mainpwd&second_password=secpwd&label=Order+No+%3A+1
