@@ -1,0 +1,1 @@
+GET /de/merchant/test43/sendmany?password=mainpwd&second_password=secpwd&recipients=%7B%22regl4jtwe8flmf23knfsd%22%3A10000%2C%2223dskflsfuo2u4o

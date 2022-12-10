@@ -2,4 +2,4 @@ GET /de/merchant/test43/payment?password=mainpwd&second_password=secpwd&to=1A8Ji
 Host: blockchain.info
 Connection: close
 Accept-Encoding: gzip, deflate
-User-Agent: Zend\H
+User-Agent: Zend\Http\Client
