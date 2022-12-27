@@ -8,4 +8,6 @@ Set-Cookie: __cfduid=d905a0c533be39356d4628bf41eed79ed1396906119090; Expires=Mon
 Content-Language: de
 Content-Security-Policy: img-src 'self' data: https://blockchain.info; style-src 'self' 'unsafe-inline'; frame-src 'none'; script-src 'self'; connect-src 'self' *.blockchain.info wss://*.blockchain.info ws://*.blockchain.info; object-src 'none'; media-src 'none'; font-src 'none';
 Strict-Transport-Security: max-age=604800
-CF-RAY: 117950ec5dc100dd-A
+CF-RAY: 117950ec5dc100dd-AMS
+
+{"active" : "18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy"}
