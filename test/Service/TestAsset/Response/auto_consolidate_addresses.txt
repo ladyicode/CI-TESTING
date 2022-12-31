@@ -6,4 +6,4 @@ Content-Length: 13
 Connection: close
 Set-Cookie: __cfduid=d905a0c533be39356d4628bf41eed79ed1396906119090; Expires=Mon, 23-Dec-2019 23:50:00 GMT; Domain=.blockchain.info; Path=/; HttpOnly
 Content-Language: de
-Content-Security-Policy: img-src 'self' data: https://blockchain.info; style-sr
+Content-Security-Policy: img-src 'self' data: https://blockchain.info; style-src 'self' 'unsafe-inline'; frame-src 'none'; script-src 'self'; connect-src 'self' *.blockchain.info wss://*.blockchain.info ws://*.blockchain.info; object-src 'none'
