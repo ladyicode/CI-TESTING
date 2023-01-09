@@ -1,3 +1,4 @@
+
 HTTP/1.1 200 OK
 Server: cloudflare-nginx
 Date: Mon, 07 Apr 2014 21:28:39 GMT
@@ -10,4 +11,4 @@ Content-Security-Policy: img-src 'self' data: https://blockchain.info; style-src
 Strict-Transport-Security: max-age=604800
 CF-RAY: 117950ec5dc100dd-AMS
 
-{ "consolidated" : ["18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy", "1Q1AtvCyKhtveGm3187mgNRh5YcukUWjQC"]}
+{ "address" : "18fyqiZzndTxdVo7g9ouRogB4uFj86JJiy" , "label":  "Order No : 1234" }
