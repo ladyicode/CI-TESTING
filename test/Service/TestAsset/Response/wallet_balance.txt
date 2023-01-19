@@ -4,4 +4,6 @@ Date: Mon, 07 Apr 2014 21:28:39 GMT
 Content-Type: application/json;charset=UTF-8
 Content-Length: 13
 Connection: close
-Set-Cookie: __cfduid=d905a0c533be39356d4628bf41eed79ed1396906119090; Expires=Mon, 23-Dec-2019 23:50:00 GMT; Do
+Set-Cookie: __cfduid=d905a0c533be39356d4628bf41eed79ed1396906119090; Expires=Mon, 23-Dec-2019 23:50:00 GMT; Domain=.blockchain.info; Path=/; HttpOnly
+Content-Language: de
+Content-Security-Policy: img-src 'self' data: https://blockchain.info; st
