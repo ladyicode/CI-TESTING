@@ -10,3 +10,14 @@
 
 return array(
     'modules' => array(
+        'Sake\BlockchainWalletApi',
+    ),
+    'module_listener_options' => array(
+        'config_glob_paths' => array(
+            __DIR__ . '/testing.config.php',
+        ),
+        'module_paths' => array(
+            'src',
+        ),
+    ),
+);
