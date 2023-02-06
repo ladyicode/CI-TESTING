@@ -14,4 +14,8 @@ use Sake\BlockchainWalletApi\Validator\BitcoinAddress;
 use Zend\Stdlib\ArrayUtils;
 
 /**
- * Class 
+ * Class BitcoinAddressTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\Validator\BitcoinAddress
+ */
+class BitcoinAddressTest extends TestCas
