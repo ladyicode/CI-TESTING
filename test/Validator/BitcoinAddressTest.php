@@ -18,4 +18,12 @@ use Zend\Stdlib\ArrayUtils;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\Validator\BitcoinAddress
  */
-class BitcoinAddressTest extends TestCas
+class BitcoinAddressTest extends TestCase
+{
+    /**
+     * Tests if isValid checks bitcoin address format
+     *
+     * @dataProvider dataProviderForTestIsValid
+     * @group validator
+     *
+     * @covers \Sake\Bloc
