@@ -26,4 +26,6 @@ class BitcoinAddressTest extends TestCase
      * @dataProvider dataProviderForTestIsValid
      * @group validator
      *
-     * @covers \Sake\Bloc
+     * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::isValid
+     * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::decode
+     * @covers \Sake\BlockchainWalletApi\Validato
