@@ -28,4 +28,10 @@ class BitcoinAddressTest extends TestCase
      *
      * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::isValid
      * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::decode
-     * @covers \Sake\BlockchainWalletApi\Validato
+     * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::encodeHex
+     */
+    public function testIsValid($address, $expected)
+    {
+        $cut = new BitcoinAddress();
+
+        
