@@ -34,4 +34,7 @@ class BitcoinAddressTest extends TestCase
     {
         $cut = new BitcoinAddress();
 
-        
+        if ('exception' === $expected) {
+            $this->setExpectedException(
+                '\Sake\BlockchainWalletApi\Validator\Exception\ValidatorException',
+    
