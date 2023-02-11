@@ -37,4 +37,8 @@ class BitcoinAddressTest extends TestCase
         if ('exception' === $expected) {
             $this->setExpectedException(
                 '\Sake\BlockchainWalletApi\Validator\Exception\ValidatorException',
-    
+                'Could not decode bitcoin address'
+            );
+            $cut->isValid($address);
+        } else {
+            $this->assert
