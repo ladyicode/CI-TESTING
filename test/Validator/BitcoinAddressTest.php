@@ -41,4 +41,13 @@ class BitcoinAddressTest extends TestCase
             );
             $cut->isValid($address);
         } else {
-            $this->assert
+            $this->assertEquals($expected, $cut->isValid($address));
+        }
+    }
+
+    /**
+     * Tests if isValid returns false
+     *
+     * @group validator
+     *
+     * @cove
