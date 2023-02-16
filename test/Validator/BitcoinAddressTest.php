@@ -54,4 +54,8 @@ class BitcoinAddressTest extends TestCase
      */
     public function testIsValidWithWrongChecksum()
     {
-        $cut = $this-
+        $cut = $this->getMock('\Sake\BlockchainWalletApi\Validator\BitcoinAddress', array('decode'));
+
+        $cut->expects($this->once())
+            ->method('decode')
+   
