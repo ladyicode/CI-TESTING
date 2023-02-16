@@ -50,4 +50,8 @@ class BitcoinAddressTest extends TestCase
      *
      * @group validator
      *
-     * @cove
+     * @covers \Sake\BlockchainWalletApi\Validator\BitcoinAddress::isValid
+     */
+    public function testIsValidWithWrongChecksum()
+    {
+        $cut = $this-
