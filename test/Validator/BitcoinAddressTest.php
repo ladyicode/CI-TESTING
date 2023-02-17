@@ -60,4 +60,12 @@ class BitcoinAddressTest extends TestCase
             ->method('decode')
             ->will($this->returnValue('0006F1B66FFE49DF7FCE684DF16C62F59DC9ADBD3F4FEC479B'));
 
-        $this->assertFalse($cut->isValid('ThisAddressIsIgnor
+        $this->assertFalse($cut->isValid('ThisAddressIsIgnored'));
+    }
+
+    /**
+     * data provider for the test method testIsValid()
+     *
+     * @return array
+     */
+    public function dataP
