@@ -68,4 +68,9 @@ class BitcoinAddressTest extends TestCase
      *
      * @return array
      */
-    public function dataP
+    public function dataProviderForTestIsValid()
+    {
+        $validAddresses = json_decode(file_get_contents(__DIR__ . '/TestAsset/bitcoin_addresses_valid.json'));
+
+        array_walk(
+       
