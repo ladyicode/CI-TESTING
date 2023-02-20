@@ -73,4 +73,10 @@ class BitcoinAddressTest extends TestCase
         $validAddresses = json_decode(file_get_contents(__DIR__ . '/TestAsset/bitcoin_addresses_valid.json'));
 
         array_walk(
-       
+            $validAddresses,
+            function (&$item) {
+                $item['expected'] = true;
+            }
+        );
+
+        $invalidAddresses = json_decode(file_g
