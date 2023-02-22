@@ -79,4 +79,9 @@ class BitcoinAddressTest extends TestCase
             }
         );
 
-        $invalidAddresses = json_decode(file_g
+        $invalidAddresses = json_decode(file_get_contents(__DIR__ . '/TestAsset/bitcoin_addresses_invalid.json'));
+
+        array_walk(
+            $invalidAddresses,
+            function (&$item) {
+       
