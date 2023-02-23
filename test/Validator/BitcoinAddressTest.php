@@ -90,4 +90,8 @@ class BitcoinAddressTest extends TestCase
 
         $addresses = ArrayUtils::merge($validAddresses, $invalidAddresses, false);
 
-        $exceptionAdd
+        $exceptionAddresses = json_decode(file_get_contents(__DIR__ . '/TestAsset/bitcoin_addresses_exception.json'));
+
+        array_walk(
+            $exceptionAddresses,
+            func
