@@ -84,4 +84,10 @@ class BitcoinAddressTest extends TestCase
         array_walk(
             $invalidAddresses,
             function (&$item) {
-       
+                $item['expected'] = false;
+            }
+        );
+
+        $addresses = ArrayUtils::merge($validAddresses, $invalidAddresses, false);
+
+        $exceptionAdd
