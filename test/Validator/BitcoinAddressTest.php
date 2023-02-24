@@ -99,4 +99,6 @@ class BitcoinAddressTest extends TestCase
             }
         );
 
-        return ArrayUtils::merge($addresses, $exceptionAddresses, false
+        return ArrayUtils::merge($addresses, $exceptionAddresses, false);
+    }
+}
