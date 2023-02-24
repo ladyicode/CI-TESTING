@@ -94,4 +94,9 @@ class BitcoinAddressTest extends TestCase
 
         array_walk(
             $exceptionAddresses,
-            func
+            function (&$item) {
+                $item['expected'] = 'exception';
+            }
+        );
+
+        return ArrayUtils::merge($addresses, $exceptionAddresses, false
