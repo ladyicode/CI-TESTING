@@ -9,4 +9,11 @@
 
 namespace SakeTest\BlockchainWalletApi\View\Helper;
 
-use PHPUnit_Framework_
+use PHPUnit_Framework_TestCase as TestCase;
+use Sake\BlockchainWalletApi\View\Helper\Satoshi;
+
+/**
+ * Class SatoshiTest
+ *
+ * Tests integrity of \Sake\BlockchainWalletApi\View\Helper\Satoshi
+ */
