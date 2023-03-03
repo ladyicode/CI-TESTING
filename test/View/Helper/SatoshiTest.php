@@ -17,3 +17,9 @@ use Sake\BlockchainWalletApi\View\Helper\Satoshi;
  *
  * Tests integrity of \Sake\BlockchainWalletApi\View\Helper\Satoshi
  */
+class SatoshiTest extends TestCase
+{
+    /**
+     * Tests if __invoke returns bitcoin value set by defaultUnit
+     *
+     * @dataProvider da
