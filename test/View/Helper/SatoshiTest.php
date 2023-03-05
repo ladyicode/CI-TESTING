@@ -29,4 +29,8 @@ class SatoshiTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::format
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::setDefaultUnit
      */
-    public function testInvokeWithSetDefaultUnit($sato
+    public function testInvokeWithSetDefaultUnit($satoshi, $expected)
+    {
+        $cut = new Satoshi($satoshi);
+        $cut->setDefaultUnit(Satoshi::UNIT_BTC);
+        $this->assertEquals($expected,
