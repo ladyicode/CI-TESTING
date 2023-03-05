@@ -26,4 +26,7 @@ class SatoshiTest extends TestCase
      * @group view
      *
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
-     * @covers \Sake\BlockchainWalletApi\View\H
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::format
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::setDefaultUnit
+     */
+    public function testInvokeWithSetDefaultUnit($sato
