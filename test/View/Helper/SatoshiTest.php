@@ -33,4 +33,12 @@ class SatoshiTest extends TestCase
     {
         $cut = new Satoshi($satoshi);
         $cut->setDefaultUnit(Satoshi::UNIT_BTC);
-        $this->assertEquals($expected,
+        $this->assertEquals($expected, $cut($satoshi));
+    }
+
+    /**
+     * Tests if __invoke returns bitcoin value if no format is set
+     *
+     * @dataProvider dataProviderForInvokeFormatBitcoin
+     * @group view
+ 
