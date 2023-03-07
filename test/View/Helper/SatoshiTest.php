@@ -45,4 +45,7 @@ class SatoshiTest extends TestCase
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::format
      */
-    public func
+    public function testInvokeShouldReturnBitcoin($satoshi, $expected)
+    {
+        $cut = new Satoshi($satoshi);
+        $this->assertEquals($expected, $cut($sato
