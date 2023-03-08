@@ -57,4 +57,7 @@ class SatoshiTest extends TestCase
      * @dataProvider dataProviderForInvokeFormatBitcoin
      * @group view
      *
- 
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::format
+     */
+    public 
