@@ -48,4 +48,13 @@ class SatoshiTest extends TestCase
     public function testInvokeShouldReturnBitcoin($satoshi, $expected)
     {
         $cut = new Satoshi($satoshi);
-        $this->assertEquals($expected, $cut($sato
+        $this->assertEquals($expected, $cut($satoshi));
+    }
+
+    /**
+     * Tests if __invoke returns bitcoin value
+     *
+     * @dataProvider dataProviderForInvokeFormatBitcoin
+     * @group view
+     *
+ 
