@@ -63,4 +63,10 @@ class SatoshiTest extends TestCase
     public function testInvokeFormatBitcoin($satoshi, $expected)
     {
         $cut = new Satoshi($satoshi);
-        $this->assertEquals($expected, $cut($satoshi,
+        $this->assertEquals($expected, $cut($satoshi, Satoshi::UNIT_BTC));
+    }
+
+    /**
+     * Tests if __invoke returns milli bitcoin value
+     *
+     * @dataProvider dataProviderForInvokeForma
