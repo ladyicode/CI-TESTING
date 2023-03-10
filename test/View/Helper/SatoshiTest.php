@@ -69,4 +69,8 @@ class SatoshiTest extends TestCase
     /**
      * Tests if __invoke returns milli bitcoin value
      *
-     * @dataProvider dataProviderForInvokeForma
+     * @dataProvider dataProviderForInvokeFormatMilliBitcoin
+     * @group view
+     *
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
+     * @covers \Sake\BlockchainWalle
