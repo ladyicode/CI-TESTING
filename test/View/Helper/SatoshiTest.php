@@ -73,4 +73,9 @@ class SatoshiTest extends TestCase
      * @group view
      *
      * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
-     * @covers \Sake\BlockchainWalle
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::format
+     */
+    public function testInvokeFormatMilliBitcoin($satoshi, $expected)
+    {
+        $cut = new Satoshi($satoshi);
+        $this->ass
