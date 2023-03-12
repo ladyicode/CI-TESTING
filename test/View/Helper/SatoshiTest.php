@@ -78,4 +78,10 @@ class SatoshiTest extends TestCase
     public function testInvokeFormatMilliBitcoin($satoshi, $expected)
     {
         $cut = new Satoshi($satoshi);
-        $this->ass
+        $this->assertEquals($expected, $cut($satoshi, Satoshi::UNIT_MBTC));
+    }
+
+    /**
+     * Tests if __invoke returns micro bitcoin value
+     *
+     * @dataProvider d
