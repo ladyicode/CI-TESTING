@@ -84,4 +84,8 @@ class SatoshiTest extends TestCase
     /**
      * Tests if __invoke returns micro bitcoin value
      *
-     * @dataProvider d
+     * @dataProvider dataProviderForInvokeFormatMicroBitcoin
+     * @group view
+     *
+     * @covers \Sake\BlockchainWalletApi\View\Helper\Satoshi::__invoke
+     * @covers \Sake\BlockchainWalletAp
