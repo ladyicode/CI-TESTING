@@ -92,4 +92,9 @@ class SatoshiTest extends TestCase
      */
     public function testInvokeFormatMicroBitcoin($satoshi, $expected)
     {
-        $cut = new Satoshi($satoshi)
+        $cut = new Satoshi($satoshi);
+        $this->assertEquals($expected, $cut($satoshi, Satoshi::UNIT_UBTC));
+    }
+
+    /**
+     * data provider for the test method testInvokeForma
