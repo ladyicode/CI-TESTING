@@ -124,4 +124,12 @@ class SatoshiTest extends TestCase
                 'satoshi' => 0,
                 'expected' => 0,
             ),
-            
+            array(
+                'satoshi' => 45000000,
+                'expected' => 0.45,
+            ),
+        );
+    }
+
+    /**
+     * data provider for the test method testI
