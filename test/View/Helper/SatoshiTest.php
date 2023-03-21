@@ -132,4 +132,10 @@ class SatoshiTest extends TestCase
     }
 
     /**
-     * data provider for the test method testI
+     * data provider for the test method testInvokeFormatMilliBitcoin()
+     *
+     * @return array
+     */
+    public function dataProviderForInvokeFormatMilliBitcoin()
+    {
+        return array(
