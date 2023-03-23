@@ -139,3 +139,9 @@ class SatoshiTest extends TestCase
     public function dataProviderForInvokeFormatMilliBitcoin()
     {
         return array(
+            array(
+                'satoshi' => 100000000,
+                'expected' => 1000,
+            ),
+            array(
+                'satosh
