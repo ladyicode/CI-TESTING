@@ -149,4 +149,12 @@ class SatoshiTest extends TestCase
             ),
             array(
                 'satoshi' => 200000000,
-                'expect
+                'expected' => 2000,
+            ),
+            array(
+                'satoshi' => 1,
+                'expected' => 0.00001,
+            ),
+            array(
+                'satoshi' => 0,
+ 
