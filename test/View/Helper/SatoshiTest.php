@@ -157,4 +157,10 @@ class SatoshiTest extends TestCase
             ),
             array(
                 'satoshi' => 0,
- 
+                'expected' => 0,
+            ),
+        );
+    }
+
+    /**
+     * data provider for the test method testInvokeFo
